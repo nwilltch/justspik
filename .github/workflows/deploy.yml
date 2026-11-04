@@ -1,0 +1,40 @@
+name: Deploy JustSpik to Contabo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          passphrase: ${{ secrets.VPS_PASSPHRASE }} # optionnel si clé sans mot de passe
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script: |
+            set -e
+            echo "🚀 Démarrage du déploiement JustSpik..."
+            
+            # Aller dans le dossier du projet
+            cd /var/www/justspik
+            
+            # Récupérer les dernières modifications
+            git pull origin main
+            
+            # Installer les dépendances
+            pnpm install --frozen-lockfile
+            
+            # Compiler Next.js pour la production
+            pnpm run build
+            
+            # Redémarrer l'application avec PM2
+            pm2 restart justspik || pm2 start pnpm --name "justspik" -- start -- -p 3025
+            
+            echo "✅ Déploiement terminé avec succès !"
