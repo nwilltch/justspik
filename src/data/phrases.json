@@ -1,0 +1,249 @@
+[
+  {
+    "id": "entry-1",
+    "category": "routine",
+    "translations": {
+      "fr": "Je ne pense pas qu’il viendra ce soir.",
+      "en": "I don't think he will come tonight.",
+      "es": "No creo que venga esta noche.",
+      "de": "Ich glaube nicht, dass er heute Abend kommt.",
+      "it": "Non penso che verrà stasera."
+    },
+    "explanations": {
+      "en": "En anglais, utilise la contraction \"don't think\" suivie de \"will come\" ou \"is coming\".",
+      "es": "Après \"no creo que\", le verbe se conjugue au subjonctif présent (\"venga\").",
+      "de": "La conjonction \"dass\" renvoie le verbe conjugué \"kommt\" en fin de proposition subordonnée.",
+      "it": "Après \"non penso che\", on utilise le futur \"verrà\" ou le subjonctif \"venga\".",
+      "fr": "En français, \"je ne pense pas qu'il viendra\" ou \"vienne\" au subjonctif sont admis."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-2",
+    "category": "social",
+    "translations": {
+      "fr": "J’ai vraiment hâte d’avoir de tes nouvelles !",
+      "en": "I'm looking forward to hearing from you!",
+      "es": "¡Tengo muchas ganas de tener noticias tuyas!",
+      "de": "Ich freue mich schon darauf, von dir zu hören!",
+      "it": "Non vedo l’ora di sentirti!"
+    },
+    "explanations": {
+      "en": "Attention : après \"look forward to\", on emploie toujours le gérondif en \"-ing\" (\"hearing\").",
+      "es": "\"Tener ganas de\" est la formule naturelle pour exprimer l'impatience bienveillante.",
+      "de": "\"Sich freuen auf\" (+ accusatif) exprime l'anticipation joyeuse d'un événement futur.",
+      "it": "\"Non vedo l'ora di\" est la tournure idiomatique incontournable pour \"j'ai hâte\".",
+      "fr": "Formule chaleureuse et dynamique en fin de message personnel ou amical."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-3",
+    "category": "work",
+    "translations": {
+      "fr": "Faisons le point sur le budget d’ici vendredi.",
+      "en": "Let's touch base on the budget by Friday.",
+      "es": "Revisemos el presupuesto de aquí al viernes.",
+      "de": "Lass uns bis Freitag den Haushalt besprechen.",
+      "it": "Facciamo il punto sul budget entro venerdì."
+    },
+    "explanations": {
+      "en": "\"Touch base\" ou \"sync up\" sont les formules business idiomatiques pour \"faire le point\". \"By\" indique l'échéance.",
+      "es": "\"De aquí al viernes\" traduit l'échéance limite de manière fluide.",
+      "de": "\"Bis Freitag\" marque la date limite, le verbe se plaçant avec fluidité.",
+      "it": "\"Entro venerdì\" marque l'échéance exacte d'ici la fin de semaine.",
+      "fr": "\"Faire le point d'ici...\" est le classique du management de projet."
+    },
+    "targetTimeSec": 3.8
+  },
+  {
+    "id": "entry-4",
+    "category": "work",
+    "translations": {
+      "fr": "Nous sommes enfin sur la même longueur d’onde.",
+      "en": "We are finally on the same page.",
+      "es": "Por fin estamos en la misma sintonía.",
+      "de": "Wir sind endlich auf derselben Wellenlänge.",
+      "it": "Siamo finalmente sulla stessa lunghezza d’onda."
+    },
+    "explanations": {
+      "en": "\"On the same page\" est la métaphore standard en entreprise anglo-saxonne.",
+      "es": "\"En la misma sintonía\" ou \"en la misma página\" expriment l'alignement d'équipe.",
+      "de": "\"Auf derselben Wellenlänge\" est très naturel et couramment employé.",
+      "it": "\"Sulla stessa lunghezza d'onda\" est la formule consacrée.",
+      "fr": "Expression imagée classique pour exprimer l'alignement mutuel."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-5",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous avoir l’addition et un peu d’eau s’il vous plaît ?",
+      "en": "Could we have the check and some water please?",
+      "es": "¿Nos trae la cuenta y un poco de agua por favor?",
+      "de": "Könnten wir bitte die Rechnung und etwas Wasser haben?",
+      "it": "Potremmo avere il conto e un po’ d’acqua per favore?"
+    },
+    "explanations": {
+      "en": "\"Check\" (US) ou \"bill\" (UK) s'emploient pour l'addition au restaurant. \"Could we have\" est la formule idéale.",
+      "es": "\"Nos trae la cuenta\" est direct et parfaitement naturel dans un restaurant hispanophone.",
+      "de": "\"Die Rechnung, bitte\" est la formule standard polie.",
+      "it": "\"Il conto per favore\" est la réplique classique en fin de repas.",
+      "fr": "Formule polie standard au restaurant."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-6",
+    "category": "food",
+    "translations": {
+      "fr": "Ce plat est délicieux mais un peu trop épicé pour moi.",
+      "en": "This dish is delicious but a bit too spicy for me.",
+      "es": "Este plato está delicioso pero un poco demasiado picante para mí.",
+      "de": "Dieses Gericht ist köstlich, aber etwas zu scharf für mich.",
+      "it": "Questo piatto è delizioso ma un po’ troppo piccante per me."
+    },
+    "explanations": {
+      "en": "\"A bit too spicy\" est la nuance parfaite pour exprimer le piquant sans être rude.",
+      "es": "\"Picante\" désigne les épices fortes qui piquent.",
+      "de": "\"Scharf\" est le mot juste pour un plat épicé/relevé.",
+      "it": "\"Piccante\" qualifie les plats relevés comme en Italie du Sud.",
+      "fr": "Nuance gustative classique lors d'un repas."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-7",
+    "category": "travel",
+    "translations": {
+      "fr": "Pourriez-vous me déposer au coin de la rue ?",
+      "en": "Could you drop me off at the corner?",
+      "es": "¿Podría dejarme en la esquina de la calle?",
+      "de": "Könnten Sie mich an der Straßenecke absetzen?",
+      "it": "Potrebbe lasciarmi all’angolo della strada?"
+    },
+    "explanations": {
+      "en": "Le phrasal verb \"drop off\" signifie déposer un passager.",
+      "es": "\"Dejarme en la esquina\" est la demande polie standard en taxi ou VTC.",
+      "de": "\"Absetzen\" est le verbe adapté pour déposer quelqu'un en véhicule.",
+      "it": "\"Lasciarmi all'angolo\" s'utilise directement avec le chauffeur.",
+      "fr": "Formule polie au conditionnel pour les trajets en transport."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-8",
+    "category": "tech",
+    "translations": {
+      "fr": "Mon micro était coupé, tu m’entends bien maintenant ?",
+      "en": "I was on mute, can you hear me properly now?",
+      "es": "Tenía el micrófono silenciado, ¿me escuchas bien ahora?",
+      "de": "Ich war stummgeschaltet, kannst du mich jetzt gut hören?",
+      "it": "Ero su muto, mi senti bene adesso?"
+    },
+    "explanations": {
+      "en": "\"I was on mute\" est la phrase n°1 des réunions visio modernes.",
+      "es": "\"Estar silenciado\" est l'expression consacrée en visio.",
+      "de": "\"Stummgeschaltet sein\" traduit exactement le micro coupé.",
+      "it": "\"Ero su muto\" s'est imposé dans le travail à distance.",
+      "fr": "La réplique quotidienne universelle en télétravail."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-9",
+    "category": "slang",
+    "translations": {
+      "fr": "Laisse tomber, ça n’en vaut pas la peine.",
+      "en": "Never mind, it's not worth it.",
+      "es": "Déjalo, no vale la pena.",
+      "de": "Lass gut sein, das ist es nicht wert.",
+      "it": "Lascia perdere, non ne vale la pena."
+    },
+    "explanations": {
+      "en": "\"Never mind\" ou \"forget it\" sont les répliques immédiates.",
+      "es": "\"Déjalo\" ou \"olvídalo\" expriment directement \"laisse tomber\".",
+      "de": "\"Lass gut sein\" est l'équivalent allemand idiomatique décontracté.",
+      "it": "\"Lascia perdere\" est la formule spontanée la plus courante.",
+      "fr": "Expression quotidienne spontanée."
+    },
+    "targetTimeSec": 2.8
+  },
+  {
+    "id": "phrase-1793810133240",
+    "category": "routine",
+    "translations": {
+      "fr": "Je te rappelle dès que je termine cette tâche.",
+      "en": "I'll call you back as soon as I finish this task.",
+      "es": "Te devuelvo la llamada en cuanto termine esta tarea.",
+      "de": "Ich rufe dich zurück, sobald ich diese Aufgabe erledigt habe.",
+      "it": "Ti richiamo non appena finisco questo compito."
+    },
+    "explanations": {
+      "en": "Après \"as soon as\", utilise le présent simple (\"finish\") et non le futur (\"will finish\").",
+      "es": "\"En cuanto\" est toujours suivi du subjonctif (\"termine\") pour une action future.",
+      "de": "\"Sobald\" renvoie le verbe composé à la fin (\"erledigt habe\").",
+      "it": "\"Non appena\" suivi du présent traduit l'immédiateté naturelle.",
+      "fr": "Formule d'engagement rapide dans la journée."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "phrase-1793810413155",
+    "category": "food",
+    "translations": {
+      "fr": "Une table pour deux personnes en terrasse, c’est possible ?",
+      "en": "Could we have a table for two on the terrace?",
+      "es": "¿Sería posible una mesa para dos en la terraza?",
+      "de": "Wäre ein Tisch für zwei auf der Terrasse möglich?",
+      "it": "Sarebbe possibile un tavolo per due in terrazza?"
+    },
+    "explanations": {
+      "en": "\"On the terrace\" ou \"outside\" pour la terrasse au restaurant.",
+      "es": "\"Una mesa para dos\" est la demande directe et courtoise.",
+      "de": "\"Auf der Terrasse\" utilise l'article dative pour le lieu statique.",
+      "it": "\"In terrazza\" avec la préposition in.",
+      "fr": "La question d'accueil au restaurant par beau temps."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "phrase-1793810541369",
+    "category": "routine",
+    "translations": {
+      "fr": "Je me lève tous les jours à sept heures pour prendre mon temps.",
+      "en": "I get up at seven every day to take my time.",
+      "es": "Me levanto todos los días a las siete para tomarme mi tiempo.",
+      "de": "Ich stehe jeden Tag um sieben auf, um mir Zeit zu nehmen.",
+      "it": "Mi alzo tutti i giorni alle sette per prendermi il mio tempo."
+    },
+    "explanations": {
+      "fr": "Utilisez « tous les jours » pour exprimer une habitude quotidienne.",
+      "en": "Use 'every day' to express a daily routine.",
+      "es": "Usa « todos los días » para expresar una rutina diaria.",
+      "de": "Verwende 'jeden Tag', um eine tägliche Routine auszudrücken.",
+      "it": "Usa 'tutti i giorni' per esprimere una routine quotidiana."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "custom-1793812760860",
+    "category": "work",
+    "translations": {
+      "fr": "J'aimerais qu'on planifie un point demain matin si tu es disponible.",
+      "en": "I'd like to schedule a quick check-in tomorrow morning if you're available.",
+      "es": "Me gustaría que planificáramos una reunión breve mañana por la mañana si estás disponible.",
+      "de": "Ich würde gerne morgen früh einen kurzen Termin einplanen, wenn du verfügbar bist.",
+      "it": "Vorrei che fissassimo un breve punto domani mattina se sei disponibile."
+    },
+    "explanations": {
+      "fr": "Utilise « j'aimerais » au conditionnel pour adoucir la demande.",
+      "en": "Use « I'd like » to sound polite and professional.",
+      "es": "Emplea « me gustaría » para suavizar la petición.",
+      "de": "Nutze « ich würde gerne », um höflich zu klingen.",
+      "it": "Usa « vorrei » per rendere la richiesta più cortese."
+    },
+    "targetTimeSec": 3.4
+  }
+]
