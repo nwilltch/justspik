@@ -83,7 +83,7 @@ export const PromptCard: React.FC<PromptCardProps> = ({
       {/* Explicit Action Label */}
       <div className="flex items-center justify-center gap-1.5 mb-2.5">
         <span className="text-[11px] font-medium tracking-tight text-stone-400">
-          Traduis et dis à voix haute en
+          Traduis en
         </span>
         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-teal-800 bg-teal-50 border border-teal-200/60 px-2 py-0.5 rounded-full">
           <span>{targetInfo.flag}</span>

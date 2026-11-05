@@ -40,7 +40,7 @@ export const ReflexGuidePill: React.FC<ReflexGuidePillProps> = ({ targetLangName
               3
             </span>
             <span className="text-teal-900 font-semibold">
-              Dis-la en {targetLangName} avant le chrono !
+              Traduis en {targetLangName} avant le chrono !
             </span>
           </div>
         </div>
