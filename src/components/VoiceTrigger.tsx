@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Mic, MicOff, ChevronRight } from 'lucide-react';
+import { Mic, MicOff, ChevronRight, Sparkles } from 'lucide-react';
 import { sound } from '@/lib/soundFx';
 
 interface VoiceTriggerProps {
@@ -23,7 +23,12 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
   // Push to talk with space
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === 'Space' && !e.repeat && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+      if (
+        e.code === 'Space' &&
+        !e.repeat &&
+        document.activeElement?.tagName !== 'INPUT' &&
+        document.activeElement?.tagName !== 'TEXTAREA'
+      ) {
         e.preventDefault();
         if (!isRecording && !disabled) {
           onStartRecording();
@@ -32,7 +37,11 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
     };
 
     const handleKeyUp = (e: KeyboardEvent) => {
-      if (e.code === 'Space' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+      if (
+        e.code === 'Space' &&
+        document.activeElement?.tagName !== 'INPUT' &&
+        document.activeElement?.tagName !== 'TEXTAREA'
+      ) {
         e.preventDefault();
         if (isRecording) {
           onStopRecording();
@@ -49,9 +58,20 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
   }, [isRecording, disabled, onStartRecording, onStopRecording]);
 
   return (
-    <div className="w-full max-w-sm mx-auto mt-8 flex flex-col items-center gap-4">
-      {/* Central Clean Spik Button */}
-      <div className="relative">
+    <div className="w-full max-w-sm mx-auto mt-6 flex flex-col items-center gap-3">
+      {/* Central Spik Button with Guidance Pill */}
+      <div className="relative flex flex-col items-center">
+        {/* Floating invitation pill */}
+        <div
+          className={`mb-3 px-3 py-1 rounded-full text-xs font-medium transition-all duration-200 border ${
+            isRecording
+              ? 'bg-rose-50 text-rose-700 border-rose-200 animate-pulse'
+              : 'bg-white text-stone-600 border-stone-200/90 shadow-2xs'
+          }`}
+        >
+          {isRecording ? '🔴 Parle maintenant...' : '🎙️ Clique pour parler'}
+        </div>
+
         <button
           onClick={() => {
             sound.playSoftClick();
@@ -62,26 +82,27 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
             }
           }}
           disabled={disabled}
-          title={isRecording ? 'Arrêter et analyser' : 'Parler en anglais'}
-          className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-150 active:scale-95 cursor-pointer ${
+          title={isRecording ? 'Arrêter et analyser' : 'Parler maintenant'}
+          className={`w-18 h-18 rounded-full flex items-center justify-center transition-all duration-150 active:scale-95 cursor-pointer ${
             isRecording
-              ? 'bg-rose-500 text-white shadow-md shadow-rose-500/25 scale-105'
-              : 'bg-teal-600 hover:bg-teal-700 text-white shadow-md shadow-teal-600/20'
+              ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/30 scale-105'
+              : 'bg-teal-600 hover:bg-teal-700 text-white shadow-md shadow-teal-600/25 hover:shadow-lg hover:shadow-teal-600/30'
           } ${disabled ? 'opacity-40 cursor-not-allowed' : ''}`}
         >
           {isRecording ? (
-            <MicOff className="w-6 h-6 animate-pulse" />
+            <MicOff className="w-7 h-7 animate-pulse" />
           ) : (
-            <Mic className="w-6 h-6" />
+            <Mic className="w-7 h-7" />
           )}
         </button>
       </div>
 
       {/* Discrete minimal test & skip bar */}
-      <div className="flex items-center gap-2 text-xs text-stone-400">
+      <div className="flex items-center gap-2 text-xs text-stone-400 mt-2">
         <button
           onClick={() => onSimulateAnswer('perfect')}
           className="hover:text-stone-700 transition-colors cursor-pointer"
+          title="Tester le rendu sans micro"
         >
           Simuler juste
         </button>
@@ -89,6 +110,7 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
         <button
           onClick={() => onSimulateAnswer('with-error')}
           className="hover:text-stone-700 transition-colors cursor-pointer"
+          title="Tester une erreur"
         >
           Simuler faute
         </button>
@@ -96,10 +118,10 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
         <button
           onClick={onSkip}
           className="hover:text-stone-700 transition-colors cursor-pointer flex items-center gap-0.5"
-          title="Passer"
+          title="Passer à la phrase suivante"
         >
           <span>Passer</span>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRight className="w-3.5 h-3.5" />
         </button>
       </div>
     </div>
