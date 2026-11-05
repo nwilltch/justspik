@@ -26,6 +26,7 @@ pnpm-debug.log*
 # local env files (IMPORTANT: protect API keys)
 .env*.local
 .env
+src/data/users.json
 
 # vercel
 .vercel
