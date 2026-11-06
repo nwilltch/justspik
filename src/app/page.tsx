@@ -559,6 +559,9 @@ export default function JustSpikApp() {
         onCloseMobile={() => setIsSidebarMobileOpen(false)}
         isCollapsedDesktop={isSidebarCollapsed}
         onToggleCollapseDesktop={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+        isGenerating={isGenerating}
+        onGenerateNewPhrase={handleGenerateNewPhrase}
+        onOpenCustomModal={() => setIsCustomModalOpen(true)}
       />
 
       {/* Main Focus Area */}
@@ -569,10 +572,7 @@ export default function JustSpikApp() {
           onSelectMode={handleSelectMode}
           isMuted={isMuted}
           onToggleMute={handleToggleMute}
-          onOpenCustomModal={() => setIsCustomModalOpen(true)}
           onOpenLeaderboard={() => setIsLeaderboardOpen(true)}
-          isGenerating={isGenerating}
-          onGenerateNewPhrase={handleGenerateNewPhrase}
           onOpenMobileSidebar={() => setIsSidebarMobileOpen(true)}
           currentCategoryLabel={currentCategoryLabel}
         />
