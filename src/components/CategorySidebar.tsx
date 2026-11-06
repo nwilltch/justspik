@@ -231,16 +231,6 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
             )}
           </div>
 
-          {/* Categories Section Header */}
-          {!isCollapsedDesktop && (
-            <div className="px-1 mb-2 flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-stone-400">
-              <span>Thèmes</span>
-              <span className="font-mono text-[10px] font-semibold text-stone-500 bg-stone-100 px-1.5 py-0.5 rounded-md">
-                {totalPhrases}
-              </span>
-            </div>
-          )}
-
           {/* Category Items */}
           <nav className="flex flex-col gap-1.5">
             {CATEGORIES_LIST.map((cat) => {
@@ -320,9 +310,8 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
             </button>
           </div>
         ) : (
-          <div className="pt-4 border-t border-stone-200/70 px-1 text-[11px] text-stone-400 flex items-center justify-between">
-            <span>Phrases prêtes</span>
-            <span className="font-mono font-medium text-stone-600">{totalPhrases}</span>
+          <div className="pt-4 border-t border-stone-200/70 px-1 text-[11px] text-stone-400 text-center">
+            <span>JustSpik — Reflex Speech Training</span>
           </div>
         )}
       </aside>
@@ -426,11 +415,6 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                 )}
               </div>
 
-              {/* Drawer Categories Section Header */}
-              <div className="px-1 mb-2 text-[11px] font-bold uppercase tracking-wider text-stone-400">
-                Thèmes
-              </div>
-
               {/* Drawer Categories List */}
               <nav className="flex flex-col gap-1.5">
                 {CATEGORIES_LIST.map((cat) => {
@@ -486,7 +470,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
 
             {/* Drawer Footer */}
             <div className="pt-4 border-t border-stone-200/80 text-[11px] text-stone-400 text-center">
-              <span>{totalPhrases} phrases prêtes à l’entraînement</span>
+              <span>JustSpik — Reflex Speech Training</span>
             </div>
           </div>
         </div>

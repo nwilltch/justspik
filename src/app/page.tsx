@@ -649,11 +649,6 @@ export default function JustSpikApp() {
         )}
       </div>
 
-      {/* Discrete minimal bottom brand */}
-      <footer className="w-full text-center text-[11px] text-stone-400 pb-2">
-        <span>JustSpik — Reflex Speech Training</span>
-      </footer>
-
       {/* Custom Phrase Modal with Auto AI Translation */}
       <CustomPhraseModal
         isOpen={isCustomModalOpen}
