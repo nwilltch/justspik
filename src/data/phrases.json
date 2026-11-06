@@ -245,5 +245,3224 @@
       "it": "Usa « vorrei » per rendere la richiesta più cortese."
     },
     "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867041-91904",
+    "category": "work",
+    "translations": {
+      "fr": "Je te prépare un récapitulatif par email d'ici ce soir.",
+      "en": "I'll send you an email summary by tonight.",
+      "es": "Te enviaré un resumen por correo antes de esta noche.",
+      "de": "Ich schicke dir bis heute Abend eine E-Mail-Zusammenfassung.",
+      "it": "Ti manderò un riassunto via email entro stasera."
+    },
+    "explanations": {
+      "fr": "Formule d'engagement pro rapide.",
+      "en": "By tonight indique la deadline stricte."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867041-14117",
+    "category": "work",
+    "translations": {
+      "fr": "Est-ce qu'on peut décaler notre point de quinze minutes ?",
+      "en": "Can we push back our meeting by fifteen minutes?",
+      "es": "¿Podemos retrasar nuestra reunión quince minutos?",
+      "de": "Können wir unser Treffen um fünfzehn Minuten verschieben?",
+      "it": "Possiamo posticipare la riunione di quindici minuti?"
+    },
+    "explanations": {
+      "fr": "Très courant pour les retards d'agenda.",
+      "en": "Push back = décaler plus tard."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867041-90049",
+    "category": "work",
+    "translations": {
+      "fr": "Je vais devoir quitter la réunion un peu plus tôt aujourd'hui.",
+      "en": "I'll need to drop off the call a bit early today.",
+      "es": "Tendré que salir de la reunión un poco antes hoy.",
+      "de": "Ich muss das Meeting heute etwas früher verlassen.",
+      "it": "Dovrò lasciare la chiamata un po' prima oggi."
+    },
+    "explanations": {
+      "fr": "Prévenir avec courtoisie en visio.",
+      "en": "Drop off the call = quitter un appel."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867041-13002",
+    "category": "work",
+    "translations": {
+      "fr": "Prenons cinq minutes pour aligner nos priorités pour ce trimestre.",
+      "en": "Let's take five minutes to align our priorities for this quarter.",
+      "es": "Tomémonos cinco minutos para alinear nuestras prioridades de este trimestre.",
+      "de": "Lass uns fünf Minuten nehmen, um unsere Prioritäten für dieses Quartal abzustimmen.",
+      "it": "Prendiamoci cinque minuti per allineare le nostre priorità per questo trimestre."
+    },
+    "explanations": {
+      "fr": "Réunion de cadrage trimestriel.",
+      "en": "Align priorities = s'aligner sur les priorités."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867041-59886",
+    "category": "work",
+    "translations": {
+      "fr": "Qui s'occupe de rédiger le compte-rendu du projet ?",
+      "en": "Who is taking care of writing the project report?",
+      "es": "¿Quién se encarga de redactar el informe del proyecto?",
+      "de": "Wer kümmert sich um das Schreiben des Projektberichts?",
+      "it": "Chi si occupa di scrivere il verbale del progetto?"
+    },
+    "explanations": {
+      "fr": "Attribution des tâches en fin de réunion.",
+      "en": "Take care of = s'occuper de."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867041-40412",
+    "category": "work",
+    "translations": {
+      "fr": "Je te transfère le document dès que j'ai le feu vert du client.",
+      "en": "I'll forward you the document as soon as I get the green light from the client.",
+      "es": "Te reenvío el documento en cuanto tenga luz verde del cliente.",
+      "de": "Ich leite dir das Dokument weiter, sobald ich grünes Licht vom Kunden habe.",
+      "it": "Ti inoltro il documento non appena ho il via libera dal cliente."
+    },
+    "explanations": {
+      "fr": "Attente de validation officielle.",
+      "en": "Get the green light = avoir le feu vert."
+    },
+    "targetTimeSec": 3.6
+  },
+  {
+    "id": "entry-1793924867041-4836",
+    "category": "work",
+    "translations": {
+      "fr": "Nous avons atteint tous nos objectifs de vente ce mois-ci.",
+      "en": "We hit all our sales targets this month.",
+      "es": "Alcanzamos todos nuestros objetivos de ventas este mes.",
+      "de": "Wir haben diesen Monat alle unsere Verkaufsziele erreicht.",
+      "it": "Abbiamo raggiunto tutti i nostri obiettivi di vendita questo mese."
+    },
+    "explanations": {
+      "fr": "Succès commercial.",
+      "en": "Hit a target = atteindre un objectif."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867041-38609",
+    "category": "work",
+    "translations": {
+      "fr": "Peux-tu me donner ton avis honnête sur cette présentation ?",
+      "en": "Can you give me your honest feedback on this presentation?",
+      "es": "¿Puedes darme tu opinión sincera sobre esta presentación?",
+      "de": "Kannst du mir dein ehrliches Feedback zu dieser Präsentation geben?",
+      "it": "Puoi darmi la tua sincera opinione su questa presentazione?"
+    },
+    "explanations": {
+      "fr": "Demande de feedback entre collègues.",
+      "en": "Honest feedback = avis franc et constructif."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867041-85864",
+    "category": "work",
+    "translations": {
+      "fr": "Je suis sous l'eau cette semaine, pouvons-nous voir cela lundi ?",
+      "en": "I'm swamped this week, can we look at this on Monday?",
+      "es": "Estoy hasta arriba de trabajo esta semana, ¿podemos verlo el lunes?",
+      "de": "Ich bin diese Woche völlig überlastet, können wir uns das am Montag ansehen?",
+      "it": "Sono sommerso di lavoro questa settimana, possiamo vederlo lunedì?"
+    },
+    "explanations": {
+      "fr": "Exprimer une surcharge de travail.",
+      "en": "Swamped = submergé de boulot."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-924",
+    "category": "work",
+    "translations": {
+      "fr": "Focalisons-nous sur ce qui a le plus d'impact pour l'utilisateur.",
+      "en": "Let's focus on what brings the most value to the user.",
+      "es": "Centrémonos en lo que aporta más valor al usuario.",
+      "de": "Konzentrieren wir uns auf das, was dem Nutzer den größten Nutzen bringt.",
+      "it": "Concentriamoci su ciò che apporta maggior valore all'utente."
+    },
+    "explanations": {
+      "fr": "Priorisation produit.",
+      "en": "Bring value = apporter de la valeur."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-58801",
+    "category": "work",
+    "translations": {
+      "fr": "Je te propose de trancher cette question demain matin.",
+      "en": "I suggest we make a final call on this tomorrow morning.",
+      "es": "Sugiero que tomemos una decisión sobre esto mañana por la mañana.",
+      "de": "Ich schlage vor, dass wir morgen früh eine endgültige Entscheidung treffen.",
+      "it": "Propongo di prendere una decisione definitiva domani mattina."
+    },
+    "explanations": {
+      "fr": "Prise de décision.",
+      "en": "Make a call = trancher/décider."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-93467",
+    "category": "work",
+    "translations": {
+      "fr": "Pourrais-tu me tenir au courant de l'évolution du dossier ?",
+      "en": "Could you keep me posted on how things are progressing?",
+      "es": "¿Podrías mantenerme informado de cómo avanza el asunto?",
+      "de": "Könntest du mich auf dem Laufenden halten, wie es vorangeht?",
+      "it": "Potresti tenermi aggiornato sull'andamento della situazione?"
+    },
+    "explanations": {
+      "fr": "Demande de suivi.",
+      "en": "Keep someone posted = tenir au courant."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-32517",
+    "category": "work",
+    "translations": {
+      "fr": "Nous devons respecter la date limite quoi qu'il arrive.",
+      "en": "We need to meet the deadline no matter what.",
+      "es": "Tenemos que cumplir con el plazo cueste lo que cueste.",
+      "de": "Wir müssen die Frist unbedingt einhalten.",
+      "it": "Dobbiamo rispettare la scadenza a tutti i costi."
+    },
+    "explanations": {
+      "fr": "Engagement sur un délai.",
+      "en": "Meet the deadline = respecter l'échéance."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867042-3365",
+    "category": "work",
+    "translations": {
+      "fr": "Je suis entièrement d'accord avec ton analyse des chiffres.",
+      "en": "I totally agree with your breakdown of the numbers.",
+      "es": "Estoy totalmente de acuerdo con tu análisis de las cifras.",
+      "de": "Ich stimme deiner Analyse der Zahlen vollkommen zu.",
+      "it": "Sono totalmente d'accordo con la tua analisi dei numeri."
+    },
+    "explanations": {
+      "fr": "Validation d'analyse.",
+      "en": "Breakdown = décorticage/analyse détaillée."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-53074",
+    "category": "work",
+    "translations": {
+      "fr": "Organisons un appel rapide de dix minutes pour régler ce problème.",
+      "en": "Let's set up a quick ten-minute sync to sort this out.",
+      "es": "Organicemos una llamada rápida de diez minutos para resolver esto.",
+      "de": "Lass uns ein kurzes zehnminütiges Gespräch führen, um das zu klären.",
+      "it": "Facciamo una breve chiamata di dieci minuti per risolvere la cosa."
+    },
+    "explanations": {
+      "fr": "Point de synchronisation rapide.",
+      "en": "Quick sync = point d'étape rapide."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-32582",
+    "category": "work",
+    "translations": {
+      "fr": "As-tu reçu la dernière version du contrat signé ?",
+      "en": "Did you receive the latest version of the signed contract?",
+      "es": "¿Recibiste la última versión del contrato firmado?",
+      "de": "Hast du die neueste Version des unterzeichneten Vertrags erhalten?",
+      "it": "Hai ricevuto l'ultima versione del contratto firmato?"
+    },
+    "explanations": {
+      "fr": "Question administrative courante.",
+      "en": "Signed contract = contrat signé."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867042-38040",
+    "category": "work",
+    "translations": {
+      "fr": "Je vais faire remonter ce point directement à la direction.",
+      "en": "I'll escalate this point directly to management.",
+      "es": "Voy a elevar este punto directamente a la dirección.",
+      "de": "Ich werde diesen Punkt direkt an die Geschäftsleitung weiterleiten.",
+      "it": "Farò presente questo punto direttamente alla direzione."
+    },
+    "explanations": {
+      "fr": "Escalade hiérarchique.",
+      "en": "Escalate = faire remonter un problème."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867042-36447",
+    "category": "work",
+    "translations": {
+      "fr": "Nos équipes ont fait un travail remarquable sur cette sortie.",
+      "en": "Our teams did an outstanding job on this release.",
+      "es": "Nuestros equipos hicieron un trabajo extraordinario en este lanzamiento.",
+      "de": "Unsere Teams haben bei dieser Veröffentlichung hervorragende Arbeit geleistet.",
+      "it": "I nostri team hanno svolto un lavoro straordinario per questo lancio."
+    },
+    "explanations": {
+      "fr": "Félicitations professionnelles.",
+      "en": "Outstanding job = travail remarquable."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-23404",
+    "category": "work",
+    "translations": {
+      "fr": "Le budget alloué à cette campagne est légèrement insuffisant.",
+      "en": "The budget allocated for this campaign is slightly tight.",
+      "es": "El presupuesto asignado para esta campaña es algo ajustado.",
+      "de": "Das für diese Kampagne bereitgestellte Budget ist etwas knapp.",
+      "it": "Il budget stanziato per questa campagna è leggermente limitato."
+    },
+    "explanations": {
+      "fr": "Contrainte financière.",
+      "en": "Tight budget = budget serré."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-3779",
+    "category": "work",
+    "translations": {
+      "fr": "Je serai en déplacement professionnel à Londres toute la semaine prochaine.",
+      "en": "I'll be away on a business trip in London all next week.",
+      "es": "Estaré de viaje de negocios en Londres durante toda la próxima semana.",
+      "de": "Ich bin nächste Woche die ganze Zeit auf Geschäftsreise in London.",
+      "it": "Sarò in viaggio di lavoro a Londra per tutta la prossima settimana."
+    },
+    "explanations": {
+      "fr": "Annonce d'absence.",
+      "en": "Business trip = déplacement professionnel."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867042-85359",
+    "category": "work",
+    "translations": {
+      "fr": "Quels sont les principaux risques identifiés pour cette phase ?",
+      "en": "What are the main risks identified for this phase?",
+      "es": "¿Cuáles son los principales riesgos identificados para esta fase?",
+      "de": "Was sind die Hauptrisiken, die für diese Phase identifiziert wurden?",
+      "it": "Quali sono i principali rischi individuati per questa fase?"
+    },
+    "explanations": {
+      "fr": "Gestion des risques.",
+      "en": "Main risks = risques majeurs."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-76557",
+    "category": "work",
+    "translations": {
+      "fr": "Merci de m'ajouter en copie du prochain échange avec eux.",
+      "en": "Please keep me in the loop on your next email exchange with them.",
+      "es": "Por favor, cópiame en el próximo correo con ellos.",
+      "de": "Bitte setze mich bei deinem nächsten E-Mail-Austausch mit ihnen in Kopie.",
+      "it": "Per favore mettimi in copia nella prossima email con loro."
+    },
+    "explanations": {
+      "fr": "Maintien dans la boucle.",
+      "en": "Keep someone in the loop = tenir informé / mettre en copie."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-70627",
+    "category": "work",
+    "translations": {
+      "fr": "Nous avons besoin d'une validation écrite avant de démarrer.",
+      "en": "We need written approval before we can kick things off.",
+      "es": "Necesitamos una aprobación por escrito antes de comenzar.",
+      "de": "Wir benötigen eine schriftliche Bestätigung, bevor wir starten können.",
+      "it": "Abbiamo bisogno di un'approvazione scritta prima di iniziare."
+    },
+    "explanations": {
+      "fr": "Condition préalable.",
+      "en": "Kick things off = lancer les opérations."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-37543",
+    "category": "work",
+    "translations": {
+      "fr": "Je te laisse la parole pour présenter les résultats trimestriels.",
+      "en": "I'll hand it over to you to present the quarterly results.",
+      "es": "Te cedo la palabra para presentar los resultados trimestrales.",
+      "de": "Ich übergebe dir das Wort, um die Quartalsergebnisse vorzustellen.",
+      "it": "Ti passo la parola per presentare i risultati trimestrali."
+    },
+    "explanations": {
+      "fr": "Passage de parole en réunion.",
+      "en": "Hand over = passer la parole."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-73841",
+    "category": "work",
+    "translations": {
+      "fr": "Pouvons-nous simplifier ce processus pour gagner du temps ?",
+      "en": "Can we streamline this process to save some time?",
+      "es": "¿Podemos simplificar este proceso para ahorrar tiempo?",
+      "de": "Können wir diesen Prozess optimieren, um Zeit zu sparen?",
+      "it": "Possiamo semplificare questo processo per risparmiare tempo?"
+    },
+    "explanations": {
+      "fr": "Optimisation de workflow.",
+      "en": "Streamline = optimiser et fluidifier."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-17616",
+    "category": "work",
+    "translations": {
+      "fr": "Je vérifie les chiffres et je reviens vers toi avant midi.",
+      "en": "Let me double-check the figures and get back to you before noon.",
+      "es": "Reviso las cifras y me pongo en contacto contigo antes del mediodía.",
+      "de": "Ich überprüfe die Zahlen noch einmal und melde mich vor Mittag bei dir.",
+      "it": "Controllo i dati e ti rispondo prima di mezzogiorno."
+    },
+    "explanations": {
+      "fr": "Vérification minutieuse.",
+      "en": "Get back to someone = revenir vers quelqu'un."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-48127",
+    "category": "work",
+    "translations": {
+      "fr": "Cette décision aura un impact direct sur notre calendrier de livraison.",
+      "en": "This decision will directly affect our delivery timeline.",
+      "es": "Esta decisión afectará directamente a nuestro calendario de entrega.",
+      "de": "Diese Entscheidung wird sich direkt auf unseren Lieferzeitplan auswirken.",
+      "it": "Questa decisione avrà un impatto diretto sui tempi di consegna."
+    },
+    "explanations": {
+      "fr": "Impact projet.",
+      "en": "Timeline = calendrier / feuille de route."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867042-45533",
+    "category": "work",
+    "translations": {
+      "fr": "Nous devons trouver un compromis acceptable pour les deux parties.",
+      "en": "We need to find an acceptable compromise for both parties.",
+      "es": "Tenemos que encontrar un acuerdo aceptable para ambas partes.",
+      "de": "Wir müssen einen für beide Seiten akzeptablen Kompromiss finden.",
+      "it": "Dobbiamo trovare un compromesso accettabile per entrambe le parti."
+    },
+    "explanations": {
+      "fr": "Négociation commerciale.",
+      "en": "Both parties = les deux parties."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-68644",
+    "category": "work",
+    "translations": {
+      "fr": "Je ne pourrai pas assister au point d'équipe ce vendredi matin.",
+      "en": "I won't be able to attend the team standup this Friday morning.",
+      "es": "No podré asistir a la reunión de equipo este viernes por la mañana.",
+      "de": "Ich kann diesen Freitagmorgen nicht am Team-Standup teilnehmen.",
+      "it": "Non potrò partecipare al meeting di squadra questo venerdì mattina."
+    },
+    "explanations": {
+      "fr": "Déclaration d'empêchement.",
+      "en": "Standup = point d'équipe quotidien/hebdo."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-8832",
+    "category": "work",
+    "translations": {
+      "fr": "Notre objectif principal est d'améliorer la rétention de nos clients.",
+      "en": "Our primary objective is to improve customer retention.",
+      "es": "Nuestro objetivo principal es mejorar la retención de clientes.",
+      "de": "Unser Hauptziel ist es, die Kundenbindung zu verbessern.",
+      "it": "Il nostro obiettivo principale è migliorare la fidelizzazione dei clienti."
+    },
+    "explanations": {
+      "fr": "Stratégie d'entreprise.",
+      "en": "Customer retention = fidélisation client."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-65396",
+    "category": "work",
+    "translations": {
+      "fr": "Est-ce qu'on a prévu un plan de secours en cas d'imprévu ?",
+      "en": "Do we have a backup plan in place just in case?",
+      "es": "¿Tenemos un plan de contingencia por si acaso?",
+      "de": "Haben wir für alle Fälle einen Notfallplan vorbereitet?",
+      "it": "Abbiamo previsto un piano di riserva per ogni evenienza?"
+    },
+    "explanations": {
+      "fr": "Prévoyance projet.",
+      "en": "Backup plan = plan de secours."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-16621",
+    "category": "work",
+    "translations": {
+      "fr": "Je suis entièrement ouvert à d'autres propositions si vous en avez.",
+      "en": "I'm totally open to alternative suggestions if you have any.",
+      "es": "Estoy totalmente abierto a otras propuestas si tienen alguna.",
+      "de": "Ich bin für andere Vorschläge völlig offen, falls ihr welche habt.",
+      "it": "Sono completamente aperto ad altre proposte se ne avete."
+    },
+    "explanations": {
+      "fr": "Ouverture d'esprit au travail.",
+      "en": "Open to suggestions = réceptif aux idées."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-17866",
+    "category": "work",
+    "translations": {
+      "fr": "Merci de m'envoyer vos retours avant la fin de journée.",
+      "en": "Please send me your feedback by the end of the day.",
+      "es": "Por favor, envíame tus comentarios antes de que termine el día.",
+      "de": "Bitte sende mir deine Rückmeldung bis zum Ende des Tages.",
+      "it": "Ti prego di inviarmi i tuoi riscontri entro la fine della giornata."
+    },
+    "explanations": {
+      "fr": "Deadline EOD (End of Day).",
+      "en": "By the end of the day = d'ici ce soir."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867042-76531",
+    "category": "work",
+    "translations": {
+      "fr": "Nous avons signé un partenariat stratégique très prometteur.",
+      "en": "We closed a very promising strategic partnership.",
+      "es": "Hemos cerrado una alianza estratégica muy prometedora.",
+      "de": "Wir haben eine sehr vielversprechende strategische Partnerschaft geschlossen.",
+      "it": "Abbiamo concluso una partnership strategica molto promettente."
+    },
+    "explanations": {
+      "fr": "Victoire business.",
+      "en": "Close a deal/partnership = signer/conclure."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-75192",
+    "category": "work",
+    "translations": {
+      "fr": "Je vous laisse reprendre la main sur la présentation.",
+      "en": "I'll let you take over the screen presentation now.",
+      "es": "Les cedo el control de la presentación ahora.",
+      "de": "Ich übergebe Ihnen jetzt wieder die Präsentation.",
+      "it": "Vi lascio il controllo della presentazione adesso."
+    },
+    "explanations": {
+      "fr": "Visio conférence.",
+      "en": "Take over = reprendre la main."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867042-60003",
+    "category": "routine",
+    "translations": {
+      "fr": "Je prends toujours dix minutes pour lire les nouvelles le matin.",
+      "en": "I always take ten minutes to read the news in the morning.",
+      "es": "Siempre me tomo diez minutos para leer las noticias por la mañana.",
+      "de": "Ich nehme mir morgens immer zehn Minuten Zeit, um die Nachrichten zu lesen.",
+      "it": "Mi prendo sempre dieci minuti per leggere le notizie al mattino."
+    },
+    "explanations": {
+      "fr": "Rituel matinal.",
+      "en": "In the morning = le matin."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-59707",
+    "category": "routine",
+    "translations": {
+      "fr": "Je vais faire quelques courses avant que le supermarché ne ferme.",
+      "en": "I'm going to grab a few groceries before the store closes.",
+      "es": "Voy a hacer unas compras antes de que cierre el supermercado.",
+      "de": "Ich gehe noch schnell einkaufen, bevor der Supermarkt schließt.",
+      "it": "Vado a fare un po' di spesa prima che chiuda il supermercato."
+    },
+    "explanations": {
+      "fr": "Course de fin de journée.",
+      "en": "Grab groceries = faire des courses rapidement."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-36077",
+    "category": "routine",
+    "translations": {
+      "fr": "J'essaie d'aller à la salle de sport au moins trois fois par semaine.",
+      "en": "I try to hit the gym at least three times a week.",
+      "es": "Intento ir al gimnasio al menos tres veces por semana.",
+      "de": "Ich versuche, mindestens dreimal pro Woche ins Fitnessstudio zu gehen.",
+      "it": "Cerco di andare in palestra almeno tre volte a settimana."
+    },
+    "explanations": {
+      "fr": "Objectif forme.",
+      "en": "Hit the gym = aller s'entraîner."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-67101",
+    "category": "routine",
+    "translations": {
+      "fr": "Je n'arrive jamais à m'endormir avant minuit en ce moment.",
+      "en": "I can never fall asleep before midnight these days.",
+      "es": "Últimamente nunca consigo dormirme antes de medianoche.",
+      "de": "Ich kann in letzter Zeit nie vor Mitternacht einschlafen.",
+      "it": "In questo periodo non riesco mai ad addormentarmi prima di mezzanotte."
+    },
+    "explanations": {
+      "fr": "Sommeil difficile.",
+      "en": "Fall asleep = s'endormir."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-41238",
+    "category": "routine",
+    "translations": {
+      "fr": "N'oublie pas d'éteindre les lumières en partant de l'appartement.",
+      "en": "Don't forget to turn off the lights when leaving the apartment.",
+      "es": "No olvides apagar las luces al salir del apartamento.",
+      "de": "Vergiss nicht, das Licht auszuschalten, wenn du die Wohnung verlässt.",
+      "it": "Non dimenticare di spegnere le luci quando esci dall'appartamento."
+    },
+    "explanations": {
+      "fr": "Recommandation quotidienne.",
+      "en": "Turn off = éteindre."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-64684",
+    "category": "routine",
+    "translations": {
+      "fr": "J'ai préparé une grande carafe d'eau fraîche pour l'après-midi.",
+      "en": "I prepared a big pitcher of cold water for the afternoon.",
+      "es": "Preparé una jarra grande de agua fresca para la tarde.",
+      "de": "Ich habe eine große Kanne kaltes Wasser für den Nachmittag vorbereitet.",
+      "it": "Ho preparato una grande caraffa d'acqua fresca per il pomeriggio."
+    },
+    "explanations": {
+      "fr": "Hydratation au travail.",
+      "en": "Pitcher of water = carafe d'eau."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-1335",
+    "category": "routine",
+    "translations": {
+      "fr": "Mon réveil n'a pas sonné ce matin, je suis parti en panique.",
+      "en": "My alarm didn't go off this morning, I left in a rush.",
+      "es": "Mi alarma no sonó esta mañana, salí a toda prisa.",
+      "de": "Mein Wecker hat heute Morgen nicht geklingelt, ich bin völlig gehetzt los.",
+      "it": "La mia sveglia non ha suonato stamattina, sono uscito di corsa."
+    },
+    "explanations": {
+      "fr": "Mésaventure matinale.",
+      "en": "Go off = sonner (pour un réveil)."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-7498",
+    "category": "routine",
+    "translations": {
+      "fr": "Je préfère préparer mes affaires la veille au soir pour être tranquille.",
+      "en": "I prefer getting my things ready the night before to save stress.",
+      "es": "Prefiero dejar mis cosas listas la noche anterior para estar tranquilo.",
+      "de": "Ich bereite meine Sachen lieber am Vorabend vor, um Stress zu vermeiden.",
+      "it": "Preferisco preparare le mie cose la sera prima per stare tranquillo."
+    },
+    "explanations": {
+      "fr": "Organisation personnelle.",
+      "en": "The night before = la veille au soir."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867042-15291",
+    "category": "routine",
+    "translations": {
+      "fr": "Il faut absolument que je passe chercher un colis à la poste.",
+      "en": "I really need to pick up a package from the post office.",
+      "es": "Tengo que ir a recoger un paquete a la oficina de correos.",
+      "de": "Ich muss unbedingt ein Paket bei der Post abholen.",
+      "it": "Devo assolutamente passare a ritirare un pacco alle poste."
+    },
+    "explanations": {
+      "fr": "Courses logistiques.",
+      "en": "Pick up a package = récupérer un colis."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-37552",
+    "category": "routine",
+    "translations": {
+      "fr": "Je fais une promenade d'une demi-heure après le déjeuner tous les jours.",
+      "en": "I go for a half-hour walk after lunch every single day.",
+      "es": "Salgo a caminar media hora después de comer todos los días.",
+      "de": "Ich mache jeden Tag nach dem Mittagessen einen halbstündigen Spaziergang.",
+      "it": "Faccio una passeggiata di mezz'ora dopo pranzo ogni giorno."
+    },
+    "explanations": {
+      "fr": "Habitude saine.",
+      "en": "Go for a walk = faire une marche."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-77726",
+    "category": "routine",
+    "translations": {
+      "fr": "Je vais aérer la pièce quelques minutes, il fait trop chaud ici.",
+      "en": "I'll air out the room for a few minutes, it's way too warm in here.",
+      "es": "Voy a ventilar la habitación unos minutos, hace demasiado calor aquí.",
+      "de": "Ich lüfte das Zimmer kurz durch, hier ist es viel zu warm.",
+      "it": "Faccio arieggiare la stanza per qualche minuto, fa troppo caldo qui dentro."
+    },
+    "explanations": {
+      "fr": "Confort de maison.",
+      "en": "Air out = aérer."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-34935",
+    "category": "routine",
+    "translations": {
+      "fr": "J'ai pris l'habitude de boire du thé vert plutôt que du café l'après-midi.",
+      "en": "I got into the habit of drinking green tea instead of coffee in the afternoon.",
+      "es": "Me he acostumbrado a tomar té verde en lugar de café por la tarde.",
+      "de": "Ich habe mir angewöhnt, nachmittags grünen Tee statt Kaffee zu trinken.",
+      "it": "Ho preso l'abitudine di bere tè verde invece del caffè nel pomeriggio."
+    },
+    "explanations": {
+      "fr": "Changement d'habitude.",
+      "en": "Get into the habit of = prendre l'habitude."
+    },
+    "targetTimeSec": 3.6
+  },
+  {
+    "id": "entry-1793924867042-35078",
+    "category": "routine",
+    "translations": {
+      "fr": "Je dois arroser les plantes sur le balcon avant de partir.",
+      "en": "I need to water the balcony plants before heading out.",
+      "es": "Tengo que regar las plantas del balcón antes de salir.",
+      "de": "Ich muss noch die Pflanzen auf dem Balkon gießen, bevor ich gehe.",
+      "it": "Devo innaffiare le piante sul balcone prima di uscire."
+    },
+    "explanations": {
+      "fr": "Petit devoir ménager.",
+      "en": "Head out = partir / s'en aller."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-27603",
+    "category": "routine",
+    "translations": {
+      "fr": "Il me reste encore deux chapitres à lire pour terminer ce livre.",
+      "en": "I still have two chapters left to finish this book.",
+      "es": "Todavía me quedan dos capítulos para terminar este libro.",
+      "de": "Ich habe noch zwei Kapitel vor mir, um dieses Buch zu beenden.",
+      "it": "Mi mancano ancora due capitoli per finire questo libro."
+    },
+    "explanations": {
+      "fr": "Lecture du soir.",
+      "en": "Have left = il reste."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867042-58984",
+    "category": "routine",
+    "translations": {
+      "fr": "Je passe toujours un coup de chiffon sur mon bureau en fin de journée.",
+      "en": "I always wipe down my desk at the end of the day.",
+      "es": "Siempre le paso un trapo a mi escritorio al final del día.",
+      "de": "Ich wische meinen Schreibtisch am Ende des Tages immer kurz ab.",
+      "it": "Do sempre una passata alla scrivania alla fine della giornata."
+    },
+    "explanations": {
+      "fr": "Rangement de bureau.",
+      "en": "Wipe down = passer un coup d'éponge/chiffon."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-68442",
+    "category": "routine",
+    "translations": {
+      "fr": "Mon téléphone n'a presque plus de batterie, je dois le brancher.",
+      "en": "My phone is almost dead, I need to plug it in.",
+      "es": "Mi teléfono casi no tiene batería, tengo que enchufarlo.",
+      "de": "Mein Handy ist fast leer, ich muss es anstecken.",
+      "it": "Il mio telefono è quasi scarico, devo metterlo in carica."
+    },
+    "explanations": {
+      "fr": "Situation d'urgence classique.",
+      "en": "Phone is dead = batterie à plat."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867042-23012",
+    "category": "routine",
+    "translations": {
+      "fr": "Je prépare une liste de courses claire pour éviter d'acheter n'importe quoi.",
+      "en": "I make a clear grocery list to avoid buying unnecessary stuff.",
+      "es": "Hago una lista de la compra clara para no comprar cualquier cosa.",
+      "de": "Ich schreibe eine genaue Einkaufsliste, um unnötige Spontankäufe zu vermeiden.",
+      "it": "Faccio una lista della spesa precisa per evitare di comprare cose a caso."
+    },
+    "explanations": {
+      "fr": "Discipline de courses.",
+      "en": "Grocery list = liste de courses."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867042-88495",
+    "category": "routine",
+    "translations": {
+      "fr": "Je prends toujours les escaliers plutôt que l'ascenseur pour bouger.",
+      "en": "I always take the stairs instead of the elevator to stay active.",
+      "es": "Siempre subo por las escaleras en lugar del ascensor para moverme.",
+      "de": "Ich nehme immer die Treppe statt den Aufzug, um mich zu bewegen.",
+      "it": "Prendo sempre le scale invece dell'ascensore per muovermi un po'."
+    },
+    "explanations": {
+      "fr": "Activité quotidienne.",
+      "en": "Take the stairs = prendre les escaliers."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867042-48604",
+    "category": "routine",
+    "translations": {
+      "fr": "Je regarde toujours la météo avant de choisir ma tenue du jour.",
+      "en": "I always check the weather forecast before picking my outfit.",
+      "es": "Siempre miro el tiempo antes de elegir lo que me voy a poner.",
+      "de": "Ich schaue immer auf den Wetterbericht, bevor ich mein Outfit auswähle.",
+      "it": "Controllo sempre il meteo prima di scegliere cosa mettermi."
+    },
+    "explanations": {
+      "fr": "Choix de tenue.",
+      "en": "Weather forecast = prévisions météo."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-27735",
+    "category": "routine",
+    "translations": {
+      "fr": "Je déteste faire la vaisselle à la main, heureusement qu'il y a la machine.",
+      "en": "I hate doing dishes by hand, thank goodness for the dishwasher.",
+      "es": "Odio fregar los platos a mano, menos mal que está el lavavajillas.",
+      "de": "Ich hasse es, von Hand abzuwaschen, zum Glück gibt es die Spülmaschine.",
+      "it": "Odio lavare i piatti a mano, per fortuna c'è la lavastoviglie."
+    },
+    "explanations": {
+      "fr": "Tâche domestique.",
+      "en": "Do the dishes = faire la vaisselle."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867042-58715",
+    "category": "routine",
+    "translations": {
+      "fr": "J'écoute un podcast inspirant pendant que je prépare le dîner.",
+      "en": "I listen to an inspiring podcast while making dinner.",
+      "es": "Escucho un podcast inspirador mientras preparo la cena.",
+      "de": "Ich höre einen inspirierenden Podcast, während ich das Abendessen koche.",
+      "it": "Ascolto un podcast interessante mentre preparo la cena."
+    },
+    "explanations": {
+      "fr": "Divertissement du soir.",
+      "en": "While making dinner = en préparant le dîner."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867042-89548",
+    "category": "routine",
+    "translations": {
+      "fr": "Je programme mon alarme dix minutes plus tôt pour ne pas courir.",
+      "en": "I set my alarm ten minutes earlier so I don't have to rush.",
+      "es": "Pongo la alarma diez minutos antes para no ir con prisas.",
+      "de": "Ich stelle meinen Wecker zehn Minuten früher, um mich nicht zu hetzen.",
+      "it": "Punto la sveglia dieci minuti prima per non dover correre."
+    },
+    "explanations": {
+      "fr": "Gestion du temps matinal.",
+      "en": "Don't have to rush = ne pas courir."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867042-22869",
+    "category": "routine",
+    "translations": {
+      "fr": "Je prends toujours une douche tiède avant d'aller au lit.",
+      "en": "I always take a warm shower before going to bed.",
+      "es": "Siempre me doy una ducha templada antes de acostarme.",
+      "de": "Ich nehme immer eine warme Dusche, bevor ich ins Bett gehe.",
+      "it": "Faccio sempre una doccia tiepida prima di andare a dormire."
+    },
+    "explanations": {
+      "fr": "Détente du soir.",
+      "en": "Take a shower = prendre une douche."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867043-94260",
+    "category": "routine",
+    "translations": {
+      "fr": "Je nettoie l'écran de mon ordinateur portable une fois par semaine.",
+      "en": "I clean my laptop screen once every week.",
+      "es": "Limpio la pantalla de mi portátil una vez por semana.",
+      "de": "Ich mache den Bildschirm meines Laptops einmal pro Woche sauber.",
+      "it": "Pulisco lo schermo del mio portatile una volta a settimana."
+    },
+    "explanations": {
+      "fr": "Entretien matériel.",
+      "en": "Laptop screen = écran de portable."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867043-56642",
+    "category": "routine",
+    "translations": {
+      "fr": "Je vérifie que la porte d'entrée est bien verrouillée à double tour.",
+      "en": "I double-check that the front door is properly locked.",
+      "es": "Compruebo que la puerta principal esté bien cerrada con llave.",
+      "de": "Ich vergewissere mich, dass die Haustür richtig abgeschlossen ist.",
+      "it": "Controllo che la porta d'ingresso sia ben chiusa a chiave."
+    },
+    "explanations": {
+      "fr": "Sécurité de maison.",
+      "en": "Double-check = revérifier."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867043-3394",
+    "category": "routine",
+    "translations": {
+      "fr": "Je bois un grand verre d'eau dès que je sors du lit.",
+      "en": "I drink a tall glass of water as soon as I roll out of bed.",
+      "es": "Me bebo un buen vaso de agua en cuanto salgo de la cama.",
+      "de": "Ich trinke ein großes Glas Wasser, sobald ich aus dem Bett aufstehe.",
+      "it": "Bevo un gran bicchiere d'acqua appena scendo dal letto."
+    },
+    "explanations": {
+      "fr": "Réveil corporel.",
+      "en": "Roll out of bed = sortir du lit."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867043-12125",
+    "category": "routine",
+    "translations": {
+      "fr": "Je range toujours mes clés au même endroit pour ne jamais les chercher.",
+      "en": "I always keep my keys in the same spot so I never lose them.",
+      "es": "Siempre dejo mis llaves en el mismo sitio para no buscarlas nunca.",
+      "de": "Ich lege meine Schlüssel immer an denselben Platz, um sie nie suchen zu müssen.",
+      "it": "Metto sempre le chiavi nello stesso posto per non doverle mai cercare."
+    },
+    "explanations": {
+      "fr": "Astuce anti-perte.",
+      "en": "In the same spot = au même endroit."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867043-53147",
+    "category": "routine",
+    "translations": {
+      "fr": "J'essaie de couper tous les écrans une heure avant de dormir.",
+      "en": "I try to turn off all screens an hour before sleeping.",
+      "es": "Intento apagar todas las pantallas una hora antes de dormir.",
+      "de": "Ich versuche, alle Bildschirme eine Stunde vor dem Schlafen auszuschalten.",
+      "it": "Cerco di spegnere tutti gli schermi un'ora prima di addormentarmi."
+    },
+    "explanations": {
+      "fr": "Détox digitale du soir.",
+      "en": "Turn off screens = couper les écrans."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867043-2110",
+    "category": "routine",
+    "translations": {
+      "fr": "Le samedi matin, j'adore prendre mon temps et préparer des pancakes.",
+      "en": "On Saturday mornings, I love taking my time and flipping some pancakes.",
+      "es": "Los sábados por la mañana me encanta tomarme mi tiempo y hacer tortitas.",
+      "de": "Samstags morgens genieße ich es, mir Zeit zu nehmen und Pfannkuchen zu backen.",
+      "it": "Il sabato mattina adoro prendermela con calma e preparare i pancake."
+    },
+    "explanations": {
+      "fr": "Plaisir du week-end.",
+      "en": "Take one's time = prendre son temps."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867043-68592",
+    "category": "routine",
+    "translations": {
+      "fr": "Je fais toujours un rapide état des lieux de ma boîte mail le matin.",
+      "en": "I always do a quick scan of my inbox first thing in the morning.",
+      "es": "Siempre le echo un vistazo rápido a mi bandeja de entrada a primera hora.",
+      "de": "Ich werfe morgens als Erstes immer einen kurzen Blick in mein Postfach.",
+      "it": "Do sempre una rapida occhiata alla casella di posta come prima cosa al mattino."
+    },
+    "explanations": {
+      "fr": "Gestion des emails.",
+      "en": "First thing in the morning = dès le matin."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867043-70898",
+    "category": "routine",
+    "translations": {
+      "fr": "Je sors les poubelles tous les mardis soir sans exception.",
+      "en": "I take out the trash every Tuesday night without fail.",
+      "es": "Saco la basura todos los martes por la noche sin falta.",
+      "de": "Ich bringe jeden Dienstagabend zuverlässig den Müll raus.",
+      "it": "Porto fuori la spazzatura ogni martedì sera senza eccezioni."
+    },
+    "explanations": {
+      "fr": "Régularité domestique.",
+      "en": "Take out the trash = sortir les poubelles."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-11186",
+    "category": "routine",
+    "translations": {
+      "fr": "J'étends mon linge dès que la machine s'arrête pour éviter les plis.",
+      "en": "I hang up the laundry as soon as the cycle ends to avoid wrinkles.",
+      "es": "Tiendo la ropa en cuanto termina el lavado para que no se arrugue.",
+      "de": "Ich hänge die Wäsche sofort auf, wenn die Maschine fertig ist, um Falten zu vermeiden.",
+      "it": "Stendo il bucato appena la lavatrice finisce per evitare le pieghe."
+    },
+    "explanations": {
+      "fr": "Tâche linge.",
+      "en": "Hang up laundry = étendre le linge."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867044-16261",
+    "category": "routine",
+    "translations": {
+      "fr": "Je prépare toujours mon sac de sport la veille pour ne pas hésiter.",
+      "en": "I always pack my gym bag the night before so I don't hesitate.",
+      "es": "Siempre preparo la bolsa del gimnasio la noche anterior para no dudar.",
+      "de": "Ich packe meine Sporttasche immer am Vorabend, um nicht zu zögern.",
+      "it": "Preparo sempre la borsa della palestra la sera prima per non tentennare."
+    },
+    "explanations": {
+      "fr": "Motivation sport.",
+      "en": "Pack a bag = faire son sac."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867044-5946",
+    "category": "routine",
+    "translations": {
+      "fr": "J'ai tendance à repousser le réveil au moins deux fois avant de me lever.",
+      "en": "I tend to hit the snooze button at least twice before getting up.",
+      "es": "Tiendo a posponer la alarma al menos dos veces antes de levantarme.",
+      "de": "Ich neige dazu, den Wecker mindestens zweimal weiterzustellen, bevor ich aufstehe.",
+      "it": "Tendo a rimandare la sveglia almeno due volte prima di alzarmi."
+    },
+    "explanations": {
+      "fr": "Bouton snooze.",
+      "en": "Hit the snooze button = appuyer sur rappel de réveil."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867044-10306",
+    "category": "routine",
+    "translations": {
+      "fr": "Je fais une pause de cinq minutes toutes les heures pour reposer mes yeux.",
+      "en": "I take a five-minute break every hour to rest my eyes.",
+      "es": "Me tomo un descanso de cinco minutos cada hora para descansar la vista.",
+      "de": "Ich mache jede Stunde fünf Minuten Pause, um meine Augen zu schonen.",
+      "it": "Faccio una pausa di cinque minuti ogni ora per riposare gli occhi."
+    },
+    "explanations": {
+      "fr": "Santé écran.",
+      "en": "Take a break = faire une pause."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867044-15918",
+    "category": "food",
+    "translations": {
+      "fr": "Est-ce qu'il y a du gluten ou des produits laitiers dans cette sauce ?",
+      "en": "Does this sauce contain any gluten or dairy products?",
+      "es": "¿Esta salsa contiene gluten o algún derivado lácteo?",
+      "de": "Enthält diese Soße Gluten oder Milchprodukte?",
+      "it": "Questa salsa contiene glutine o derivati del latte?"
+    },
+    "explanations": {
+      "fr": "Allergies alimentaires.",
+      "en": "Dairy products = produits laitiers."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-54021",
+    "category": "food",
+    "translations": {
+      "fr": "Je prendrai le plat du jour avec un verre de vin rouge, s'il vous plaît.",
+      "en": "I'll have the daily special with a glass of red wine, please.",
+      "es": "Tomaré el plato del día con una copa de vino tinto, por favor.",
+      "de": "Ich nehme das Tagesgericht mit einem Glas Rotwein, bitte.",
+      "it": "Prendo il piatto del giorno con un bicchiere di vino rosso, grazie."
+    },
+    "explanations": {
+      "fr": "Commande classique au restaurant.",
+      "en": "Daily special = plat du jour."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867044-76758",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous avoir l'addition séparée en deux parts égales ?",
+      "en": "Could we split the bill down the middle, please?",
+      "es": "¿Podríamos dividir la cuenta a partes iguales, por favor?",
+      "de": "Könnten wir die Rechnung bitte genau durch zwei teilen?",
+      "it": "Potremmo dividere il conto a metà, per favore?"
+    },
+    "explanations": {
+      "fr": "Partage de l'addition.",
+      "en": "Split down the middle = diviser pile en deux."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867044-11520",
+    "category": "food",
+    "translations": {
+      "fr": "La cuisson de la viande est absolument parfaite, merci beaucoup !",
+      "en": "The meat is cooked to absolute perfection, thank you so much!",
+      "es": "La carne está en su punto perfecto, ¡muchas gracias!",
+      "de": "Das Fleisch ist absolut auf den Punkt zubereitet, vielen Dank!",
+      "it": "La cottura della carne è assolutamente perfetta, grazie mille!"
+    },
+    "explanations": {
+      "fr": "Compliment au chef.",
+      "en": "Cooked to perfection = cuit à la perfection."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-42938",
+    "category": "food",
+    "translations": {
+      "fr": "Avez-vous des options végétariennes ou vegan sur la carte ?",
+      "en": "Do you offer any vegetarian or vegan options on the menu?",
+      "es": "¿Tienen opciones vegetarianas o veganas en la carta?",
+      "de": "Haben Sie vegetarische oder vegane Gerichte auf der Karte?",
+      "it": "Avete opzioni vegetariane o vegane nel menu?"
+    },
+    "explanations": {
+      "fr": "Régime spécifique.",
+      "en": "On the menu = sur la carte."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867044-7464",
+    "category": "food",
+    "translations": {
+      "fr": "Un espresso serré et un grand verre d'eau plate, s'il vous plaît.",
+      "en": "A double espresso and a large glass of still water, please.",
+      "es": "Un espresso solo y un vaso grande de agua sin gas, por favor.",
+      "de": "Einen doppelten Espresso und ein großes Glas stilles Wasser, bitte.",
+      "it": "Un espresso ristretto e un bicchiere grande di acqua naturale, per favore."
+    },
+    "explanations": {
+      "fr": "Commande café.",
+      "en": "Still water = eau plate (par opposition à sparkling)."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-92851",
+    "category": "food",
+    "translations": {
+      "fr": "Est-ce qu'il est possible d'avoir la vinaigrette à part ?",
+      "en": "Is it possible to get the dressing on the side?",
+      "es": "¿Es posible que me pongan el aliño aparte?",
+      "de": "Wäre es möglich, das Dressing separat zu bekommen?",
+      "it": "È possibile avere il condimento a parte?"
+    },
+    "explanations": {
+      "fr": "Demande personnalisée.",
+      "en": "On the side = à part."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867044-54289",
+    "category": "food",
+    "translations": {
+      "fr": "Nous n'avons pas commandé ce plat, il y a sans doute une erreur.",
+      "en": "We didn't order this dish, there must be a mix-up.",
+      "es": "No pedimos este plato, probablemente haya una confusión.",
+      "de": "Dieses Gericht haben wir nicht bestellt, da liegt wohl ein Versehen vor.",
+      "it": "Non abbiamo ordinato questo piatto, ci deve essere un errore."
+    },
+    "explanations": {
+      "fr": "Rectification courtoise.",
+      "en": "Mix-up = malentendu / inversion."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867044-44403",
+    "category": "food",
+    "translations": {
+      "fr": "Qu'est-ce que vous nous recommandez comme dessert maison ?",
+      "en": "What homemade dessert would you personally recommend?",
+      "es": "¿Qué postre casero nos recomienda personalmente?",
+      "de": "Welches hausgemachte Dessert können Sie uns empfehlen?",
+      "it": "Quale dolce fatto in casa ci consiglia?"
+    },
+    "explanations": {
+      "fr": "Conseil du serveur.",
+      "en": "Homemade = fait maison."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867044-83995",
+    "category": "food",
+    "translations": {
+      "fr": "Gardez la monnaie, le service était vraiment impeccable !",
+      "en": "Keep the change, the service was truly wonderful!",
+      "es": "Quédese con la vuelta, ¡el servicio fue impecable!",
+      "de": "Stimmt so, der Service war wirklich ausgezeichnet!",
+      "it": "Tenga il resto, il servizio è stato davvero impeccabile!"
+    },
+    "explanations": {
+      "fr": "Pourboire.",
+      "en": "Keep the change = gardez la monnaie."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867044-17124",
+    "category": "food",
+    "translations": {
+      "fr": "Je vais prendre un café à emporter avec du lait d'avoine.",
+      "en": "I'll take a coffee to go with oat milk, please.",
+      "es": "Tomaré un café para llevar con leche de avena, por favor.",
+      "de": "Ich nehme einen Kaffee zum Mitnehmen mit Hafermilch, bitte.",
+      "it": "Prendo un caffè da asporto con latte d'avena, per favore."
+    },
+    "explanations": {
+      "fr": "Commande coffee shop.",
+      "en": "To go = à emporter."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867044-15347",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous avoir un peu plus de pain et du beurre ?",
+      "en": "Could we get a little more bread and some butter, please?",
+      "es": "¿Podría traernos un poco más de pan y mantequilla, por favor?",
+      "de": "Könnten wir bitte noch etwas Brot und Butter bekommen?",
+      "it": "Potremmo avere ancora un po' di pane e del burro, per favore?"
+    },
+    "explanations": {
+      "fr": "Demande de réapprovisionnement.",
+      "en": "A little more = un peu plus."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867044-40225",
+    "category": "food",
+    "translations": {
+      "fr": "La soupe est un peu tiède, pourriez-vous la faire réchauffer ?",
+      "en": "The soup is a bit lukewarm, could you warm it up a little?",
+      "es": "La sopa está algo templada, ¿podrían calentarla un poco?",
+      "de": "Die Suppe ist etwas lauwarm, könnten Sie sie kurz aufwärmen?",
+      "it": "La zuppa è un po' tiepida, potrebbe farla riscaldare un attimo?"
+    },
+    "explanations": {
+      "fr": "Remarque de température.",
+      "en": "Lukewarm = tiède."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867044-50672",
+    "category": "food",
+    "translations": {
+      "fr": "Tout était succulent, nous reviendrons très bientôt !",
+      "en": "Everything was delicious, we will definitely be back soon!",
+      "es": "Todo estuvo delicioso, ¡volveremos muy pronto sin duda!",
+      "de": "Alles war köstlich, wir kommen auf jeden Fall bald wieder!",
+      "it": "Tutto era squisito, torneremo prestissimo sicuramente!"
+    },
+    "explanations": {
+      "fr": "Départ enthousiaste.",
+      "en": "Be back soon = revenir bientôt."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867044-38643",
+    "category": "food",
+    "translations": {
+      "fr": "Acceptez-vous les paiements par carte sans contact ou Apple Pay ?",
+      "en": "Do you accept contactless card payments or Apple Pay?",
+      "es": "¿Aceptan pagos con tarjeta sin contacto o Apple Pay?",
+      "de": "Akzeptieren Sie kontaktlose Kartenzahlung oder Apple Pay?",
+      "it": "Accettate pagamenti contactless o Apple Pay?"
+    },
+    "explanations": {
+      "fr": "Règlement moderne.",
+      "en": "Contactless payment = paiement sans contact."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-20462",
+    "category": "food",
+    "translations": {
+      "fr": "Je suis allergique aux arachides, pouvez-vous vérifier avec la cuisine ?",
+      "en": "I'm allergic to peanuts, could you double-check with the kitchen?",
+      "es": "Soy alérgico a los cacahuetes, ¿podría comprobarlo con la cocina?",
+      "de": "Ich bin allergisch gegen Erdnüsse, könnten Sie das kurz in der Küche abklären?",
+      "it": "Sono allergico alle arachidi, potrebbe verificare con la cucina?"
+    },
+    "explanations": {
+      "fr": "Alerte allergie vitale.",
+      "en": "Allergic to peanuts = allergique aux cacahuètes."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867044-65675",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous commander deux bouteilles d'eau pétillante fraîche ?",
+      "en": "Could we order two bottles of chilled sparkling water?",
+      "es": "¿Podríamos pedir dos botellas de agua con gas bien fresca?",
+      "de": "Könnten wir bitte zwei Flaschen gekühltes Mineralwasser mit Kohlensäure bestellen?",
+      "it": "Potremmo ordinare due bottiglie di acqua frizzante fresca?"
+    },
+    "explanations": {
+      "fr": "Boisson restaurant.",
+      "en": "Sparkling water = eau pétillante."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867044-60014",
+    "category": "food",
+    "translations": {
+      "fr": "Est-ce que le service est inclus dans le total de la facture ?",
+      "en": "Is the tip already included in the bill total?",
+      "es": "¿La propina ya está incluida en el total de la cuenta?",
+      "de": "Ist das Trinkgeld bereits im Rechnungsbetrag enthalten?",
+      "it": "Il servizio è già compreso nel totale del conto?"
+    },
+    "explanations": {
+      "fr": "Clarification de pourboire à l'étranger.",
+      "en": "Tip included = pourboire inclus."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-72415",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous avoir une chaise haute pour le bébé, s'il vous plaît ?",
+      "en": "Could we get a high chair for the baby, please?",
+      "es": "¿Nos podría traer una trona para el bebé, por favor?",
+      "de": "Könnten wir bitte einen Kinderhochstuhl für das Baby bekommen?",
+      "it": "Potremmo avere un seggiolone per il bimbo, per favore?"
+    },
+    "explanations": {
+      "fr": "Repas en famille.",
+      "en": "High chair = chaise haute."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867044-57698",
+    "category": "food",
+    "translations": {
+      "fr": "J'aimerais mon steak saignant avec des frites croustillantes.",
+      "en": "I'd like my steak cooked rare with crispy french fries.",
+      "es": "Me gustaría el filete poco hecho con patatas fritas crujientes.",
+      "de": "Ich hätte mein Steak gerne blutig mit knusprigen Pommes.",
+      "it": "Vorrei la mia bistecca al sangue con patatine fritte croccanti."
+    },
+    "explanations": {
+      "fr": "Cuisson de viande.",
+      "en": "Rare = saignant (medium-rare = à point, well-done = bien cuit)."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-45323",
+    "category": "food",
+    "translations": {
+      "fr": "Avez-vous une table libre au calme, loin de la porte d'entrée ?",
+      "en": "Do you have a quiet table available away from the front entrance?",
+      "es": "¿Tiene una mesa tranquila disponible lejos de la puerta de entrada?",
+      "de": "Haben Sie einen ruhigen Tisch frei, weg von der Eingangstür?",
+      "it": "Avete un tavolo tranquillo lontano dalla porta d'ingresso?"
+    },
+    "explanations": {
+      "fr": "Choix de placement.",
+      "en": "Away from the entrance = loin de l'entrée."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867044-3193",
+    "category": "food",
+    "translations": {
+      "fr": "Nous avons une réservation au nom de Thomas pour vingt heures.",
+      "en": "We have a reservation under the name Thomas for eight PM.",
+      "es": "Tenemos una reserva a nombre de Thomas para las ocho de la tarde.",
+      "de": "Wir haben eine Reservierung auf den Namen Thomas für zwanzig Uhr.",
+      "it": "Abbiamo una prenotazione a nome Thomas per le venti."
+    },
+    "explanations": {
+      "fr": "Arrivée au restaurant.",
+      "en": "Reservation under the name = réservation au nom de."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867044-46257",
+    "category": "food",
+    "translations": {
+      "fr": "Ce dessert au chocolat est à tomber par terre !",
+      "en": "This chocolate dessert is absolutely to die for!",
+      "es": "¡Este postre de chocolate está para chuparse los dedos!",
+      "de": "Dieses Schokoladendessert ist einfach ein absoluter Traum!",
+      "it": "Questo dolce al cioccolato è davvero la fine del mondo!"
+    },
+    "explanations": {
+      "fr": "Expression d'enthousiasme culinaire.",
+      "en": "To die for = à tomber par terre."
+    },
+    "targetTimeSec": 2.8
+  },
+  {
+    "id": "entry-1793924867044-98121",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous avoir une carafe d'eau du robinet avec des glaçons ?",
+      "en": "Could we have a pitcher of tap water with plenty of ice cubes?",
+      "es": "¿Podría traernos una jarra de agua del grifo con hielo?",
+      "de": "Könnten wir bitte eine Karaffe Leitungswasser mit viel Eis haben?",
+      "it": "Potremmo avere una caraffa di acqua del rubinetto con ghiaccio?"
+    },
+    "explanations": {
+      "fr": "Eau gratuite au restaurant.",
+      "en": "Tap water = eau du robinet."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-68426",
+    "category": "food",
+    "translations": {
+      "fr": "Je n'ai pas très faim, je vais juste prendre une petite salade.",
+      "en": "I'm not super hungry, I'll just go with a light salad.",
+      "es": "No tengo mucha hambre, solo pediré una ensalada ligera.",
+      "de": "Ich habe nicht viel Hunger, ich nehme einfach einen leichten Salat.",
+      "it": "Non ho molta fame, prenderò solo un'insalata leggera."
+    },
+    "explanations": {
+      "fr": "Repas léger.",
+      "en": "Go with = opter pour."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867045-3881",
+    "category": "food",
+    "translations": {
+      "fr": "Pouvez-vous nous emballer le reste dans une boîte à emporter ?",
+      "en": "Could you wrap up what's left in a to-go box for us?",
+      "es": "¿Podría ponernos lo que ha sobrado para llevar, por favor?",
+      "de": "Könnten Sie uns den Rest bitte für unterwegs einpacken?",
+      "it": "Potrebbe incartarci il resto da portare via, per favore?"
+    },
+    "explanations": {
+      "fr": "Doggy bag.",
+      "en": "To-go box / doggy bag = boîte à emporter."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-23009",
+    "category": "food",
+    "translations": {
+      "fr": "Le chef utilise-t-il des produits locaux et de saison ?",
+      "en": "Does the chef use fresh local and seasonal ingredients?",
+      "es": "¿El chef utiliza ingredientes frescos locales y de temporada?",
+      "de": "Verwendet der Küchenchef frische regionale und saisonale Zutaten?",
+      "it": "Lo chef utilizza ingredienti freschi locali e di stagione?"
+    },
+    "explanations": {
+      "fr": "Qualité des produits.",
+      "en": "Seasonal ingredients = produits de saison."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867045-14871",
+    "category": "food",
+    "translations": {
+      "fr": "Pourrions-nous commander un café supplémentaire avant de partir ?",
+      "en": "Could we order one more coffee before we head out?",
+      "es": "¿Podríamos pedir un café más antes de irnos?",
+      "de": "Könnten wir noch einen letzten Kaffee bestellen, bevor wir gehen?",
+      "it": "Potremmo ordinare un altro caffè prima di andare via?"
+    },
+    "explanations": {
+      "fr": "Fin de repas.",
+      "en": "One more = un de plus."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867045-96730",
+    "category": "food",
+    "translations": {
+      "fr": "Le poisson est grillé ou cuit à la vapeur ?",
+      "en": "Is the fish grilled or freshly steamed?",
+      "es": "¿El pescado es a la plancha o al vapor?",
+      "de": "Wird der Fisch gegrillt oder frisch gedämpft?",
+      "it": "Il pesce è grigliato o cotto al vapore?"
+    },
+    "explanations": {
+      "fr": "Mode de cuisson.",
+      "en": "Grilled vs steamed."
+    },
+    "targetTimeSec": 2.9
+  },
+  {
+    "id": "entry-1793924867045-54095",
+    "category": "food",
+    "translations": {
+      "fr": "C'est ma tournée, laissez-moi régler l'addition !",
+      "en": "This round is on me, let me pick up the tab!",
+      "es": "¡Esta ronda la pago yo, déjame invitar!",
+      "de": "Diese Runde geht auf mich, lasst mich die Rechnung übernehmen!",
+      "it": "Questo giro lo offro io, lasciate pagare a me!"
+    },
+    "explanations": {
+      "fr": "Générosité entre amis.",
+      "en": "Pick up the tab = régaler / payer la note."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867045-68021",
+    "category": "social",
+    "translations": {
+      "fr": "Ça fait une éternité qu'on ne s'est pas vus, comment tu vas ?",
+      "en": "It feels like ages since we last met, how have you been?",
+      "es": "¡Hace una eternidad que no nos vemos, ¿cómo has estado?!",
+      "de": "Es ist eine halbe Ewigkeit her, wie geht es dir denn so?",
+      "it": "È da un'eternità che non ci vediamo, come stai?"
+    },
+    "explanations": {
+      "fr": "Retrouvailles amicales.",
+      "en": "Feels like ages = ça fait un bail."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867045-44953",
+    "category": "social",
+    "translations": {
+      "fr": "Est-ce que tu es libre pour prendre un verre ce vendredi soir ?",
+      "en": "Are you free to grab a drink this Friday evening?",
+      "es": "¿Estás libre para tomar algo este viernes por la noche?",
+      "de": "Hast du Zeit, diesen Freitagabend auf ein Glas vorbeizukommen?",
+      "it": "Sei libero per bere qualcosa questo venerdì sera?"
+    },
+    "explanations": {
+      "fr": "Invitation informelle.",
+      "en": "Grab a drink = aller boire un verre."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867045-46962",
+    "category": "social",
+    "translations": {
+      "fr": "Passe un super week-end et repose-toi bien !",
+      "en": "Have a wonderful weekend and get some good rest!",
+      "es": "¡Que pases un fin de semana genial y descanses mucho!",
+      "de": "Schönes Wochenende und erhol dich gut!",
+      "it": "Passa un bel fine settimana e riposati bene!"
+    },
+    "explanations": {
+      "fr": "Vœu amical de fin de semaine.",
+      "en": "Get some rest = se reposer."
+    },
+    "targetTimeSec": 2.9
+  },
+  {
+    "id": "entry-1793924867045-9874",
+    "category": "social",
+    "translations": {
+      "fr": "Je suis tellement content pour toi, tu mérites amplement ce succès !",
+      "en": "I'm so thrilled for you, you truly deserve this success!",
+      "es": "¡Me alegro muchísimo por ti, te mereces este éxito de sobra!",
+      "de": "Ich freue mich so sehr für dich, du hast diesen Erfolg wirklich verdient!",
+      "it": "Sono felicissimo per te, meriti davvero tutto questo successo!"
+    },
+    "explanations": {
+      "fr": "Félicitations chaleureuses.",
+      "en": "Thrilled for you = ravi pour toi."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-57034",
+    "category": "social",
+    "translations": {
+      "fr": "Désolé pour le retard imprévu, les transports étaient complètement bloqués.",
+      "en": "Sorry for the sudden delay, transit was totally jammed.",
+      "es": "Siento el retraso inesperado, el transporte estaba completamente colapsado.",
+      "de": "Entschuldige die Verspätung, die öffentlichen Verkehrsmittel waren komplett lahmgelegt.",
+      "it": "Scusa per il ritardo imprevisto, i trasporti erano completamente bloccati."
+    },
+    "explanations": {
+      "fr": "Excuse courante.",
+      "en": "Transit was jammed = transports bouchés."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867045-13134",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as regardé la nouvelle série dont tout le monde parle ?",
+      "en": "Have you checked out that new TV show everyone is talking about?",
+      "es": "¿Has visto la nueva serie de la que todo el mundo habla?",
+      "de": "Hast du die neue Serie gesehen, über die gerade alle reden?",
+      "it": "Hai visto la nuova serie di cui parlano tutti?"
+    },
+    "explanations": {
+      "fr": "Brise-glace de conversation.",
+      "en": "Check out = regarder / jeter un œil."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867045-17800",
+    "category": "social",
+    "translations": {
+      "fr": "C'était vraiment une soirée géniale, il faut qu'on remette ça vite !",
+      "en": "That was such a fantastic evening, we must do this again soon!",
+      "es": "¡Fue una velada fantástica, tenemos que repetirlo muy pronto!",
+      "de": "Das war so ein toller Abend, das müssen wir unbedingt bald wiederholen!",
+      "it": "È stata una serata fantastica, dobbiamo rifarlo presto!"
+    },
+    "explanations": {
+      "fr": "Fin de soirée réussie.",
+      "en": "Do this again = remettre ça."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867045-63214",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as prévu quoi de beau pour les prochaines vacances d'été ?",
+      "en": "What fun plans do you have lined up for summer vacation?",
+      "es": "¿Qué buenos planes tienes pensados para las próximas vacaciones?",
+      "de": "Was für schöne Pläne hast du für die kommenden Sommerferien?",
+      "it": "Che bei programmi hai per le prossime vacanze estive?"
+    },
+    "explanations": {
+      "fr": "Projets de vacances.",
+      "en": "Lined up = de prévu."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-70211",
+    "category": "social",
+    "translations": {
+      "fr": "Je suis désolé d'annuler au dernier moment, j'ai un empêchement de santé.",
+      "en": "I'm so sorry to cancel last minute, something came up health-wise.",
+      "es": "Siento mucho cancelar a última hora, me ha surgido un imprevisto de salud.",
+      "de": "Es tut mir leid, so kurzfristig abzusagen, mir ist gesundheitlich etwas dazwischengekommen.",
+      "it": "Mi dispiace tantissimo disdire all'ultimo momento, ho avuto un contrattempo di salute."
+    },
+    "explanations": {
+      "fr": "Désistement poli.",
+      "en": "Something came up = il y a eu un imprévu."
+    },
+    "targetTimeSec": 3.6
+  },
+  {
+    "id": "entry-1793924867045-44294",
+    "category": "social",
+    "translations": {
+      "fr": "Tu me préviens dès que tu es bien rentré chez toi ?",
+      "en": "Let me know as soon as you get home safely, okay?",
+      "es": "¿Me avisas en cuanto llegues bien a casa, por favor?",
+      "de": "Sag mir bitte Bescheid, sobald du gut zu Hause angekommen bist, ja?",
+      "it": "Mi fai sapere appena arrivi a casa sano e salvo?"
+    },
+    "explanations": {
+      "fr": "Bienveillance de fin de soirée.",
+      "en": "Get home safely = bien rentrer."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867045-85133",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as complètement raison sur ce point, je ne l'avais pas vu comme ça.",
+      "en": "You're spot on about that, I hadn't looked at it that way.",
+      "es": "Tienes toda la razón en eso, no lo había visto desde esa perspectiva.",
+      "de": "Da hast du völlig recht, so hatte ich das noch gar nicht gesehen.",
+      "it": "Hai perfettamente ragione su questo punto, non l'avevo vista in quel modo."
+    },
+    "explanations": {
+      "fr": "Accord amical.",
+      "en": "Spot on = pile dans le mille."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-94934",
+    "category": "social",
+    "translations": {
+      "fr": "Je t'envoie les photos de notre sortie sur WhatsApp dès ce soir.",
+      "en": "I'll send you the pictures from our outing on WhatsApp tonight.",
+      "es": "Te paso las fotos de nuestra salida por WhatsApp esta misma noche.",
+      "de": "Ich schicke dir die Fotos von unserem Ausflug heute Abend über WhatsApp.",
+      "it": "Ti mando le foto della nostra uscita su WhatsApp stasera stessa."
+    },
+    "explanations": {
+      "fr": "Partage de souvenirs.",
+      "en": "Pictures from our outing = photos de notre sortie."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-40357",
+    "category": "social",
+    "translations": {
+      "fr": "Merci pour ton accueil si chaleureux, on s'est sentis comme à la maison.",
+      "en": "Thank you for the warm welcome, we truly felt right at home.",
+      "es": "Gracias por recibirnos con tanto cariño, nos sentimos como en casa.",
+      "de": "Vielen Dank für den herzlichen Empfang, wir haben uns wie zu Hause gefühlt.",
+      "it": "Grazie per l'accoglienza così calorosa, ci siamo sentiti davvero a casa."
+    },
+    "explanations": {
+      "fr": "Remerciement d'hôte.",
+      "en": "Felt right at home = se sentir comme chez soi."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867045-35497",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as le bonjour de la part de toute la famille !",
+      "en": "Everyone in the family sends their warmest regards!",
+      "es": "¡Toda la familia te manda muchísimos recuerdos!",
+      "de": "Ganz liebe Grüße von der gesamten Familie!",
+      "it": "Tutta la famiglia ti manda un carissimo saluto!"
+    },
+    "explanations": {
+      "fr": "Transmission de salutations.",
+      "en": "Send warmest regards = passer le bonjour chaleureux."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867045-43520",
+    "category": "social",
+    "translations": {
+      "fr": "Ne t'inquiète pas du tout pour ça, ça arrive à tout le monde !",
+      "en": "Don't worry about it one bit, it happens to everyone!",
+      "es": "¡No te preocupes en absoluto por eso, le pasa a cualquiera!",
+      "de": "Mach dir darüber überhaupt keine Sorgen, das passiert jedem mal!",
+      "it": "Non preoccuparti affatto, capita a tutti!"
+    },
+    "explanations": {
+      "fr": "Rassurer un ami.",
+      "en": "Not one bit = pas le moins du monde."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867045-95408",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as prévu quoi de spécial pour fêter ton anniversaire ce week-end ?",
+      "en": "Do you have anything special planned to celebrate your birthday this weekend?",
+      "es": "¿Tienes algo especial pensado para celebrar tu cumpleaños este fin de semana?",
+      "de": "Hast du etwas Besonderes geplant, um deinen Geburtstag dieses Wochenende zu feiern?",
+      "it": "Hai organizzato qualcosa di speciale per festeggiare il tuo compleanno questo weekend?"
+    },
+    "explanations": {
+      "fr": "Anniversaire d'un proche.",
+      "en": "Anything special planned = quelque chose de spécial prévu."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867045-53016",
+    "category": "social",
+    "translations": {
+      "fr": "Prends tout ton temps, nous ne sommes pas pressés du tout.",
+      "en": "Take all the time you need, we're in no rush whatsoever.",
+      "es": "Tómate todo el tiempo que necesites, no tenemos ninguna prisa.",
+      "de": "Nimm dir alle Zeit der Welt, wir haben es überhaupt nicht eilig.",
+      "it": "Prenditi tutto il tempo che ti serve, non abbiamo alcuna fretta."
+    },
+    "explanations": {
+      "fr": "Déstresser son interlocuteur.",
+      "en": "In no rush whatsoever = absolument pas pressé."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867045-23834",
+    "category": "social",
+    "translations": {
+      "fr": "Je te présente mon ami Julien qui vient d'emménager dans le quartier.",
+      "en": "This is my friend Julien who just moved into the neighborhood.",
+      "es": "Te presento a mi amigo Julien, que acaba de mudarse al barrio.",
+      "de": "Das ist mein Freund Julien, der gerade erst in die Nachbarschaft gezogen ist.",
+      "it": "Ti presento il mio amico Julien che si è appena trasferito nel quartiere."
+    },
+    "explanations": {
+      "fr": "Présentation amicale.",
+      "en": "Moved into the neighborhood = a emménagé dans le quartier."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-8833",
+    "category": "social",
+    "translations": {
+      "fr": "C'est un plaisir de te rencontrer enfin en vrai après tous ces appels !",
+      "en": "It's such a pleasure to finally meet you in person after all those calls!",
+      "es": "¡Es un verdadero placer conocerte en persona después de tantas llamadas!",
+      "de": "Es ist mir eine große Freude, dich nach all den Telefonaten endlich persönlich zu treffen!",
+      "it": "È un vero piacere incontrarti finalmente di persona dopo tutte quelle chiamate!"
+    },
+    "explanations": {
+      "fr": "Rencontre après le télétravail.",
+      "en": "In person = en personne."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867045-78022",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as l'air en super forme aujourd'hui, qu'est-ce qui te donne ce sourire ?",
+      "en": "You look great today, what's got you smiling like that?",
+      "es": "Te ves estupendamente hoy, ¿a qué se debe esa sonrisa?",
+      "de": "Du siehst heute super aus, was zaubert dir dieses Lächeln ins Gesicht?",
+      "it": "Hai un aspetto magnifico oggi, cosa ti fa sorridere così?"
+    },
+    "explanations": {
+      "fr": "Compliment de bonne humeur.",
+      "en": "You look great = tu as l'air en forme."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867045-88843",
+    "category": "social",
+    "translations": {
+      "fr": "Si tu as besoin de quoi que ce soit, sache que je suis là.",
+      "en": "If you ever need anything at all, just know I'm here for you.",
+      "es": "Si alguna vez necesitas cualquier cosa, que sepas que estoy aquí.",
+      "de": "Wenn du jemals irgendetwas brauchst, lass es mich wissen, ich bin für dich da.",
+      "it": "Se mai avessi bisogno di qualunque cosa, sappi che io ci sono."
+    },
+    "explanations": {
+      "fr": "Soutien sincère.",
+      "en": "Here for you = là pour toi."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867045-19948",
+    "category": "social",
+    "translations": {
+      "fr": "On se fait un brunch dimanche matin si le soleil est de la partie ?",
+      "en": "Shall we do Sunday brunch if the weather stays sunny?",
+      "es": "¿Nos tomamos un brunch el domingo por la mañana si hace buen tiempo?",
+      "de": "Wollen wir am Sonntagmorgen brunchen, wenn das Wetter schön bleibt?",
+      "it": "Facciamo un brunch domenica mattina se c'è il sole?"
+    },
+    "explanations": {
+      "fr": "Proposition de week-end.",
+      "en": "Sunday brunch = brunch dominical."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867045-50056",
+    "category": "social",
+    "translations": {
+      "fr": "J'ai pensé à toi l'autre jour en écoutant ce vieux morceau de musique.",
+      "en": "I thought of you the other day while listening to that old track.",
+      "es": "Me acordé de ti el otro día escuchando ese tema antiguo.",
+      "de": "Ich habe neulich an dich gedacht, als ich dieses alte Lied gehört habe.",
+      "it": "Ho pensato a te l'altro giorno mentre ascoltavo quel vecchio pezzo."
+    },
+    "explanations": {
+      "fr": "Nostalgie complice.",
+      "en": "Thought of you = j'ai pensé à toi."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-55715",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as des nouvelles de Sophie depuis son déménagement au Canada ?",
+      "en": "Have you heard from Sophie since she relocated to Canada?",
+      "es": "¿Has sabido algo de Sophie desde que se mudó a Canadá?",
+      "de": "Hast du etwas von Sophie gehört, seit sie nach Kanada gezogen ist?",
+      "it": "Hai notizie di Sophie da quando si è trasferita in Canada?"
+    },
+    "explanations": {
+      "fr": "Prendre des nouvelles d'un tiers.",
+      "en": "Hear from someone = avoir des nouvelles de quelqu'un."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867046-36865",
+    "category": "social",
+    "translations": {
+      "fr": "Je te promets qu'on se rattrapera la semaine prochaine autour d'un café.",
+      "en": "I promise we'll make up for it next week over coffee.",
+      "es": "Te prometo que lo compensaremos la semana que viene tomando un café.",
+      "de": "Ich verspreche dir, wir holen das nächste Woche bei einem Kaffee nach.",
+      "it": "Ti prometto che ci rifaremo la prossima settimana davanti a un caffè."
+    },
+    "explanations": {
+      "fr": "Promesse de rattrapage.",
+      "en": "Make up for it = se rattraper."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-60000",
+    "category": "social",
+    "translations": {
+      "fr": "Fais attention sur la route avec cette pluie torrentielle !",
+      "en": "Drive carefully on the road with all this heavy rain!",
+      "es": "¡Ten mucho cuidado en la carretera con esta lluvia torrencial!",
+      "de": "Fahr bitte vorsichtig bei diesem heftigen Regen!",
+      "it": "Fai molta attenzione per strada con questa pioggia battente!"
+    },
+    "explanations": {
+      "fr": "Conseil de prudence.",
+      "en": "Drive carefully = conduire prudemment."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-18972",
+    "category": "social",
+    "translations": {
+      "fr": "Tu m'as manqué, c'est tellement bon de pouvoir discuter tranquillement !",
+      "en": "I missed you, it feels so good to sit and catch up peacefully!",
+      "es": "¡Te eché de menos, qué alegría poder hablar tranquilamente!",
+      "de": "Ich habe dich vermisst, es tut so gut, sich in Ruhe auszutauschen!",
+      "it": "Mi sei mancato, è così bello potersi fare una chiacchierata tranquilla!"
+    },
+    "explanations": {
+      "fr": "Retrouvailles intimes.",
+      "en": "Catch up = rattraper le temps perdu en discutant."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867046-22368",
+    "category": "social",
+    "translations": {
+      "fr": "Tu as vu sa nouvelle coupe de cheveux ? Ça lui va à ravir !",
+      "en": "Did you notice her new haircut? It suits her so well!",
+      "es": "¿Has visto su nuevo corte de pelo? ¡Le sienta de maravilla!",
+      "de": "Hast du ihren neuen Haarschnitt gesehen? Der steht ihr wirklich ausgezeichnet!",
+      "it": "Hai visto il suo nuovo taglio di capelli? Le dona tantissimo!"
+    },
+    "explanations": {
+      "fr": "Compliment esthétique.",
+      "en": "It suits her well = ça lui va bien."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867046-28176",
+    "category": "social",
+    "translations": {
+      "fr": "On se tient au courant d'ici demain pour confirmer l'heure du dîner.",
+      "en": "Let's touch base by tomorrow to lock in the dinner time.",
+      "es": "Nos mantenemos en contacto para mañana para confirmar la hora de la cena.",
+      "de": "Lass uns morgen kurz sprechen, um die Uhrzeit fürs Abendessen festzulegen.",
+      "it": "Ci aggiorniamo entro domani per confermare l'orario della cena."
+    },
+    "explanations": {
+      "fr": "Organisation de sortie.",
+      "en": "Lock in = verrouiller / confirmer."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-79260",
+    "category": "social",
+    "translations": {
+      "fr": "Passe le bonjour à tout le monde de ma part, et à très vite !",
+      "en": "Say hi to everyone for me, and talk very soon!",
+      "es": "¡Dale un saludo a todos de mi parte y hasta muy pronto!",
+      "de": "Grüß alle ganz herzlich von mir und bis ganz bald!",
+      "it": "Saluta tutti da parte mia e a prestissimo!"
+    },
+    "explanations": {
+      "fr": "Salutation chaleureuse finale.",
+      "en": "Say hi to everyone = passer le bonjour."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-19343",
+    "category": "travel",
+    "translations": {
+      "fr": "À quelle porte d'embarquement part le vol pour Madrid ?",
+      "en": "Which gate is the flight to Madrid departing from?",
+      "es": "¿Desde qué puerta de embarque sale el vuelo a Madrid?",
+      "de": "Von welchem Flugsteig geht der Flug nach Madrid ab?",
+      "it": "Da quale gate parte il volo per Madrid?"
+    },
+    "explanations": {
+      "fr": "Aéroport.",
+      "en": "Gate = porte d'embarquement."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867046-75290",
+    "category": "travel",
+    "translations": {
+      "fr": "Pourriez-vous m'indiquer la station de métro la plus proche ?",
+      "en": "Could you point me to the nearest subway station, please?",
+      "es": "¿Podría indicarme la estación de metro más cercana, por favor?",
+      "de": "Könnten Sie mir den Weg zur nächsten U-Bahn-Station zeigen?",
+      "it": "Potrebbe indicarmi la fermata della metropolitana più vicina, per favore?"
+    },
+    "explanations": {
+      "fr": "Orientation urbaine.",
+      "en": "Point me to = m'indiquer le chemin."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-21792",
+    "category": "travel",
+    "translations": {
+      "fr": "Est-ce que le petit-déjeuner est inclus dans le tarif de la chambre ?",
+      "en": "Is breakfast included in the room rate?",
+      "es": "¿El desayuno está incluido en la tarifa de la habitación?",
+      "de": "Ist das Frühstück im Zimmerpreis inbegriffen?",
+      "it": "La colazione è inclusa nella tariffa della camera?"
+    },
+    "explanations": {
+      "fr": "Hôtel.",
+      "en": "Room rate = tarif de la chambre."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-7926",
+    "category": "travel",
+    "translations": {
+      "fr": "Mon train a quarante minutes de retard à cause d'une panne de signalisation.",
+      "en": "My train is delayed forty minutes due to a signal failure.",
+      "es": "Mi tren lleva cuarenta minutos de retraso por una avería en la señalización.",
+      "de": "Mein Zug hat vierzig Minuten Verspätung wegen einer Signalstörung.",
+      "it": "Il mio treno ha quaranta minuti di ritardo a causa di un guasto ai segnali."
+    },
+    "explanations": {
+      "fr": "Imprévu en gare.",
+      "en": "Signal failure = panne de signalisation."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867046-74347",
+    "category": "travel",
+    "translations": {
+      "fr": "Où puis-je acheter un pass de transport illimité pour trois jours ?",
+      "en": "Where can I buy a three-day unlimited travel pass?",
+      "es": "¿Dónde puedo comprar un abono de transporte ilimitado para tres días?",
+      "de": "Wo kann ich eine 3-Tage-Netzkarte für den Nahverkehr kaufen?",
+      "it": "Dove posso acquistare un abbonamento trasporti illimitato per tre giorni?"
+    },
+    "explanations": {
+      "fr": "Achat de titre de transport.",
+      "en": "Unlimited travel pass = pass illimité."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-30656",
+    "category": "travel",
+    "translations": {
+      "fr": "Pourriez-vous m'appeler un taxi pour l'aéroport demain matin à six heures ?",
+      "en": "Could you book me a cab to the airport for six tomorrow morning?",
+      "es": "¿Podría pedirme un taxi al aeropuerto para las seis de la mañana?",
+      "de": "Könnten Sie mir für morgen früh um sechs ein Taxi zum Flughafen rufen?",
+      "it": "Potrebbe chiamarmi un taxi per l'aeroporto domani mattina alle sei?"
+    },
+    "explanations": {
+      "fr": "Réservation taxi hôtel.",
+      "en": "Book a cab = réserver un taxi."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867046-43817",
+    "category": "travel",
+    "translations": {
+      "fr": "Ma valise n'est pas arrivée sur le tapis à bagages, où dois-je déclarer cela ?",
+      "en": "My luggage didn't show up on the carousel, where do I report it?",
+      "es": "Mi maleta no ha salido por la cinta de equipajes, ¿dónde puedo reclamarla?",
+      "de": "Mein Koffer ist nicht auf dem Gepäckband aufgetaucht, wo kann ich das melden?",
+      "it": "La mia valigia non è arrivata sul nastro bagagli, dove posso fare reclamo?"
+    },
+    "explanations": {
+      "fr": "Bagage égaré.",
+      "en": "Luggage carousel = tapis à bagages."
+    },
+    "targetTimeSec": 3.6
+  },
+  {
+    "id": "entry-1793924867046-33722",
+    "category": "travel",
+    "translations": {
+      "fr": "Est-ce qu'il y a une connexion Wi-Fi gratuite disponible dans le hall ?",
+      "en": "Is there free Wi-Fi access available in the lobby?",
+      "es": "¿Hay conexión wifi gratuita disponible en el vestíbulo?",
+      "de": "Gibt es kostenloses WLAN in der Hotellobby?",
+      "it": "C'è il Wi-Fi gratuito disponibile nella hall?"
+    },
+    "explanations": {
+      "fr": "Connexion hôtel.",
+      "en": "Lobby = hall d'hôtel."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-92686",
+    "category": "travel",
+    "translations": {
+      "fr": "Pouvez-vous me recommander un quartier sympa et animé pour se promener ?",
+      "en": "Can you recommend a lively neighborhood to walk around?",
+      "es": "¿Puede recomendarme un barrio animado para dar un paseo?",
+      "de": "Können Sie mir ein schönes, lebendiges Viertel zum Spazierengehen empfehlen?",
+      "it": "Può consigliarmi un quartiere vivace dove fare una passeggiata?"
+    },
+    "explanations": {
+      "fr": "Conseil touristique.",
+      "en": "Lively neighborhood = quartier animé."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-91002",
+    "category": "travel",
+    "translations": {
+      "fr": "Est-il possible de faire le check-out un peu plus tard dans l'après-midi ?",
+      "en": "Is late check-out available this afternoon?",
+      "es": "¿Sería posible hacer el check-out un poco más tarde esta tarde?",
+      "de": "Wäre ein späterer Check-out heute Nachmittag möglich?",
+      "it": "È possibile posticipare il check-out al pomeriggio?"
+    },
+    "explanations": {
+      "fr": "Départ tardif hôtel.",
+      "en": "Late check-out = départ tardif."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867046-90401",
+    "category": "travel",
+    "translations": {
+      "fr": "Combien de temps faut-il pour rejoindre le centre-ville en bus ?",
+      "en": "How long does it take to get downtown by bus?",
+      "es": "¿Cuánto se tarda en llegar al centro de la ciudad en autobús?",
+      "de": "Wie lange dauert es mit dem Bus bis in die Innenstadt?",
+      "it": "Quanto tempo ci vuole per arrivare in centro con l'autobus?"
+    },
+    "explanations": {
+      "fr": "Trajet vers le centre.",
+      "en": "Downtown = centre-ville."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867046-42322",
+    "category": "travel",
+    "translations": {
+      "fr": "Pourriez-vous nous prendre en photo devant ce monument, s'il vous plaît ?",
+      "en": "Could you take a quick photo of us in front of this landmark, please?",
+      "es": "¿Nos podría hacer una foto rápida delante de este monumento, por favor?",
+      "de": "Könnten Sie kurz ein Foto von uns vor dieser Sehenswürdigkeit machen?",
+      "it": "Potrebbe farci una foto davanti a questo monumento, per favore?"
+    },
+    "explanations": {
+      "fr": "Demande photo touriste.",
+      "en": "Landmark = monument emblématique."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867046-49779",
+    "category": "travel",
+    "translations": {
+      "fr": "Est-ce que je dois composter ce billet avant de monter à bord ?",
+      "en": "Do I need to validate this ticket before boarding?",
+      "es": "¿Tengo que validar este billete antes de subir a bordo?",
+      "de": "Muss ich diesen Fahrschein vor dem Einsteigen entwerten?",
+      "it": "Devo timbrare questo biglietto prima di salire a bordo?"
+    },
+    "explanations": {
+      "fr": "Validation billet train/bus.",
+      "en": "Validate ticket = composter."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-62896",
+    "category": "travel",
+    "translations": {
+      "fr": "Pouvez-vous garder nos bagages à la réception jusqu'à ce soir ?",
+      "en": "Could you hold onto our bags at front desk until this evening?",
+      "es": "¿Podrían guardarnos las maletas en recepción hasta esta tarde?",
+      "de": "Könnten Sie unser Gepäck bis heute Abend an der Rezeption aufbewahren?",
+      "it": "Potreste tenerci i bagagli alla reception fino a stasera?"
+    },
+    "explanations": {
+      "fr": "Consigne hôtel.",
+      "en": "Hold onto bags = garder les sacs."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-11057",
+    "category": "travel",
+    "translations": {
+      "fr": "J'ai un vol avec correspondance à Francfort, ai-je assez de temps ?",
+      "en": "I have a connecting flight in Frankfurt, is the layover long enough?",
+      "es": "Tengo un vuelo de conexión en Fráncfort, ¿tengo tiempo suficiente?",
+      "de": "Ich habe einen Anschlussflug in Frankfurt, reicht die Umsteigezeit?",
+      "it": "Ho una coincidenza a Francoforte, il tempo di scalo è sufficiente?"
+    },
+    "explanations": {
+      "fr": "Escale aéroport.",
+      "en": "Layover = escale."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867046-62838",
+    "category": "travel",
+    "translations": {
+      "fr": "Ce siège est-il libre ou est-il déjà occupé par quelqu'un ?",
+      "en": "Is this seat taken or is it completely free?",
+      "es": "¿Este asiento está ocupado o está libre?",
+      "de": "Ist dieser Platz noch frei oder schon besetzt?",
+      "it": "Questo posto è occupato o è libero?"
+    },
+    "explanations": {
+      "fr": "Place dans les transports.",
+      "en": "Is this seat taken? = cette place est-elle prise ?"
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-98111",
+    "category": "travel",
+    "translations": {
+      "fr": "Pourriez-vous fermer le rideau de la fenêtre, le soleil m'éblouit ?",
+      "en": "Could you pull down the window shade, the sun is quite blinding?",
+      "es": "¿Podría bajar la persiana de la ventana? El sol me da de lleno.",
+      "de": "Könnten Sie die Sonnenblende herunterziehen, die Sonne blendet ziemlich?",
+      "it": "Potrebbe abbassare la tendina del finestrino, il sole mi acceca?"
+    },
+    "explanations": {
+      "fr": "Vol avion ou train.",
+      "en": "Window shade = store / cache-hublot."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-33054",
+    "category": "travel",
+    "translations": {
+      "fr": "Quel est le moyen le plus rapide pour se rendre à la plage d'ici ?",
+      "en": "What's the quickest way to get down to the beach from here?",
+      "es": "¿Cuál es la forma más rápida de llegar a la playa desde aquí?",
+      "de": "Was ist der schnellste Weg von hier zum Strand?",
+      "it": "Qual è il modo più rapido per arrivare alla spiaggia da qui?"
+    },
+    "explanations": {
+      "fr": "Direction plage.",
+      "en": "Quickest way = le chemin le plus rapide."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-51168",
+    "category": "travel",
+    "translations": {
+      "fr": "Est-ce que l'eau du robinet est potable dans cette région ?",
+      "en": "Is tap water safe to drink in this region?",
+      "es": "¿El agua del grifo es potable en esta región?",
+      "de": "Kann man das Leitungswasser in dieser Region unbedenklich trinken?",
+      "it": "L'acqua del rubinetto è potabile in questa regione?"
+    },
+    "explanations": {
+      "fr": "Sécurité sanitaire voyage.",
+      "en": "Safe to drink = potable."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-190",
+    "category": "travel",
+    "translations": {
+      "fr": "J'aimerais louer un vélo pour toute la journée, quel est le tarif ?",
+      "en": "I'd like to rent a bicycle for the whole day, how much is it?",
+      "es": "Me gustaría alquilar una bicicleta para todo el día, ¿cuánto cuesta?",
+      "de": "Ich möchte für den ganzen Tag ein Fahrrad mieten, wie viel kostet das?",
+      "it": "Vorrei noleggiare una bicicletta per tutto il giorno, quanto costa?"
+    },
+    "explanations": {
+      "fr": "Location vélo.",
+      "en": "Rent a bicycle = louer un vélo."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-25688",
+    "category": "travel",
+    "translations": {
+      "fr": "Le musée est-il ouvert les jours fériés et le dimanche ?",
+      "en": "Is the museum open on public holidays and Sundays?",
+      "es": "¿El museo abre en días festivos y los domingos?",
+      "de": "Hat das Museum an Feiertagen und sonntags geöffnet?",
+      "it": "Il museo è aperto nei giorni festivi e la domenica?"
+    },
+    "explanations": {
+      "fr": "Visite culturelle.",
+      "en": "Public holidays = jours fériés."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867046-71372",
+    "category": "travel",
+    "translations": {
+      "fr": "Où se trouve le point de rencontre pour la visite guidée en anglais ?",
+      "en": "Where is the meeting point for the guided tour in English?",
+      "es": "¿Dónde es el punto de encuentro para la visita guiada en inglés?",
+      "de": "Wo ist der Treffpunkt für die englischsprachige Führung?",
+      "it": "Dov'è il punto di incontro per la visita guidata in inglese?"
+    },
+    "explanations": {
+      "fr": "Visite guidée.",
+      "en": "Meeting point = point de rendez-vous."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-32048",
+    "category": "travel",
+    "translations": {
+      "fr": "Avez-vous une carte de la ville avec les lignes de métro principales ?",
+      "en": "Do you have a city map featuring the main subway routes?",
+      "es": "¿Tiene un mapa de la ciudad con las principales líneas de metro?",
+      "de": "Haben Sie einen Stadtplan mit den wichtigsten U-Bahn-Linien?",
+      "it": "Ha una mappa della città con le linee principali della metropolitana?"
+    },
+    "explanations": {
+      "fr": "Plan de ville.",
+      "en": "City map = carte de la ville."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-66895",
+    "category": "travel",
+    "translations": {
+      "fr": "Pouvez-vous me réveiller demain matin à sept heures précises ?",
+      "en": "Could I get a wake-up call tomorrow at seven AM sharp, please?",
+      "es": "¿Podría programar un servicio de despertador para las siete en punto de la mañana?",
+      "de": "Könnten Sie mich bitte morgen früh um punkt sieben Uhr wecken?",
+      "it": "Potrebbe impostare una sveglia telefonica per le sette in punto domani mattina?"
+    },
+    "explanations": {
+      "fr": "Réveil hôtel.",
+      "en": "Wake-up call = réveil téléphonique."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-22595",
+    "category": "travel",
+    "translations": {
+      "fr": "Combien coûte une course en taxi jusqu'au centre de conférences ?",
+      "en": "How much does a taxi ride cost to the convention center?",
+      "es": "¿Cuánto cuesta una carrera de taxi hasta el centro de convenciones?",
+      "de": "Wie viel kostet eine Taxifahrt zum Kongresszentrum?",
+      "it": "Quanto costa una corsa in taxi fino al centro congressi?"
+    },
+    "explanations": {
+      "fr": "Course taxi.",
+      "en": "Taxi ride = trajet en taxi."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-67082",
+    "category": "travel",
+    "translations": {
+      "fr": "Je voyage seul et je cherche une chambre simple non-fumeur.",
+      "en": "I'm traveling solo and looking for a single non-smoking room.",
+      "es": "Viajo solo y busco una habitación individual para no fumadores.",
+      "de": "Ich reise alleine und suche ein Nichtraucher-Einzelzimmer.",
+      "it": "Viaggio da solo e cerco una camera singola per non fumatori."
+    },
+    "explanations": {
+      "fr": "Voyage en solo.",
+      "en": "Traveling solo = voyager seul."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-10365",
+    "category": "travel",
+    "translations": {
+      "fr": "Y a-t-il un distributeur de billets automatique à proximité de la gare ?",
+      "en": "Is there an ATM machine somewhere near the train station?",
+      "es": "¿Hay algún cajero automático cerca de la estación de tren?",
+      "de": "Gibt es in der Nähe des Bahnhofs irgendwo einen Geldautomaten?",
+      "it": "C'è un bancomat nelle vicinanze della stazione ferroviaria?"
+    },
+    "explanations": {
+      "fr": "Retrait d'argent liquide.",
+      "en": "ATM = distributeur de billets."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-32733",
+    "category": "travel",
+    "translations": {
+      "fr": "Y a-t-il un tarif réduit pour les étudiants ou les jeunes ?",
+      "en": "Is there any discounted fare for students or young travelers?",
+      "es": "¿Hay alguna tarifa reducida para estudiantes o jóvenes?",
+      "de": "Gibt es einen ermäßigten Tarif für Studenten oder Jugendliche?",
+      "it": "C'è una tariffa ridotta per studenti o giovani?"
+    },
+    "explanations": {
+      "fr": "Réduction tarifaire.",
+      "en": "Discounted fare = tarif réduit."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-17410",
+    "category": "travel",
+    "translations": {
+      "fr": "La vue depuis le sommet de cette colline est absolument spectaculaire !",
+      "en": "The view from the top of this hill is simply breathtaking!",
+      "es": "¡La vista desde lo alto de esta colina es absolutamente espectacular!",
+      "de": "Die Aussicht von der Spitze dieses Hügels ist einfach atemberaubend!",
+      "it": "La vista dalla cima di questa collina è davvero mozzafiato!"
+    },
+    "explanations": {
+      "fr": "Panorama remarquable.",
+      "en": "Breathtaking = à couper le souffle."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-13707",
+    "category": "travel",
+    "translations": {
+      "fr": "Nous avons adoré notre séjour chez vous, merci pour tout !",
+      "en": "We absolutely loved our stay here, thank you for everything!",
+      "es": "Nos ha encantado nuestra estancia aquí, ¡muchísimas gracias por todo!",
+      "de": "Wir haben unseren Aufenthalt hier sehr genossen, danke für alles!",
+      "it": "Abbiamo adorato il nostro soggiorno qui, grazie davvero di tutto!"
+    },
+    "explanations": {
+      "fr": "Départ et remerciements.",
+      "en": "Loved our stay = adoré notre séjour."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867046-18739",
+    "category": "tech",
+    "translations": {
+      "fr": "Je vais redémarrer mon routeur, ma connexion internet est très instable.",
+      "en": "I'll reboot my router, my internet connection is very shaky.",
+      "es": "Voy a reiniciar el router, mi conexión a internet está muy inestable.",
+      "de": "Ich starte meinen Router neu, meine Internetverbindung ist sehr wackelig.",
+      "it": "Riavvio il router, la mia connessione internet è molto instabile."
+    },
+    "explanations": {
+      "fr": "Bug de connexion.",
+      "en": "Shaky connection = connexion bancale."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-68742",
+    "category": "tech",
+    "translations": {
+      "fr": "As-tu mis à jour tes identifiants sur le nouveau tableau de bord ?",
+      "en": "Did you update your login credentials on the new dashboard?",
+      "es": "¿Actualizaste tus credenciales de acceso en el nuevo panel?",
+      "de": "Hast du deine Zugangsdaten im neuen Dashboard aktualisiert?",
+      "it": "Hai aggiornato le tue credenziali di accesso sulla nuova dashboard?"
+    },
+    "explanations": {
+      "fr": "Sécurité informatique.",
+      "en": "Login credentials = identifiants de connexion."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-51948",
+    "category": "tech",
+    "translations": {
+      "fr": "Le bug a été corrigé et déployé sur le serveur de production.",
+      "en": "The bug was fixed and pushed straight to the production server.",
+      "es": "El error fue corregido y subido directamente al servidor de producción.",
+      "de": "Der Bug wurde behoben und direkt auf den Produktionsserver aufgespielt.",
+      "it": "Il bug è stato corretto e rilasciato direttamente sul server di produzione."
+    },
+    "explanations": {
+      "fr": "Livraison de fix.",
+      "en": "Pushed to production = déployé en prod."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-43006",
+    "category": "tech",
+    "translations": {
+      "fr": "Je n'arrive pas à télécharger le fichier, le lien semble expiré.",
+      "en": "I can't download the file, the link seems to have expired.",
+      "es": "No puedo descargar el archivo, el enlace parece haber caducado.",
+      "de": "Ich kann die Datei nicht herunterladen, der Link scheint abgelaufen zu sein.",
+      "it": "Non riesco a scaricare il file, il link sembra scaduto."
+    },
+    "explanations": {
+      "fr": "Lien brisé.",
+      "en": "Expired link = lien expiré."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867046-63770",
+    "category": "tech",
+    "translations": {
+      "fr": "Cette application utilise l'intelligence artificielle pour transcrire la voix.",
+      "en": "This app leverages artificial intelligence to transcribe voice in real time.",
+      "es": "Esta aplicación utiliza inteligencia artificial para transcribir la voz en tiempo real.",
+      "de": "Diese App nutzt künstliche Intelligenz, um Sprache in Echtzeit zu transkribieren.",
+      "it": "Questa applicazione sfrutta l'intelligenza artificiale per trascrivere la voce in tempo reale."
+    },
+    "explanations": {
+      "fr": "Fonctionnalité IA.",
+      "en": "Leverage AI = tirer parti de l'IA."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867046-44391",
+    "category": "tech",
+    "translations": {
+      "fr": "Coupe ta caméra si le son commence à saccader pendant l'appel.",
+      "en": "Turn off your video if audio starts lagging during the call.",
+      "es": "Apaga la cámara si el audio empieza a cortarse durante la llamada.",
+      "de": "Schalte die Kamera aus, wenn der Ton während des Anrufs zu ruckeln beginnt.",
+      "it": "Disattiva la videocamera se l'audio inizia a laggare durante la chiamata."
+    },
+    "explanations": {
+      "fr": "Astuce visio en basse bande passante.",
+      "en": "Lagging = qui saccade ou rame."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-82533",
+    "category": "tech",
+    "translations": {
+      "fr": "N'oublie pas de sauvegarder tes modifications avant de fermer la fenêtre.",
+      "en": "Remember to save your changes before closing the window.",
+      "es": "Acuérdate de guardar los cambios antes de cerrar la ventana.",
+      "de": "Denke daran, deine Änderungen zu speichern, bevor du das Fenster schließt.",
+      "it": "Ricordati di salvare le modifiche prima di chiudere la finestra."
+    },
+    "explanations": {
+      "fr": "Prévention perte de données.",
+      "en": "Save changes = sauvegarder les modifs."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867046-74001",
+    "category": "tech",
+    "translations": {
+      "fr": "Cette nouvelle mise à jour améliore considérablement la rapidité du site.",
+      "en": "This new update substantially boosts site loading speed.",
+      "es": "Esta nueva actualización mejora notablemente la velocidad del sitio.",
+      "de": "Dieses neue Update steigert die Ladegeschwindigkeit der Website spürbar.",
+      "it": "Questo nuovo aggiornamento migliora notevolmente la velocità del sito."
+    },
+    "explanations": {
+      "fr": "Performance web.",
+      "en": "Boost loading speed = booster la vitesse de chargement."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867046-51807",
+    "category": "tech",
+    "translations": {
+      "fr": "Tu peux m'envoyer le code d'accès par message privé sur Slack ?",
+      "en": "Can you shoot me the access code via a direct message on Slack?",
+      "es": "¿Puedes mandarme el código de acceso por mensaje privado en Slack?",
+      "de": "Kannst du mir den Zugangscode per Direktnachricht auf Slack schicken?",
+      "it": "Puoi mandarmi il codice di accesso tramite messaggio privato su Slack?"
+    },
+    "explanations": {
+      "fr": "Communication d'équipe.",
+      "en": "Shoot me = envoie-moi rapidement."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867046-28616",
+    "category": "tech",
+    "translations": {
+      "fr": "L'interface est devenue beaucoup plus intuitive et agréable à utiliser.",
+      "en": "The user interface became way more intuitive and smooth to use.",
+      "es": "La interfaz se ha vuelto mucho más intuitiva y agradable de usar.",
+      "de": "Die Benutzeroberfläche ist viel intuitiver und angenehmer zu bedienen geworden.",
+      "it": "L'interfaccia utente è diventata molto più intuitiva e piacevole da usare."
+    },
+    "explanations": {
+      "fr": "Design UX.",
+      "en": "Intuitive and smooth = intuitive et fluide."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-50979",
+    "category": "tech",
+    "translations": {
+      "fr": "Nous devons chiffrer toutes les données sensibles avant l'exportation.",
+      "en": "We must encrypt all sensitive data prior to export.",
+      "es": "Debemos cifrar todos los datos sensibles antes de exportarlos.",
+      "de": "Wir müssen alle sensiblen Daten vor dem Export verschlüsseln.",
+      "it": "Dobbiamo crittografare tutti i dati sensibili prima di esportarli."
+    },
+    "explanations": {
+      "fr": "Sécurité des données.",
+      "en": "Sensitive data = données sensibles."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867047-91069",
+    "category": "tech",
+    "translations": {
+      "fr": "Le temps de chargement de cette page a été divisé par deux.",
+      "en": "The load time for this page has been cut in half.",
+      "es": "El tiempo de carga de esta página se ha reducido a la mitad.",
+      "de": "Die Ladezeit dieser Seite wurde um die Hälfte verkürzt.",
+      "it": "Il tempo di caricamento di questa pagina è stato dimezzato."
+    },
+    "explanations": {
+      "fr": "Gain d'optimisation.",
+      "en": "Cut in half = réduit de moitié."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-91107",
+    "category": "tech",
+    "translations": {
+      "fr": "Je vais cloner le dépôt git et lancer l'environnement en local.",
+      "en": "I'll clone the git repository and spin up the local environment.",
+      "es": "Voy a clonar el repositorio de git y levantar el entorno local.",
+      "de": "Ich klone das Git-Repository und fahre die lokale Umgebung hoch.",
+      "it": "Clono il repository git e avvio l'ambiente in locale."
+    },
+    "explanations": {
+      "fr": "Routine développeur.",
+      "en": "Spin up = lancer / démarrer une instance."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-18009",
+    "category": "tech",
+    "translations": {
+      "fr": "Il y a un conflit de version entre ces deux dépendances logicielles.",
+      "en": "There's a version mismatch between these two software packages.",
+      "es": "Hay un conflicto de versiones entre estas dos dependencias.",
+      "de": "Es gibt einen Versionskonflikt zwischen diesen beiden Softwarepaketen.",
+      "it": "C'è un conflitto di versione tra queste due dipendenze software."
+    },
+    "explanations": {
+      "fr": "Bug technique.",
+      "en": "Version mismatch = incompatibilité de versions."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867047-8195",
+    "category": "tech",
+    "translations": {
+      "fr": "Peux-tu m'accorder les droits d'administration sur ce projet ?",
+      "en": "Can you grant me admin access rights on this project?",
+      "es": "¿Puedes otorgarme permisos de administrador en este proyecto?",
+      "de": "Kannst du mir für dieses Projekt Administratorrechte erteilen?",
+      "it": "Puoi concedermi i permessi di amministratore per questo progetto?"
+    },
+    "explanations": {
+      "fr": "Gestion des accès.",
+      "en": "Grant admin access = accorder les droits admin."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-6883",
+    "category": "tech",
+    "translations": {
+      "fr": "Le modèle d'intelligence artificielle répond en moins de deux cents millisecondes.",
+      "en": "The artificial intelligence model responds in under two hundred milliseconds.",
+      "es": "El modelo de inteligencia artificial responde en menos de doscientos milisegundos.",
+      "de": "Das KI-Modell antwortet in weniger als zweihundert Millisekunden.",
+      "it": "Il modello di intelligenza artificiale risponde in meno di duecento millisecondi."
+    },
+    "explanations": {
+      "fr": "Performance IA.",
+      "en": "In under = en moins de."
+    },
+    "targetTimeSec": 3.5
+  },
+  {
+    "id": "entry-1793924867047-40053",
+    "category": "tech",
+    "translations": {
+      "fr": "Nous avons mis en place une sauvegarde automatique toutes les nuits.",
+      "en": "We set up an automated nightly backup routine.",
+      "es": "Hemos configurado una copia de seguridad automática todas las noches.",
+      "de": "Wir haben eine automatische nächtliche Datensicherung eingerichtet.",
+      "it": "Abbiamo impostato un backup automatico ogni notte."
+    },
+    "explanations": {
+      "fr": "Résilience technique.",
+      "en": "Nightly backup = sauvegarde nocturne."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867047-2088",
+    "category": "tech",
+    "translations": {
+      "fr": "Ce service en ligne est compatible avec tous les navigateurs modernes.",
+      "en": "This web service is fully compatible with every modern browser.",
+      "es": "Este servicio web es totalmente compatible con cualquier navegador moderno.",
+      "de": "Dieser Webdienst ist mit allen modernen Browsern vollständig kompatibel.",
+      "it": "Questo servizio online è perfettamente compatibile con tutti i browser moderni."
+    },
+    "explanations": {
+      "fr": "Compatibilité web.",
+      "en": "Modern browser = navigateur récent."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-87533",
+    "category": "tech",
+    "translations": {
+      "fr": "Je vais vider le cache de mon navigateur pour voir les changements.",
+      "en": "I'll clear my browser cache to view the latest changes.",
+      "es": "Voy a borrar la caché del navegador para ver las novedades.",
+      "de": "Ich leere meinen Browser-Cache, um die aktuellen Änderungen zu sehen.",
+      "it": "Svuoto la cache del browser per vedere gli ultimi aggiornamenti."
+    },
+    "explanations": {
+      "fr": "Réflexe web.",
+      "en": "Clear cache = vider le cache."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867047-70318",
+    "category": "tech",
+    "translations": {
+      "fr": "Le serveur a redémarré tout seul sans aucune perte de données.",
+      "en": "The server restarted on its own without any data loss.",
+      "es": "El servidor se reinició solo sin ninguna pérdida de datos.",
+      "de": "Der Server hat sich von selbst neu gestartet, ohne jeden Datenverlust.",
+      "it": "Il server si è riavviato da solo senza alcuna perdita di dati."
+    },
+    "explanations": {
+      "fr": "Reprise sur incident.",
+      "en": "On its own = tout seul."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-71404",
+    "category": "slang",
+    "translations": {
+      "fr": "C'est un jeu d'enfant, tu vas y arriver sans aucun problème !",
+      "en": "It's a piece of cake, you'll nail it with zero effort!",
+      "es": "¡Está chupado, lo vas a clavar sin ningún problema!",
+      "de": "Das ist ein Kinderspiel, das packst du mit links!",
+      "it": "È un gioco da ragazzi, ce la farai a occhi chiusi!"
+    },
+    "explanations": {
+      "fr": "Encouragement idiomatique.",
+      "en": "Piece of cake / nail it = très facile et réussi."
+    },
+    "targetTimeSec": 2.9
+  },
+  {
+    "id": "entry-1793924867047-16539",
+    "category": "slang",
+    "translations": {
+      "fr": "Ne vends pas la peau de l'ours avant de l'avoir tué.",
+      "en": "Don't count your chickens before they hatch.",
+      "es": "No cantes victoria antes de tiempo.",
+      "de": "Freue dich nicht zu früh.",
+      "it": "Non dire gatto se non ce l'hai nel sacco."
+    },
+    "explanations": {
+      "fr": "Proverbe de prudence.",
+      "en": "Count chickens before they hatch = vendre la peau de l'ours."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867047-43579",
+    "category": "slang",
+    "translations": {
+      "fr": "Je suis crevé ce soir, je vais aller pioncer directement.",
+      "en": "I'm beat tonight, I'm just going to hit the hay.",
+      "es": "Estoy hecho polvo esta noche, me voy directo al sobre.",
+      "de": "Ich bin völlig k.o. heute Abend, ich hau mich direkt ins Bett.",
+      "it": "Sono a pezzi stasera, vado dritto a nanna."
+    },
+    "explanations": {
+      "fr": "Fatigue intense.",
+      "en": "Hit the hay = aller dormir / pioncer."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-73502",
+    "category": "slang",
+    "translations": {
+      "fr": "C'est la goutte d'eau qui fait déborder le vase !",
+      "en": "That really is the final straw!",
+      "es": "¡Esta es la gota que colma el vaso!",
+      "de": "Das ist der Tropfen, der das Fass zum Überlaufen bringt!",
+      "it": "Questa è davvero la goccia che fa traboccare il vaso!"
+    },
+    "explanations": {
+      "fr": "Exaspération.",
+      "en": "The final straw = la goutte d'eau de trop."
+    },
+    "targetTimeSec": 2.8
+  },
+  {
+    "id": "entry-1793924867047-3415",
+    "category": "slang",
+    "translations": {
+      "fr": "Garde ton calme et respire un grand coup, tout va bien se passer.",
+      "en": "Keep your cool and take a deep breath, it's all going to work out.",
+      "es": "Mantén la calma y respira hondo, todo va a salir bien.",
+      "de": "Bleib ganz ruhig und atme tief durch, alles wird gut.",
+      "it": "Mantieni la calma e fai un respiro profondo, andrà tutto bene."
+    },
+    "explanations": {
+      "fr": "Apaisement.",
+      "en": "Keep your cool = garder son sang-froid."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-16952",
+    "category": "slang",
+    "translations": {
+      "fr": "Tu me fais marcher ou tu es sérieux là ?",
+      "en": "Are you pulling my leg or are you dead serious right now?",
+      "es": "¿Me estás tomando el pelo o lo dices totalmente en serio?",
+      "de": "Willst du mich auf den Arm nehmen oder meinst du das todernst?",
+      "it": "Mi stai prendendo in giro o sei serio davvero?"
+    },
+    "explanations": {
+      "fr": "Incrédulité.",
+      "en": "Pull someone's leg = faire marcher quelqu'un."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867047-79514",
+    "category": "slang",
+    "translations": {
+      "fr": "Touchons du bois pour que la météo reste clémente ce week-end !",
+      "en": "Fingers crossed that the weather holds up nicely this weekend!",
+      "es": "¡Toquemos madera para que aguante el buen tiempo este fin de semana!",
+      "de": "Toi toi toi, dass das Wetter dieses Wochenende mitspielt!",
+      "it": "Incrociamo le dita perché il tempo regga questo fine settimana!"
+    },
+    "explanations": {
+      "fr": "Superstition positive.",
+      "en": "Fingers crossed = on croise les doigts."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867047-90704",
+    "category": "slang",
+    "translations": {
+      "fr": "Ça coûte un bras, je ne peux pas me permettre cette dépense.",
+      "en": "It costs an arm and a leg, I simply can't afford that right now.",
+      "es": "Cuesta un ojo de la cara, no me puedo permitir ese gasto ahora.",
+      "de": "Das kostet ein Vermögen, das kann ich mir im Moment echt nicht leisten.",
+      "it": "Costa un occhio della testa, non posso proprio permettermi questa spesa adesso."
+    },
+    "explanations": {
+      "fr": "Prix excessif.",
+      "en": "Cost an arm and a leg = coûter un bras."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-24632",
+    "category": "slang",
+    "translations": {
+      "fr": "On est dans le même bateau, serrons-nous les coudes !",
+      "en": "We're all in the same boat, let's stick together!",
+      "es": "Estamos en el mismo barco, ¡mantengámonos unidos!",
+      "de": "Wir sitzen alle im selben Boot, halten wir zusammen!",
+      "it": "Siamo tutti sulla stessa barca, restiamo uniti!"
+    },
+    "explanations": {
+      "fr": "Solidarité face à l'épreuve.",
+      "en": "In the same boat = dans le même bateau."
+    },
+    "targetTimeSec": 2.9
+  },
+  {
+    "id": "entry-1793924867047-80783",
+    "category": "slang",
+    "translations": {
+      "fr": "Il tourne autour du pot au lieu de dire ce qu'il pense vraiment.",
+      "en": "He's beating around the bush instead of speaking his mind.",
+      "es": "Se anda con rodeos en vez de decir lo que realmente piensa.",
+      "de": "Er redet um den heißen Brei herum, statt frei heraus zu sprechen.",
+      "it": "Gira intorno al punto invece di dire chiaramente quello che pensa."
+    },
+    "explanations": {
+      "fr": "Évitement du sujet.",
+      "en": "Beat around the bush = tourner autour du pot."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-27394",
+    "category": "slang",
+    "translations": {
+      "fr": "Ne t'emballe pas trop vite, rien n'est encore officiel.",
+      "en": "Don't jump the gun, nothing has been made official yet.",
+      "es": "No te precipites, todavía no hay nada oficial.",
+      "de": "Freu dich nicht zu früh, noch ist überhaupt nichts offiziell.",
+      "it": "Non correre troppo, non c'è ancora nulla di ufficiale."
+    },
+    "explanations": {
+      "fr": "Prudence dans l'action.",
+      "en": "Jump the gun = aller trop vite en besogne."
+    },
+    "targetTimeSec": 3
+  },
+  {
+    "id": "entry-1793924867047-61886",
+    "category": "slang",
+    "translations": {
+      "fr": "C'est du passé, tirons un trait et passons à autre chose.",
+      "en": "That's water under the bridge, let's just move forward.",
+      "es": "Eso es agua pasada, pasemos página y sigamos adelante.",
+      "de": "Das ist Schnee von gestern, blicken wir einfach nach vorn.",
+      "it": "È acqua passata, voltiamo pagina e guardiamo avanti."
+    },
+    "explanations": {
+      "fr": "Oublier les rancœurs.",
+      "en": "Water under the bridge = de l'eau sous les ponts."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-31929",
+    "category": "slang",
+    "translations": {
+      "fr": "Tu as mis dans le mille, c'est exactement ce que je voulais dire !",
+      "en": "You hit the nail on the head, that's exactly what I meant!",
+      "es": "¡Has dado en el clavo, eso es justo lo que quería decir!",
+      "de": "Du hast den Nagel auf den Kopf getroffen, genau das meinte ich!",
+      "it": "Hai fatto centro, è esattamente quello che intendevo dire!"
+    },
+    "explanations": {
+      "fr": "Viser juste.",
+      "en": "Hit the nail on the head = mettre dans le mille."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867047-18825",
+    "category": "slang",
+    "translations": {
+      "fr": "Ne t'inquiète pas, j'ai plus d'un tour dans mon sac.",
+      "en": "Don't fret, I've still got a trick or two up my sleeve.",
+      "es": "No te preocupes, todavía me guardo un as bajo la manga.",
+      "de": "Keine Sorge, ich habe noch das eine oder andere Ass im Ärmel.",
+      "it": "Non preoccuparti, ho ancora qualche asso nella manica."
+    },
+    "explanations": {
+      "fr": "Ressources cachées.",
+      "en": "Trick up one's sleeve = tour dans son sac / atout caché."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-10820",
+    "category": "slang",
+    "translations": {
+      "fr": "À vrai dire, ça m'est complètement égal, choisis ce que tu veux.",
+      "en": "Honestly, I couldn't care less, pick whatever you like.",
+      "es": "La verdad es que me da exactamente igual, elige lo que quieras.",
+      "de": "Ehrlich gesagt ist mir das völlig schnuppe, such dir einfach was aus.",
+      "it": "A dire il vero non mi importa per niente, scegli pure quello che vuoi."
+    },
+    "explanations": {
+      "fr": "Indifférence totale.",
+      "en": "Couldn't care less = m'en fiche complètement."
+    },
+    "targetTimeSec": 3.2
+  },
+  {
+    "id": "entry-1793924867047-21929",
+    "category": "slang",
+    "translations": {
+      "fr": "Il a vendu la mèche avant même le début de la fête surprise.",
+      "en": "He let the cat out of the bag way before the surprise party.",
+      "es": "Se fue de la lengua mucho antes de la fiesta sorpresa.",
+      "de": "Er hat die Katze aus dem Sack gelassen, lange vor der Überraschungsparty.",
+      "it": "Si è fatto scappare il segreto ben prima della festa a sorpresa."
+    },
+    "explanations": {
+      "fr": "Gaffer / révéler un secret.",
+      "en": "Let the cat out of the bag = vendre la mèche."
+    },
+    "targetTimeSec": 3.4
+  },
+  {
+    "id": "entry-1793924867047-3729",
+    "category": "slang",
+    "translations": {
+      "fr": "Mieux vaut tard que jamais, content que tu sois enfin là !",
+      "en": "Better late than never, thrilled to see you made it!",
+      "es": "¡Más vale tarde que nunca, qué bien que hayas podido venir!",
+      "de": "Besser spät als nie, schön dass du endlich da bist!",
+      "it": "Meglio tardi che mai, sono contento che tu sia arrivato!"
+    },
+    "explanations": {
+      "fr": "Accueil d'un retardataire.",
+      "en": "Better late than never = mieux vaut tard que jamais."
+    },
+    "targetTimeSec": 2.9
+  },
+  {
+    "id": "entry-1793924867047-46193",
+    "category": "slang",
+    "translations": {
+      "fr": "C'est l'étincelle qui a mis le feu aux poudres.",
+      "en": "That was the spark that ignited the whole firestorm.",
+      "es": "Esa fue la chispa que encendió la mecha.",
+      "de": "Das war der Funke, der das Fass zur Explosion gebracht hat.",
+      "it": "È stata quella la scintilla che ha fatto scoppiare il finimondo."
+    },
+    "explanations": {
+      "fr": "Élément déclencheur.",
+      "en": "Spark that ignited the fire = étincelle déclencheuse."
+    },
+    "targetTimeSec": 3.1
+  },
+  {
+    "id": "entry-1793924867047-79822",
+    "category": "slang",
+    "translations": {
+      "fr": "Laisse tomber, ce n'est vraiment pas la peine de se prendre la tête.",
+      "en": "Let it slide, it's really not worth stressing over.",
+      "es": "Déjalo correr, de verdad que no vale la pena comerse la cabeza.",
+      "de": "Lass gut sein, darüber lohnt es sich wirklich nicht, sich den Kopf zu zerbrechen.",
+      "it": "Lascia perdere, non vale davvero la pena farsi il sangue amaro."
+    },
+    "explanations": {
+      "fr": "Lâcher prise.",
+      "en": "Not worth stressing over = pas la peine de stresser."
+    },
+    "targetTimeSec": 3.3
+  },
+  {
+    "id": "entry-1793924867047-45571",
+    "category": "slang",
+    "translations": {
+      "fr": "Ça roule, on se voit demain à la première heure !",
+      "en": "Sounds like a plan, see you first thing tomorrow morning!",
+      "es": "¡Hecho, nos vemos mañana a primera hora!",
+      "de": "Abgemacht, wir sehen uns morgen früh in aller Frische!",
+      "it": "Affare fatto, ci vediamo domani mattina di buon'ora!"
+    },
+    "explanations": {
+      "fr": "Accord enthousiaste final.",
+      "en": "Sounds like a plan = marché conclu / ça roule."
+    },
+    "targetTimeSec": 2.9
+  },
+  {
+    "id": "auto-1793924963034-9396",
+    "category": "tech",
+    "translations": {
+      "fr": "Peux-tu vérifier si le serveur répond toujours ?",
+      "en": "Can you check if the server is still responding?",
+      "es": "¿Puedes comprobar si el servidor sigue respondiendo?",
+      "de": "Kannst du prüfen, ob der Server noch antwortet?",
+      "it": "Puoi controllare se il server risponde ancora?"
+    },
+    "explanations": {
+      "fr": "Enchaîne « vérifier si » sans pause, garde un ton direct et montant.",
+      "en": "Blend « check if » smoothly and keep a rising, direct tone.",
+      "es": "Une « comprobar si » sin pausa y mantén un tono directo y ascendente.",
+      "de": "Verbinde « prüfen, ob » flüssig und sprich mit klarer, leicht steigender Stimme.",
+      "it": "Unisci « controllare se » senza pausa e mantieni un tono diretto e ascendente."
+    },
+    "targetTimeSec": 3.2
   }
 ]

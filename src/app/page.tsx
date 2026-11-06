@@ -408,6 +408,16 @@ export default function JustSpikApp() {
     setEvaluation(null);
     setElapsedTime(0.0);
     setCurrentIndex((prev) => prev + 1);
+
+    // Auto-génération en tâche de fond jusqu'à 2 000 phrases (non-bloquant)
+    fetch('/api/cron/fill-phrases', { method: 'POST' })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.isFull) {
+          console.log('[JustSpik] Objectif de 2 000 phrases atteint !');
+        }
+      })
+      .catch(() => {});
   };
 
   // Retry challenge
