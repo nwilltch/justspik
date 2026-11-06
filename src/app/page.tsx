@@ -12,7 +12,6 @@ import { ResultDrawer } from '@/components/ResultDrawer';
 import { SummaryModal } from '@/components/SummaryModal';
 import { LeaderboardDrawer } from '@/components/LeaderboardDrawer';
 import { CustomPhraseModal } from '@/components/CustomPhraseModal';
-import { ReflexGuidePill } from '@/components/ReflexGuidePill';
 import { useAuth, MAX_FREE_ATTEMPTS } from '@/contexts/AuthContext';
 import { audioRecorder } from '@/lib/audioRecorder';
 import {
@@ -531,9 +530,6 @@ export default function JustSpikApp() {
 
       {/* Main Focus Canvas */}
       <div className="flex-1 flex flex-col items-center justify-center max-w-xl mx-auto w-full my-4">
-        {/* Onboarding / Reflex Guide Pill */}
-        <ReflexGuidePill targetLangName={getLanguageInfo(targetLang).name} />
-
         {/* Only One Filter Bar: Category Pills */}
         <CategoryBar
           currentCategory={currentCategory}
