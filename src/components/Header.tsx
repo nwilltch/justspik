@@ -12,6 +12,7 @@ import {
   User,
   LogOut,
   ShieldCheck,
+  Layers,
 } from 'lucide-react';
 import { ModeDropdown, GameMode } from './ModeDropdown';
 import { sound } from '@/lib/soundFx';
@@ -26,6 +27,8 @@ interface HeaderProps {
   onOpenLeaderboard: () => void;
   isGenerating: boolean;
   onGenerateNewPhrase: () => void;
+  onOpenMobileSidebar?: () => void;
+  currentCategoryLabel?: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -37,6 +40,8 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenLeaderboard,
   isGenerating,
   onGenerateNewPhrase,
+  onOpenMobileSidebar,
+  currentCategoryLabel,
 }) => {
   const { user, isLoading, openAuthModal, logout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,12 +78,25 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="w-full max-w-2xl mx-auto pt-6 pb-2 px-2 flex items-center justify-between">
-      {/* Brand */}
-      <div className="flex items-center gap-2">
-        <span className="w-2.5 h-2.5 rounded-full bg-teal-500 inline-block animate-pulse" />
-        <span className="text-lg font-bold tracking-tight text-stone-900">
-          just<span className="text-teal-600">spik</span>
-        </span>
+      {/* Brand & Mobile Theme Trigger */}
+      <div className="flex items-center gap-2.5">
+        {onOpenMobileSidebar && (
+          <button
+            onClick={onOpenMobileSidebar}
+            className="md:hidden flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-stone-100 hover:bg-stone-200/80 text-stone-700 text-xs font-medium border border-stone-200/80 transition-colors cursor-pointer"
+            title="Changer de thème"
+          >
+            <Layers className="w-3.5 h-3.5 text-teal-600" />
+            <span className="truncate max-w-[80px]">{currentCategoryLabel || 'Thèmes'}</span>
+          </button>
+        )}
+
+        <div className="flex items-center gap-2">
+          <span className="w-2.5 h-2.5 rounded-full bg-teal-500 inline-block animate-pulse" />
+          <span className="text-lg font-bold tracking-tight text-stone-900">
+            just<span className="text-teal-600">spik</span>
+          </span>
+        </div>
       </div>
 
       {/* Right Controls: Mode Dropdown + Add Action + Leaderboard + Sound + Auth */}

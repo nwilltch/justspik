@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Header } from '@/components/Header';
 import { ModeSelector, GameMode } from '@/components/ModeSelector';
-import { CategoryBar } from '@/components/CategoryBar';
+import { CategorySidebar, CATEGORIES_LIST } from '@/components/CategorySidebar';
 import { ChronoHUD } from '@/components/ChronoHUD';
 import { SurvivalHUD } from '@/components/SurvivalHUD';
 import { PromptCard } from '@/components/PromptCard';
@@ -60,6 +60,10 @@ export default function JustSpikApp() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isGenerating, setIsGenerating] = useState(false);
 
+  // Sidebar responsive & collapse states
+  const [isSidebarMobileOpen, setIsSidebarMobileOpen] = useState(false);
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+
   // Ghost Mode Record for current phrase
   const [ghostRecord, setGhostRecord] = useState<number | null>(null);
 
@@ -91,6 +95,31 @@ export default function JustSpikApp() {
       buildChallenge(entry, sourceLang, targetLang)
     );
   }, [currentCategory, sourceLang, targetLang, savedEntries, customChallenges]);
+
+  // Dynamic phrase counts per category
+  const categoryCounts = useMemo<Record<PhraseCategory, number>>(() => {
+    const counts: Record<PhraseCategory, number> = {
+      routine: 0,
+      work: 0,
+      food: 0,
+      social: 0,
+      travel: 0,
+      tech: 0,
+      slang: 0,
+      custom: customChallenges.length,
+    };
+    savedEntries.forEach((entry) => {
+      if (counts[entry.category] !== undefined) {
+        counts[entry.category]++;
+      }
+    });
+    return counts;
+  }, [savedEntries, customChallenges]);
+
+  const currentCategoryLabel = useMemo(() => {
+    const found = CATEGORIES_LIST.find((c) => c.id === currentCategory);
+    return found ? found.label : 'Thèmes';
+  }, [currentCategory]);
 
   const currentChallenge: Challenge | undefined =
     activeChallenges[currentIndex % Math.max(activeChallenges.length, 1)];
@@ -515,48 +544,57 @@ export default function JustSpikApp() {
     sessionAttemptCount > 0 ? Math.round((sessionCorrectCount / sessionAttemptCount) * 100) : 0;
 
   return (
-    <main className="min-h-screen bg-[#fafaf9] flex flex-col justify-between p-4 md:p-8">
-      {/* Top Header with Mode Dropdown & Actions */}
-      <Header
-        currentMode={gameMode}
-        onSelectMode={handleSelectMode}
-        isMuted={isMuted}
-        onToggleMute={handleToggleMute}
-        onOpenCustomModal={() => setIsCustomModalOpen(true)}
-        onOpenLeaderboard={() => setIsLeaderboardOpen(true)}
-        isGenerating={isGenerating}
-        onGenerateNewPhrase={handleGenerateNewPhrase}
+    <div className="min-h-screen bg-[#fafaf9] flex">
+      {/* Category Sidebar (Desktop rail + Mobile drawer) */}
+      <CategorySidebar
+        currentCategory={currentCategory}
+        onSelectCategory={(cat) => {
+          setCurrentCategory(cat);
+          setCurrentIndex(0);
+          setEvaluation(null);
+          setElapsedTime(0.0);
+        }}
+        counts={categoryCounts}
+        isMobileOpen={isSidebarMobileOpen}
+        onCloseMobile={() => setIsSidebarMobileOpen(false)}
+        isCollapsedDesktop={isSidebarCollapsed}
+        onToggleCollapseDesktop={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
       />
 
-      {/* Main Focus Canvas */}
-      <div className="flex-1 flex flex-col items-center justify-center max-w-xl mx-auto w-full my-4">
-        {/* Only One Filter Bar: Category Pills */}
-        <CategoryBar
-          currentCategory={currentCategory}
-          onSelectCategory={(cat) => {
-            setCurrentCategory(cat);
-            setCurrentIndex(0);
-            setEvaluation(null);
-            setElapsedTime(0.0);
-          }}
+      {/* Main Focus Area */}
+      <main className="flex-1 flex flex-col justify-between min-w-0 min-h-screen p-4 md:p-8">
+        {/* Top Header with Mode Dropdown, Mobile Sidebar trigger & Actions */}
+        <Header
+          currentMode={gameMode}
+          onSelectMode={handleSelectMode}
+          isMuted={isMuted}
+          onToggleMute={handleToggleMute}
+          onOpenCustomModal={() => setIsCustomModalOpen(true)}
+          onOpenLeaderboard={() => setIsLeaderboardOpen(true)}
+          isGenerating={isGenerating}
+          onGenerateNewPhrase={handleGenerateNewPhrase}
+          onOpenMobileSidebar={() => setIsSidebarMobileOpen(true)}
+          currentCategoryLabel={currentCategoryLabel}
         />
 
-        {/* Survival or Daily HUD (if active) */}
-        <SurvivalHUD
-          mode={gameMode}
-          survivalSecondsLeft={survivalSecondsLeft}
-          survivalScore={survivalScore}
-          dailyStep={dailyStep}
-          dailyTotal={7}
-          timeBonusDelta={timeBonusDelta}
-        />
+        {/* Main Focus Canvas */}
+        <div className="flex-1 flex flex-col items-center justify-center max-w-xl mx-auto w-full my-4">
+          {/* Survival or Daily HUD (if active) */}
+          <SurvivalHUD
+            mode={gameMode}
+            survivalSecondsLeft={survivalSecondsLeft}
+            survivalScore={survivalScore}
+            dailyStep={dailyStep}
+            dailyTotal={7}
+            timeBonusDelta={timeBonusDelta}
+          />
 
-        {/* Chrono */}
-        <ChronoHUD
-          timeSeconds={elapsedTime}
-          isRunning={isTimerRunning}
-          targetBenchmark={currentChallenge?.targetTimeSec || 3.0}
-        />
+          {/* Chrono */}
+          <ChronoHUD
+            timeSeconds={elapsedTime}
+            isRunning={isTimerRunning}
+            targetBenchmark={currentChallenge?.targetTimeSec || 3.0}
+          />
 
         {/* Prompt Card with integrated Language Change, Swap & Ghost Mode Record */}
         {currentChallenge ? (
@@ -646,5 +684,6 @@ export default function JustSpikApp() {
         userStreak={streak}
       />
     </main>
+  </div>
   );
 }
