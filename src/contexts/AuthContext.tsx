@@ -4,14 +4,21 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { SafeUser } from '@/lib/userStore';
 
 export type AuthModalView = 'login' | 'signup' | 'verify' | 'forgot' | 'reset';
+export type AuthReason = 'normal' | 'limit_reached';
+
+export const MAX_FREE_ATTEMPTS = 5;
 
 interface AuthContextType {
   user: SafeUser | null;
   isLoading: boolean;
   isAuthModalOpen: boolean;
   authModalView: AuthModalView;
+  authReason: AuthReason;
   pendingEmail: string;
-  openAuthModal: (view?: AuthModalView, email?: string) => void;
+  guestAttempts: number;
+  isLimitReached: boolean;
+  incrementGuestAttempt: () => number;
+  openAuthModal: (view?: AuthModalView, email?: string, reason?: AuthReason) => void;
   closeAuthModal: () => void;
   setPendingEmail: (email: string) => void;
   setAuthModalView: (view: AuthModalView) => void;
@@ -27,7 +34,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authModalView, setAuthModalView] = useState<AuthModalView>('login');
+  const [authReason, setAuthReason] = useState<AuthReason>('normal');
   const [pendingEmail, setPendingEmail] = useState('');
+  const [guestAttempts, setGuestAttempts] = useState(0);
+
+  // Charger les tentatives sauvegardées dans localStorage
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('justspik_guest_attempts');
+      if (stored) {
+        const val = parseInt(stored, 10);
+        if (!isNaN(val)) setGuestAttempts(val);
+      }
+    }
+  }, []);
 
   const refreshUser = useCallback(async () => {
     try {
@@ -49,19 +69,37 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     refreshUser();
   }, [refreshUser]);
 
-  const openAuthModal = useCallback((view: AuthModalView = 'login', email: string = '') => {
-    setAuthModalView(view);
-    if (email) setPendingEmail(email);
-    setIsAuthModalOpen(true);
-  }, []);
+  const incrementGuestAttempt = useCallback((): number => {
+    // Si l'utilisateur est connecté, pas de décompte invité
+    if (user) return 0;
+
+    const nextVal = guestAttempts + 1;
+    setGuestAttempts(nextVal);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('justspik_guest_attempts', nextVal.toString());
+    }
+    return nextVal;
+  }, [user, guestAttempts]);
+
+  const openAuthModal = useCallback(
+    (view: AuthModalView = 'login', email: string = '', reason: AuthReason = 'normal') => {
+      setAuthModalView(view);
+      setAuthReason(reason);
+      if (email) setPendingEmail(email);
+      setIsAuthModalOpen(true);
+    },
+    []
+  );
 
   const closeAuthModal = useCallback(() => {
     setIsAuthModalOpen(false);
+    setAuthReason('normal');
   }, []);
 
   const loginSuccess = useCallback((loggedInUser: SafeUser) => {
     setUser(loggedInUser);
     setIsAuthModalOpen(false);
+    setAuthReason('normal');
   }, []);
 
   const logout = useCallback(async () => {
@@ -73,6 +111,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }, []);
 
+  const isLimitReached = !user && guestAttempts >= MAX_FREE_ATTEMPTS;
+
   return (
     <AuthContext.Provider
       value={{
@@ -80,7 +120,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isLoading,
         isAuthModalOpen,
         authModalView,
+        authReason,
         pendingEmail,
+        guestAttempts,
+        isLimitReached,
+        incrementGuestAttempt,
         openAuthModal,
         closeAuthModal,
         setPendingEmail,

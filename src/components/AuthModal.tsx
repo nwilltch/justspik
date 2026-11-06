@@ -22,6 +22,7 @@ export const AuthModal: React.FC = () => {
   const {
     isAuthModalOpen,
     authModalView,
+    authReason,
     pendingEmail,
     closeAuthModal,
     setAuthModalView,
@@ -263,20 +264,36 @@ export const AuthModal: React.FC = () => {
               just<span className="text-teal-600">spik</span>
             </span>
           </div>
-          <h2 className="text-xl font-extrabold text-stone-900">
-            {authModalView === 'login' && 'Connexion'}
-            {authModalView === 'signup' && 'Créer un compte'}
-            {authModalView === 'verify' && 'Vérification de l’email'}
-            {authModalView === 'forgot' && 'Mot de passe oublié'}
-            {authModalView === 'reset' && 'Nouveau mot de passe'}
-          </h2>
-          <p className="text-xs text-stone-500 mt-1">
-            {authModalView === 'login' && 'Retrouve tes réflexes et tes records vocaux'}
-            {authModalView === 'signup' && 'Sauvegarde tes streaks et compare tes temps'}
-            {authModalView === 'verify' && `Saisis le code à 6 chiffres envoyé à ${email}`}
-            {authModalView === 'forgot' && 'Reçois un code par email pour réinitialiser ton accès'}
-            {authModalView === 'reset' && 'Saisis le code reçu et ton nouveau mot de passe'}
-          </p>
+          {authReason === 'limit_reached' && (authModalView === 'signup' || authModalView === 'login') ? (
+            <div className="mt-1">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-[11px] font-semibold">
+                🔥 5 essais découverte terminés !
+              </span>
+              <h2 className="text-xl font-extrabold text-stone-900 mt-2">
+                Sauvegarde tes réflexes
+              </h2>
+              <p className="text-xs text-stone-500 mt-1 max-w-xs mx-auto">
+                Crée ton compte gratuit en 10 secondes pour enregistrer tes records, suivre ton streak et continuer l’entraînement en illimité.
+              </p>
+            </div>
+          ) : (
+            <>
+              <h2 className="text-xl font-extrabold text-stone-900">
+                {authModalView === 'login' && 'Connexion'}
+                {authModalView === 'signup' && 'Créer un compte'}
+                {authModalView === 'verify' && 'Vérification de l’email'}
+                {authModalView === 'forgot' && 'Mot de passe oublié'}
+                {authModalView === 'reset' && 'Nouveau mot de passe'}
+              </h2>
+              <p className="text-xs text-stone-500 mt-1">
+                {authModalView === 'login' && 'Retrouve tes réflexes et tes records vocaux'}
+                {authModalView === 'signup' && 'Sauvegarde tes streaks et compare tes temps'}
+                {authModalView === 'verify' && `Saisis le code à 6 chiffres envoyé à ${email}`}
+                {authModalView === 'forgot' && 'Reçois un code par email pour réinitialiser ton accès'}
+                {authModalView === 'reset' && 'Saisis le code reçu et ton nouveau mot de passe'}
+              </p>
+            </>
+          )}
         </div>
 
         {/* Alertes d'erreur et de succès */}

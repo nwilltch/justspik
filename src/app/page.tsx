@@ -13,6 +13,7 @@ import { SummaryModal } from '@/components/SummaryModal';
 import { LeaderboardDrawer } from '@/components/LeaderboardDrawer';
 import { CustomPhraseModal } from '@/components/CustomPhraseModal';
 import { ReflexGuidePill } from '@/components/ReflexGuidePill';
+import { useAuth, MAX_FREE_ATTEMPTS } from '@/contexts/AuthContext';
 import {
   MULTILINGUAL_ENTRIES,
   buildChallenge,
@@ -24,6 +25,8 @@ import { sound } from '@/lib/soundFx';
 import { getGhostRecord, saveGhostRecord, getDailyStreak, recordDayActivity } from '@/lib/ghostStore';
 
 export default function JustSpikApp() {
+  const { user, guestAttempts, isLimitReached, incrementGuestAttempt, openAuthModal } = useAuth();
+
   // Game Modes & Sound
   const [gameMode, setGameMode] = useState<GameMode>('focus');
   const [isMuted, setIsMuted] = useState(false);
@@ -292,6 +295,11 @@ export default function JustSpikApp() {
 
   // Recording controls
   const handleStartRecording = () => {
+    if (isLimitReached) {
+      openAuthModal('signup', undefined, 'limit_reached');
+      return;
+    }
+
     setEvaluation(null);
     setIsRecording(true);
     startTimer();
@@ -330,6 +338,16 @@ export default function JustSpikApp() {
     // Update global session stats
     setSessionAttemptCount((prev) => prev + 1);
     setSessionTotalTime((prev) => prev + finalTime);
+
+    // Suivi du quota d'essais pour les invités non connectés
+    if (!user) {
+      const updatedAttempts = incrementGuestAttempt();
+      if (updatedAttempts >= MAX_FREE_ATTEMPTS) {
+        setTimeout(() => {
+          openAuthModal('signup', undefined, 'limit_reached');
+        }, 1500);
+      }
+    }
 
     if (result.isCorrect) {
       setSessionCorrectCount((prev) => prev + 1);
@@ -405,6 +423,11 @@ export default function JustSpikApp() {
 
   // Next challenge
   const handleNextChallenge = () => {
+    if (isLimitReached) {
+      openAuthModal('signup', undefined, 'limit_reached');
+      return;
+    }
+
     setEvaluation(null);
     setElapsedTime(0.0);
     setCurrentIndex((prev) => prev + 1);
@@ -422,6 +445,10 @@ export default function JustSpikApp() {
 
   // Retry challenge
   const handleRetry = () => {
+    if (isLimitReached) {
+      openAuthModal('signup', undefined, 'limit_reached');
+      return;
+    }
     setEvaluation(null);
     setElapsedTime(0.0);
   };
@@ -548,6 +575,46 @@ export default function JustSpikApp() {
           </div>
         )}
 
+        {/* Free Guest Attempts Counter Pill */}
+        {!user && (
+          <div className="w-full max-w-xl mx-auto mt-3 px-4 py-2 rounded-2xl bg-white/80 border border-stone-200/80 shadow-2xs flex items-center justify-between text-xs animate-in fade-in duration-150">
+            <div className="flex items-center gap-2">
+              <span className="text-stone-500 font-medium">Essais découverte :</span>
+              <div className="flex items-center gap-1.5">
+                {[...Array(MAX_FREE_ATTEMPTS)].map((_, i) => (
+                  <span
+                    key={`dot-${i}`}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      i < guestAttempts
+                        ? 'bg-teal-600 ring-2 ring-teal-100'
+                        : 'bg-stone-200'
+                    }`}
+                  />
+                ))}
+              </div>
+              <span className="font-mono font-semibold text-stone-700 text-[11px] ml-1">
+                {Math.min(guestAttempts, MAX_FREE_ATTEMPTS)}/{MAX_FREE_ATTEMPTS}
+              </span>
+            </div>
+
+            {isLimitReached ? (
+              <button
+                onClick={() => openAuthModal('signup', undefined, 'limit_reached')}
+                className="font-semibold text-amber-900 bg-amber-100 hover:bg-amber-200 px-3 py-1 rounded-full border border-amber-300/80 text-[11px] transition-colors cursor-pointer"
+              >
+                Débloquer l’accès gratuit ➔
+              </button>
+            ) : (
+              <button
+                onClick={() => openAuthModal('signup')}
+                className="text-stone-400 hover:text-teal-700 text-[11px] transition-colors cursor-pointer"
+              >
+                Créer un compte
+              </button>
+            )}
+          </div>
+        )}
+
         {/* Voice Trigger (Mic & minimal test) */}
         {!evaluation && currentChallenge && (
           <VoiceTrigger
@@ -556,6 +623,8 @@ export default function JustSpikApp() {
             onStopRecording={handleStopRecording}
             onSimulateAnswer={handleSimulateAnswer}
             onSkip={handleNextChallenge}
+            isLimitReached={isLimitReached}
+            onLimitReached={() => openAuthModal('signup', undefined, 'limit_reached')}
           />
         )}
 
