@@ -39,7 +39,7 @@ export default async function Image() {
               width: '28px',
               height: '28px',
               borderRadius: '9999px',
-              backgroundColor: '#0d9488',
+              backgroundColor: '#2563eb',
             }}
           />
           <div
@@ -51,7 +51,7 @@ export default async function Image() {
               fontFamily: 'sans-serif',
             }}
           >
-            just<span style={{ color: '#0d9488' }}>spik</span>
+            just<span style={{ color: '#2563eb' }}>spik</span>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default async function Image() {
             alignItems: 'center',
             gap: '12px',
             padding: '12px 28px',
-            backgroundColor: '#0d9488',
+            backgroundColor: '#2563eb',
             borderRadius: '9999px',
             color: '#ffffff',
             fontSize: '22px',

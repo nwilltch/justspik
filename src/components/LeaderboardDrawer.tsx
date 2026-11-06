@@ -126,11 +126,11 @@ export const LeaderboardDrawer: React.FC<LeaderboardDrawerProps> = ({
               }}
               className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-full transition-all cursor-pointer ${
                 tab === 'survival'
-                  ? 'bg-white text-teal-700 shadow-2xs font-semibold'
+                  ? 'bg-white text-blue-700 shadow-2xs font-semibold'
                   : 'text-stone-500 hover:text-stone-800'
               }`}
             >
-              <Zap className="w-3.5 h-3.5 text-teal-600" />
+              <Zap className="w-3.5 h-3.5 text-blue-600" />
               <span>Survie 60s</span>
             </button>
 
@@ -169,7 +169,7 @@ export const LeaderboardDrawer: React.FC<LeaderboardDrawerProps> = ({
                 key={`entry-${entry.rank}-${entry.name}`}
                 className={`flex items-center justify-between p-3 rounded-2xl transition-all ${
                   entry.isUser
-                    ? 'bg-teal-50/80 border border-teal-200/80 shadow-2xs'
+                    ? 'bg-blue-50/80 border border-blue-200/80 shadow-2xs'
                     : 'bg-white hover:bg-stone-50 border border-stone-100'
                 }`}
               >
@@ -187,7 +187,7 @@ export const LeaderboardDrawer: React.FC<LeaderboardDrawerProps> = ({
                       <span className="text-xs">{entry.flag}</span>
                       <span
                         className={`text-xs font-semibold ${
-                          entry.isUser ? 'text-teal-900 font-bold' : 'text-stone-800'
+                          entry.isUser ? 'text-blue-900 font-bold' : 'text-stone-800'
                         }`}
                       >
                         {entry.name}
@@ -205,7 +205,7 @@ export const LeaderboardDrawer: React.FC<LeaderboardDrawerProps> = ({
                       entry.grade === 'S'
                         ? 'bg-amber-100 text-amber-800 border border-amber-200'
                         : entry.grade === 'A'
-                        ? 'bg-teal-100 text-teal-800'
+                        ? 'bg-blue-100 text-blue-800'
                         : 'bg-stone-100 text-stone-600'
                     }`}
                   >

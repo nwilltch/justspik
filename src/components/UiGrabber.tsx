@@ -110,7 +110,7 @@ export const UiGrabber: React.FC = () => {
       if (current.tagName === 'BUTTON' && current.innerText.includes('Ajouter'))
         return 'src/components/Header.tsx';
       if (current.closest('header')) return 'src/components/Header.tsx';
-      if (current.closest('.bg-teal-50') || current.closest('[title*="prononciation"]'))
+      if (current.closest('.bg-blue-50') || current.closest('[title*="prononciation"]'))
         return 'src/components/ResultDrawer.tsx';
       if (current.tagName === 'BUTTON' && (current.querySelector('svg') || current.innerText.includes('parler')))
         return 'src/components/VoiceTrigger.tsx';
@@ -362,7 +362,7 @@ export const UiGrabber: React.FC = () => {
                   ref={textareaRef}
                   value={promptText}
                   onChange={(e) => setPromptText(e.target.value)}
-                  placeholder={`Clique sur les éléments de ton interface pour composer ton prompt IA multi-modifications...\n\nExemple :\n📍 [src/components/Header.tsx] <button.bg-teal-600>\n> Remplace la couleur par un vert émeraude plus doux`}
+                  placeholder={`Clique sur les éléments de ton interface pour composer ton prompt IA multi-modifications...\n\nExemple :\n📍 [src/components/Header.tsx] <button.bg-blue-600>\n> Remplace la couleur par un vert émeraude plus doux`}
                   rows={7}
                   className="w-full p-3 rounded-xl bg-stone-950 border border-stone-800 text-stone-200 font-mono text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500 resize-y placeholder:text-stone-600 selection:bg-emerald-500/30 selection:text-white leading-relaxed"
                 />

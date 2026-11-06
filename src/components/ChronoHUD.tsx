@@ -16,9 +16,9 @@ export const ChronoHUD: React.FC<ChronoHUDProps> = ({
 
   let colorClass = 'text-stone-900';
   if (isRunning) {
-    colorClass = timeSeconds <= 2.8 ? 'text-teal-600' : 'text-stone-500';
+    colorClass = timeSeconds <= 2.8 ? 'text-blue-600' : 'text-stone-500';
   } else if (timeSeconds > 0) {
-    colorClass = timeSeconds <= 2.8 ? 'text-teal-600' : 'text-stone-700';
+    colorClass = timeSeconds <= 2.8 ? 'text-blue-600' : 'text-stone-700';
   }
 
   return (

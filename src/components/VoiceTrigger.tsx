@@ -121,7 +121,7 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
               ? 'bg-stone-800 hover:bg-stone-900 text-amber-400 shadow-md shadow-stone-900/20 ring-4 ring-amber-100'
               : isRecording
               ? 'bg-rose-500 text-white shadow-xl shadow-rose-500/35 scale-105 ring-8 ring-rose-100 animate-pulse'
-              : 'bg-teal-600 hover:bg-teal-700 text-white shadow-lg shadow-teal-600/25 hover:shadow-xl hover:shadow-teal-600/35 ring-6 ring-stone-100 hover:ring-teal-100/70'
+              : 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/35 ring-6 ring-stone-100 hover:ring-blue-100/70'
           } ${disabled ? 'opacity-40 cursor-not-allowed' : ''}`}
         >
           {isLimitReached ? (

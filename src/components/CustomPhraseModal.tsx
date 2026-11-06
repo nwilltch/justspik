@@ -76,7 +76,7 @@ export const CustomPhraseModal: React.FC<CustomPhraseModalProps> = ({
         {/* Header */}
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-1">
-            <span className="w-2 h-2 rounded-full bg-teal-500" />
+            <span className="w-2 h-2 rounded-full bg-blue-500" />
             <h3 className="text-base font-bold text-stone-900 tracking-tight">
               Ajouter une phrase
             </h3>
@@ -103,7 +103,7 @@ export const CustomPhraseModal: React.FC<CustomPhraseModalProps> = ({
                 value={sourceLang}
                 onChange={(e) => setSourceLang(e.target.value as SupportedLang)}
                 disabled={isLoading}
-                className="w-full px-3 py-2 rounded-xl bg-stone-50 border border-stone-200 text-xs font-semibold text-stone-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500"
+                className="w-full px-3 py-2 rounded-xl bg-stone-50 border border-stone-200 text-xs font-semibold text-stone-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
               >
                 {SUPPORTED_LANGUAGES.map((l) => (
                   <option key={`custom-lang-${l.code}`} value={l.code}>
@@ -125,7 +125,7 @@ export const CustomPhraseModal: React.FC<CustomPhraseModalProps> = ({
               onChange={(e) => setSourceText(e.target.value)}
               disabled={isLoading}
               placeholder="Ex: J'aimerais qu'on cale un point rapide demain matin si tu es disponible..."
-              className="w-full px-3 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-stone-900 placeholder-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 resize-none leading-relaxed"
+              className="w-full px-3 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-stone-900 placeholder-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 resize-none leading-relaxed"
             />
           </div>
 
@@ -142,7 +142,7 @@ export const CustomPhraseModal: React.FC<CustomPhraseModalProps> = ({
             <button
               type="submit"
               disabled={isLoading}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-95 cursor-pointer disabled:opacity-50"
+              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-95 cursor-pointer disabled:opacity-50"
             >
               {isLoading ? (
                 <>

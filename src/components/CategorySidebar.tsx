@@ -118,9 +118,9 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
           >
             {!isCollapsedDesktop ? (
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-teal-500 inline-block animate-pulse shrink-0" />
+                <span className="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block animate-pulse shrink-0" />
                 <span className="text-lg font-bold tracking-tight text-stone-900 leading-none">
-                  just<span className="text-teal-600">spik</span>
+                  just<span className="text-blue-600">spik</span>
                 </span>
               </div>
             ) : (
@@ -128,7 +128,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                 className="w-9 h-9 rounded-xl bg-stone-900 text-white font-bold flex items-center justify-center text-xs tracking-tighter shadow-2xs"
                 title="justspik"
               >
-                j<span className="text-teal-400">s</span>
+                j<span className="text-blue-400">s</span>
               </div>
             )}
 
@@ -149,7 +149,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
               <button
                 onClick={() => setIsAddMenuOpen(!isAddMenuOpen)}
                 disabled={isGenerating}
-                className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-98 cursor-pointer disabled:opacity-50"
+                className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-98 cursor-pointer disabled:opacity-50"
                 title="Ajouter une phrase"
               >
                 <div className="flex items-center gap-2">
@@ -161,7 +161,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                   <span>{isGenerating ? 'Création...' : 'Ajouter une phrase'}</span>
                 </div>
                 <ChevronDown
-                  className={`w-3.5 h-3.5 text-teal-200 transition-transform duration-150 ${
+                  className={`w-3.5 h-3.5 text-blue-200 transition-transform duration-150 ${
                     isAddMenuOpen ? 'rotate-180' : ''
                   }`}
                 />
@@ -170,7 +170,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
               <button
                 onClick={() => setIsAddMenuOpen(!isAddMenuOpen)}
                 disabled={isGenerating}
-                className="w-12 h-12 mx-auto rounded-2xl bg-teal-600 hover:bg-teal-700 text-white flex items-center justify-center shadow-sm transition-all active:scale-95 cursor-pointer disabled:opacity-50"
+                className="w-12 h-12 mx-auto rounded-2xl bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-sm transition-all active:scale-95 cursor-pointer disabled:opacity-50"
                 title="Ajouter une phrase"
               >
                 {isGenerating ? (
@@ -195,7 +195,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                   }}
                   className="w-full flex items-start gap-3 p-2.5 rounded-xl text-left hover:bg-stone-50 transition-colors cursor-pointer group"
                 >
-                  <div className="p-1.5 rounded-lg bg-teal-50 text-teal-700 group-hover:bg-teal-100/80 transition-colors mt-0.5">
+                  <div className="p-1.5 rounded-lg bg-blue-50 text-blue-700 group-hover:bg-blue-100/80 transition-colors mt-0.5">
                     <Sparkles className="w-4 h-4" />
                   </div>
                   <div>
@@ -253,7 +253,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                       : 'w-full px-3 py-2.5 justify-between'
                   } ${
                     isActive
-                      ? 'bg-teal-50 text-teal-800 font-semibold border border-teal-200/90 shadow-2xs'
+                      ? 'bg-blue-50 text-blue-800 font-semibold border border-blue-200/90 shadow-2xs'
                       : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100/70 border border-transparent'
                   }`}
                 >
@@ -261,7 +261,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                     <div
                       className={`p-1.5 rounded-xl transition-colors shrink-0 ${
                         isActive
-                          ? 'bg-teal-600 text-white shadow-xs shadow-teal-600/30'
+                          ? 'bg-blue-600 text-white shadow-xs shadow-blue-600/30'
                           : 'bg-stone-100 text-stone-500 group-hover:text-stone-800 group-hover:bg-stone-200/70'
                       }`}
                     >
@@ -277,7 +277,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                     <span
                       className={`text-[11px] font-mono px-2 py-0.5 rounded-full transition-colors ${
                         isActive
-                          ? 'bg-teal-100/70 text-teal-800 font-semibold'
+                          ? 'bg-blue-100/70 text-blue-800 font-semibold'
                           : 'text-stone-400 bg-stone-100/80 group-hover:bg-stone-200/60'
                       }`}
                     >
@@ -333,9 +333,9 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
               {/* Drawer Header with Logo & Close button */}
               <div className="flex items-center justify-between pb-4 border-b border-stone-200/80 mb-4">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-teal-500 animate-pulse" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
                   <span className="text-lg font-bold tracking-tight text-stone-900">
-                    just<span className="text-teal-600">spik</span>
+                    just<span className="text-blue-600">spik</span>
                   </span>
                 </div>
                 <button
@@ -351,7 +351,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                 <button
                   onClick={() => setIsMobileAddMenuOpen(!isMobileAddMenuOpen)}
                   disabled={isGenerating}
-                  className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-98 cursor-pointer disabled:opacity-50"
+                  className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-98 cursor-pointer disabled:opacity-50"
                 >
                   <div className="flex items-center gap-2">
                     {isGenerating ? (
@@ -362,7 +362,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                     <span>{isGenerating ? 'Création...' : 'Ajouter une phrase'}</span>
                   </div>
                   <ChevronDown
-                    className={`w-3.5 h-3.5 text-teal-200 transition-transform duration-150 ${
+                    className={`w-3.5 h-3.5 text-blue-200 transition-transform duration-150 ${
                       isMobileAddMenuOpen ? 'rotate-180' : ''
                     }`}
                   />
@@ -378,7 +378,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                       }}
                       className="w-full flex items-start gap-3 p-2.5 rounded-xl text-left hover:bg-stone-50 transition-colors cursor-pointer"
                     >
-                      <div className="p-1.5 rounded-lg bg-teal-50 text-teal-700 mt-0.5">
+                      <div className="p-1.5 rounded-lg bg-blue-50 text-blue-700 mt-0.5">
                         <Sparkles className="w-4 h-4" />
                       </div>
                       <div>
@@ -428,7 +428,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                       onClick={() => handleSelect(cat.id)}
                       className={`flex items-center justify-between px-3 py-2.5 rounded-2xl transition-all cursor-pointer ${
                         isActive
-                          ? 'bg-teal-50 text-teal-800 font-semibold border border-teal-200/90 shadow-2xs'
+                          ? 'bg-blue-50 text-blue-800 font-semibold border border-blue-200/90 shadow-2xs'
                           : 'text-stone-600 hover:bg-stone-100 border border-transparent'
                       }`}
                     >
@@ -436,7 +436,7 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                         <div
                           className={`p-1.5 rounded-xl shrink-0 ${
                             isActive
-                              ? 'bg-teal-600 text-white shadow-xs'
+                              ? 'bg-blue-600 text-white shadow-xs'
                               : 'bg-stone-100 text-stone-500'
                           }`}
                         >
@@ -454,13 +454,13 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                         <span
                           className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
                             isActive
-                              ? 'bg-teal-100 text-teal-800 font-semibold'
+                              ? 'bg-blue-100 text-blue-800 font-semibold'
                               : 'text-stone-400 bg-stone-100'
                           }`}
                         >
                           {count}
                         </span>
-                        {isActive && <Check className="w-3.5 h-3.5 text-teal-600" />}
+                        {isActive && <Check className="w-3.5 h-3.5 text-blue-600" />}
                       </div>
                     </button>
                   );

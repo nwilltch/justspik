@@ -50,8 +50,8 @@ export const ModeDropdown: React.FC<ModeDropdownProps> = ({
       id: 'survival',
       label: 'Survie 60s',
       description: 'Chrono rush : +4s par succès, -5s par faute',
-      icon: <Zap className="w-3.5 h-3.5 text-teal-600 fill-teal-600/20" />,
-      color: 'text-teal-700',
+      icon: <Zap className="w-3.5 h-3.5 text-blue-600 fill-blue-600/20" />,
+      color: 'text-blue-700',
     },
     {
       id: 'daily',
@@ -108,7 +108,7 @@ export const ModeDropdown: React.FC<ModeDropdownProps> = ({
                 <div className="flex-1">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-semibold text-stone-900">{m.label}</span>
-                    {isSelected && <Check className="w-3.5 h-3.5 text-teal-600" />}
+                    {isSelected && <Check className="w-3.5 h-3.5 text-blue-600" />}
                   </div>
                   <span className="block text-[11px] text-stone-500 font-normal leading-tight mt-0.5">
                     {m.description}

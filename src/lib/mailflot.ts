@@ -76,8 +76,8 @@ export async function sendVerificationCodeEmail(to: string, code: string, name?:
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #fafaf9; margin: 0; padding: 40px 20px; color: #1c1917; }
         .card { max-width: 480px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e7e5e4; padding: 32px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         .logo { font-size: 20px; font-weight: 700; color: #1c1917; margin-bottom: 24px; }
-        .logo span { color: #0d9488; }
-        .code-box { background: #f0fdfa; border: 1px dashed #0d9488; border-radius: 12px; padding: 18px; text-align: center; margin: 28px 0; }
+        .logo span { color: #2563eb; }
+        .code-box { background: #eff6ff; border: 1px dashed #2563eb; border-radius: 12px; padding: 18px; text-align: center; margin: 28px 0; }
         .code { font-size: 32px; font-weight: 800; letter-spacing: 6px; color: #0f766e; font-family: monospace; }
         .text { font-size: 15px; line-height: 1.6; color: #44403c; margin: 12px 0; }
         .footer { font-size: 12px; color: #a8a29e; text-align: center; margin-top: 32px; }
@@ -117,7 +117,7 @@ export async function sendPasswordResetEmail(to: string, code: string) {
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #fafaf9; margin: 0; padding: 40px 20px; color: #1c1917; }
         .card { max-width: 480px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e7e5e4; padding: 32px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         .logo { font-size: 20px; font-weight: 700; color: #1c1917; margin-bottom: 24px; }
-        .logo span { color: #0d9488; }
+        .logo span { color: #2563eb; }
         .code-box { background: #fef2f2; border: 1px dashed #ef4444; border-radius: 12px; padding: 18px; text-align: center; margin: 28px 0; }
         .code { font-size: 32px; font-weight: 800; letter-spacing: 6px; color: #b91c1c; font-family: monospace; }
         .text { font-size: 15px; line-height: 1.6; color: #44403c; margin: 12px 0; }

@@ -97,7 +97,7 @@ export const PromptCard: React.FC<PromptCardProps> = ({
             <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-stone-100 border border-stone-200/60 text-[11px] font-mono text-stone-600">
               <span>👻</span>
               <span>
-                Record : <strong className="text-teal-700">{ghostRecord.toFixed(2)}s</strong>
+                Record : <strong className="text-blue-700">{ghostRecord.toFixed(2)}s</strong>
               </span>
             </div>
           )}
@@ -114,7 +114,7 @@ export const PromptCard: React.FC<PromptCardProps> = ({
 
         {/* Hint Revealed */}
         {showHint && (
-          <div className="mt-2 text-xs font-medium text-teal-700 bg-teal-50/60 border border-teal-100 rounded-xl py-1.5 px-3 inline-block animate-in fade-in duration-150">
+          <div className="mt-2 text-xs font-medium text-blue-700 bg-blue-50/60 border border-blue-100 rounded-xl py-1.5 px-3 inline-block animate-in fade-in duration-150">
             💡 {challenge.optimalAnswer}
           </div>
         )}
@@ -125,12 +125,12 @@ export const PromptCard: React.FC<PromptCardProps> = ({
         <div className="h-6 flex items-center">
           {isRecording && (
             <div className="flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-              <span className="w-1.5 h-3 rounded-full bg-teal-500 animate-pulse delay-75" />
-              <span className="w-1.5 h-4 rounded-full bg-teal-500 animate-pulse delay-150" />
-              <span className="w-1.5 h-2 rounded-full bg-teal-500 animate-pulse delay-75" />
-              <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-              <span className="ml-2 text-xs font-mono text-teal-600 font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+              <span className="w-1.5 h-3 rounded-full bg-blue-500 animate-pulse delay-75" />
+              <span className="w-1.5 h-4 rounded-full bg-blue-500 animate-pulse delay-150" />
+              <span className="w-1.5 h-2 rounded-full bg-blue-500 animate-pulse delay-75" />
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+              <span className="ml-2 text-xs font-mono text-blue-600 font-medium">
                 Écoute en cours ({targetInfo.name})...
               </span>
             </div>

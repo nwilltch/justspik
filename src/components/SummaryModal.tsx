@@ -34,7 +34,7 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({
   // Compute Reflex Grade
   let grade = 'S-Tier';
   let gradeLabel = 'Réflexe Natif';
-  let gradeColor = 'text-teal-600 bg-teal-50 border-teal-200';
+  let gradeColor = 'text-blue-600 bg-blue-50 border-blue-200';
   let gradeIcon = '💎';
 
   if (avgTimeSeconds > 4.2 || accuracyRate < 60) {
@@ -50,7 +50,7 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({
   } else if (avgTimeSeconds > 2.2) {
     grade = 'A-Tier';
     gradeLabel = 'Conversation Fluide';
-    gradeColor = 'text-teal-700 bg-teal-50 border-teal-200';
+    gradeColor = 'text-blue-700 bg-blue-50 border-blue-200';
     gradeIcon = '⚡';
   }
 
@@ -61,7 +61,7 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({
         particleCount: 60,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ['#0d9488', '#14b8a6', '#2dd4bf', '#f59e0b'],
+        colors: ['#2563eb', '#3b82f6', '#60a5fa', '#f59e0b'],
       });
     }
   }, [isOpen]);
@@ -127,7 +127,7 @@ Entraîne tes réflexes d'élocution !`;
             <span className="block text-[10px] font-bold uppercase tracking-wider text-stone-400">
               Précision
             </span>
-            <span className="font-mono text-base font-bold text-teal-600">
+            <span className="font-mono text-base font-bold text-blue-600">
               {accuracyRate}%
             </span>
           </div>
@@ -159,8 +159,8 @@ Entraîne tes réflexes d'élocution !`;
           >
             {copied ? (
               <>
-                <Check className="w-3.5 h-3.5 text-teal-600" />
-                <span className="text-teal-700">Copié !</span>
+                <Check className="w-3.5 h-3.5 text-blue-600" />
+                <span className="text-blue-700">Copié !</span>
               </>
             ) : (
               <>
@@ -172,7 +172,7 @@ Entraîne tes réflexes d'élocution !`;
 
           <button
             onClick={onReplay}
-            className="flex-1 flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-95 cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm transition-all active:scale-95 cursor-pointer"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>Rejouer</span>

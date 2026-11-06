@@ -259,9 +259,9 @@ export const AuthModal: React.FC = () => {
         {/* Brand Header */}
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 mb-2">
-            <span className="w-3 h-3 rounded-full bg-teal-500 inline-block" />
+            <span className="w-3 h-3 rounded-full bg-blue-500 inline-block" />
             <span className="text-xl font-bold tracking-tight text-stone-900">
-              just<span className="text-teal-600">spik</span>
+              just<span className="text-blue-600">spik</span>
             </span>
           </div>
           {authReason === 'limit_reached' && (authModalView === 'signup' || authModalView === 'login') ? (
@@ -305,7 +305,7 @@ export const AuthModal: React.FC = () => {
         )}
 
         {successMsg && (
-          <div className="mb-4 flex items-start gap-2.5 p-3 rounded-xl bg-teal-50 border border-teal-200 text-teal-700 text-xs">
+          <div className="mb-4 flex items-start gap-2.5 p-3 rounded-xl bg-blue-50 border border-blue-200 text-blue-700 text-xs">
             <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" />
             <span>{successMsg}</span>
           </div>
@@ -324,7 +324,7 @@ export const AuthModal: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="toi@exemple.com"
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
               </div>
             </div>
@@ -335,7 +335,7 @@ export const AuthModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setAuthModalView('forgot')}
-                  className="text-xs text-teal-600 hover:text-teal-700 hover:underline cursor-pointer"
+                  className="text-xs text-blue-600 hover:text-blue-700 hover:underline cursor-pointer"
                 >
                   Mot de passe oublié ?
                 </button>
@@ -348,7 +348,7 @@ export const AuthModal: React.FC = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
                 <button
                   type="button"
@@ -363,7 +363,7 @@ export const AuthModal: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full mt-2 py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-60 cursor-pointer"
+              className="w-full mt-2 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-60 cursor-pointer"
             >
               {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Se connecter'}
             </button>
@@ -373,7 +373,7 @@ export const AuthModal: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setAuthModalView('signup')}
-                className="text-xs font-semibold text-teal-600 hover:text-teal-700 hover:underline cursor-pointer"
+                className="text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline cursor-pointer"
               >
                 Créer un compte
               </button>
@@ -394,7 +394,7 @@ export const AuthModal: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Alex"
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
               </div>
             </div>
@@ -409,7 +409,7 @@ export const AuthModal: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="toi@exemple.com"
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
               </div>
             </div>
@@ -425,7 +425,7 @@ export const AuthModal: React.FC = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Minimum 6 caractères"
-                  className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
                 <button
                   type="button"
@@ -440,7 +440,7 @@ export const AuthModal: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full mt-2 py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-60 cursor-pointer"
+              className="w-full mt-2 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-60 cursor-pointer"
             >
               {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Créer mon compte'}
             </button>
@@ -450,7 +450,7 @@ export const AuthModal: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setAuthModalView('login')}
-                className="text-xs font-semibold text-teal-600 hover:text-teal-700 hover:underline cursor-pointer"
+                className="text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline cursor-pointer"
               >
                 Se connecter
               </button>
@@ -474,7 +474,7 @@ export const AuthModal: React.FC = () => {
                   value={code}
                   onChange={(e) => setCode(e.target.value.replace(/\D/g, ''))}
                   placeholder="••••••"
-                  className="w-full text-center text-2xl tracking-[0.5em] py-3 rounded-xl border border-stone-200 bg-stone-50/50 font-mono font-bold focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full text-center text-2xl tracking-[0.5em] py-3 rounded-xl border border-stone-200 bg-stone-50/50 font-mono font-bold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
               </div>
             </div>
@@ -482,7 +482,7 @@ export const AuthModal: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading || code.length !== 6}
-              className="w-full py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-50 cursor-pointer"
+              className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-50 cursor-pointer"
             >
               {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Valider mon compte'}
             </button>
@@ -499,7 +499,7 @@ export const AuthModal: React.FC = () => {
                 type="button"
                 disabled={resendCooldown > 0 || isLoading}
                 onClick={() => handleResendCode('signup')}
-                className="text-teal-600 hover:text-teal-700 disabled:text-stone-400 font-medium cursor-pointer"
+                className="text-blue-600 hover:text-blue-700 disabled:text-stone-400 font-medium cursor-pointer"
               >
                 {resendCooldown > 0 ? `Renvoyer (${resendCooldown}s)` : 'Renvoyer un code'}
               </button>
@@ -520,7 +520,7 @@ export const AuthModal: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="toi@exemple.com"
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
               </div>
             </div>
@@ -528,7 +528,7 @@ export const AuthModal: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-60 cursor-pointer"
+              className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-60 cursor-pointer"
             >
               {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Envoyer le code'}
             </button>
@@ -559,7 +559,7 @@ export const AuthModal: React.FC = () => {
                 value={code}
                 onChange={(e) => setCode(e.target.value.replace(/\D/g, ''))}
                 placeholder="••••••"
-                className="w-full text-center text-2xl tracking-[0.5em] py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 font-mono font-bold focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                className="w-full text-center text-2xl tracking-[0.5em] py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 font-mono font-bold focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
               />
             </div>
 
@@ -576,7 +576,7 @@ export const AuthModal: React.FC = () => {
                   value={newPassword}
                   onChange={(e) => setNewPassword(e.target.value)}
                   placeholder="Minimum 6 caractères"
-                  className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-600 transition-all text-stone-900"
+                  className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-stone-200 bg-stone-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all text-stone-900"
                 />
                 <button
                   type="button"
@@ -591,7 +591,7 @@ export const AuthModal: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading || code.length !== 6 || newPassword.length < 6}
-              className="w-full py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-50 cursor-pointer"
+              className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-50 cursor-pointer"
             >
               {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Changer mon mot de passe'}
             </button>
@@ -608,7 +608,7 @@ export const AuthModal: React.FC = () => {
                 type="button"
                 disabled={resendCooldown > 0 || isLoading}
                 onClick={() => handleResendCode('reset-password')}
-                className="text-teal-600 hover:text-teal-700 disabled:text-stone-400 font-medium cursor-pointer"
+                className="text-blue-600 hover:text-blue-700 disabled:text-stone-400 font-medium cursor-pointer"
               >
                 {resendCooldown > 0 ? `Renvoyer (${resendCooldown}s)` : 'Renvoyer un code'}
               </button>

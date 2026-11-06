@@ -39,9 +39,9 @@ export const SurvivalHUD: React.FC<SurvivalHUDProps> = ({
               key={`dot-${i}`}
               className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                 i < dailyStep
-                  ? 'bg-teal-500 scale-100 shadow-2xs'
+                  ? 'bg-blue-500 scale-100 shadow-2xs'
                   : i === dailyStep
-                  ? 'bg-teal-300 ring-2 ring-teal-500/30 animate-pulse'
+                  ? 'bg-blue-300 ring-2 ring-blue-500/30 animate-pulse'
                   : 'bg-stone-200'
               }`}
             />
@@ -64,7 +64,7 @@ export const SurvivalHUD: React.FC<SurvivalHUDProps> = ({
 
       {/* Score */}
       <div className="flex items-center gap-2">
-        <div className="p-1.5 rounded-lg bg-teal-50 text-teal-700">
+        <div className="p-1.5 rounded-lg bg-blue-50 text-blue-700">
           <Zap className="w-4 h-4 fill-current" />
         </div>
         <div>
@@ -81,7 +81,7 @@ export const SurvivalHUD: React.FC<SurvivalHUDProps> = ({
           <span
             className={`font-mono text-xs font-bold px-2 py-0.5 rounded-full animate-bounce ${
               timeBonusDelta > 0
-                ? 'bg-teal-100 text-teal-800 border border-teal-200'
+                ? 'bg-blue-100 text-blue-800 border border-blue-200'
                 : 'bg-rose-100 text-rose-800 border border-rose-200'
             }`}
           >

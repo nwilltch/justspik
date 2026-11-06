@@ -617,7 +617,7 @@ export default function JustSpikApp() {
               <button
                 onClick={handleGenerateNewPhrase}
                 disabled={isGenerating}
-                className="px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-sm transition-all cursor-pointer"
+                className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm transition-all cursor-pointer"
               >
                 Découvrir une phrase
               </button>

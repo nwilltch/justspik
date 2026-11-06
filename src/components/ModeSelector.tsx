@@ -45,12 +45,12 @@ export const ModeSelector: React.FC<ModeSelectorProps> = ({
           }}
           className={`flex items-center gap-1.5 px-3 py-1 rounded-full transition-all active:scale-95 cursor-pointer ${
             currentMode === 'survival'
-              ? 'bg-white text-teal-700 shadow-sm font-semibold'
+              ? 'bg-white text-blue-700 shadow-sm font-semibold'
               : 'text-stone-500 hover:text-stone-800'
           }`}
           title="Mode Survie 60s : enchaîne les phrases, gagne du temps, survis au chrono !"
         >
-          <Zap className="w-3.5 h-3.5 text-teal-600" />
+          <Zap className="w-3.5 h-3.5 text-blue-600" />
           <span>Survie 60s</span>
         </button>
 

@@ -85,7 +85,7 @@ export default function RootLayout({
           src="https://brieflish.com/tracker.js"
         />
       </head>
-      <body className="bg-[#fafaf9] text-stone-900 antialiased selection:bg-teal-100 selection:text-teal-900 min-h-screen">
+      <body className="bg-[#fafaf9] text-stone-900 antialiased selection:bg-blue-100 selection:text-blue-900 min-h-screen">
         <AuthProvider>
           {children}
           <AuthModal />

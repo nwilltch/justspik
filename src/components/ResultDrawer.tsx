@@ -26,7 +26,7 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
         particleCount: 40,
         spread: 50,
         origin: { y: 0.7 },
-        colors: ['#0d9488', '#14b8a6', '#2dd4bf'],
+        colors: ['#2563eb', '#3b82f6', '#60a5fa'],
       });
     }
   }, [result]);
@@ -84,7 +84,7 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
         <div className="flex items-center gap-3">
           <span
             className={`font-mono text-2xl font-black ${
-              result.isCorrect ? 'text-teal-600' : 'text-rose-500'
+              result.isCorrect ? 'text-blue-600' : 'text-rose-500'
             }`}
           >
             {result.accuracy}%
@@ -134,7 +134,7 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
                   </>
                 ) : (
                   <>
-                    <Play className="w-3 h-3 fill-current text-teal-600" />
+                    <Play className="w-3 h-3 fill-current text-blue-600" />
                     <span>Réécouter ma voix</span>
                   </>
                 )}
@@ -148,14 +148,14 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
         </div>
 
         {/* Modèle natif attendu */}
-        <div className="flex flex-col gap-1 p-3.5 rounded-2xl bg-teal-50/60 border border-teal-100">
+        <div className="flex flex-col gap-1 p-3.5 rounded-2xl bg-blue-50/60 border border-blue-100">
           <div className="flex items-center justify-between">
-            <span className="text-[11px] font-semibold text-teal-800 uppercase tracking-wider">
+            <span className="text-[11px] font-semibold text-blue-800 uppercase tracking-wider">
               Modèle natif recommandé
             </span>
             <button
               onClick={onPlaySolutionAudio}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-2xs transition-all active:scale-95 cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-2xs transition-all active:scale-95 cursor-pointer"
               title="Écouter la prononciation du natif"
             >
               <Volume2 className="w-3.5 h-3.5" />
@@ -187,7 +187,7 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
 
         <button
           onClick={handleCleanAndNext}
-          className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold shadow-sm shadow-teal-600/20 transition-all cursor-pointer active:scale-95"
+          className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm shadow-blue-600/20 transition-all cursor-pointer active:scale-95"
         >
           <span>Suivant</span>
           <ArrowRight className="w-3.5 h-3.5" />

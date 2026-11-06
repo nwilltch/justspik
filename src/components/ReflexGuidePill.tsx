@@ -36,10 +36,10 @@ export const ReflexGuidePill: React.FC<ReflexGuidePillProps> = ({ targetLangName
           <span className="text-stone-300 hidden sm:inline">→</span>
 
           <div className="flex items-center gap-1.5 font-medium">
-            <span className="w-4 h-4 rounded-full bg-teal-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0">
+            <span className="w-4 h-4 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0">
               3
             </span>
-            <span className="text-teal-900 font-semibold">
+            <span className="text-blue-900 font-semibold">
               Traduis en {targetLangName} avant le chrono !
             </span>
           </div>

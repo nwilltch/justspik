@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="md:hidden flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-stone-200/90 shadow-2xs hover:bg-stone-50 text-stone-700 text-xs font-semibold transition-colors cursor-pointer"
             title="Ouvrir le menu et les thèmes"
           >
-            <Layers className="w-3.5 h-3.5 text-teal-600" />
+            <Layers className="w-3.5 h-3.5 text-blue-600" />
             <span>{currentCategoryLabel || 'Thèmes'}</span>
           </button>
         ) : (
@@ -101,7 +101,7 @@ export const Header: React.FC<HeaderProps> = ({
               <>
                 <button
                   onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                  className="w-8 h-8 rounded-full bg-teal-100 border border-teal-200 text-teal-800 text-xs font-bold flex items-center justify-center hover:bg-teal-200/80 transition-colors cursor-pointer shadow-xs"
+                  className="w-8 h-8 rounded-full bg-blue-100 border border-blue-200 text-blue-800 text-xs font-bold flex items-center justify-center hover:bg-blue-200/80 transition-colors cursor-pointer shadow-xs"
                   title={user.name || user.email}
                 >
                   {(user.name || user.email).charAt(0).toUpperCase()}

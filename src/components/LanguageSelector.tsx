@@ -41,7 +41,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         <button
           onClick={onSwapLanguages}
           title="Inverser les langues"
-          className="p-1.5 rounded-full text-stone-500 hover:text-teal-700 hover:bg-teal-50 active:scale-90 transition-all duration-150 cursor-pointer"
+          className="p-1.5 rounded-full text-stone-500 hover:text-blue-700 hover:bg-blue-50 active:scale-90 transition-all duration-150 cursor-pointer"
         >
           <ArrowLeftRight className="w-3.5 h-3.5" />
         </button>
@@ -51,7 +51,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           <select
             value={targetLang}
             onChange={(e) => onChangeTargetLang(e.target.value as SupportedLang)}
-            className="appearance-none pl-2 pr-3 py-1 rounded-full text-xs font-semibold text-teal-700 bg-transparent hover:bg-teal-50/50 cursor-pointer focus:outline-none"
+            className="appearance-none pl-2 pr-3 py-1 rounded-full text-xs font-semibold text-blue-700 bg-transparent hover:bg-blue-50/50 cursor-pointer focus:outline-none"
           >
             {SUPPORTED_LANGUAGES.map((lang) => (
               <option key={`target-${lang.code}`} value={lang.code}>

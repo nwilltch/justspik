@@ -76,7 +76,7 @@ export const CategoryBar: React.FC<CategoryBarProps> = ({
             onClick={() => setIsOpen(!isOpen)}
             className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium transition-all duration-150 cursor-pointer active:scale-95 whitespace-nowrap ${
               isOverflowActive
-                ? 'bg-white text-teal-700 shadow-sm font-semibold'
+                ? 'bg-white text-blue-700 shadow-sm font-semibold'
                 : 'text-stone-500 hover:text-stone-800'
             }`}
             title="Autres catégories"
@@ -84,7 +84,7 @@ export const CategoryBar: React.FC<CategoryBarProps> = ({
             {isOverflowActive ? (
               <>
                 <span>{activeOverflowItem?.label}</span>
-                <ChevronDown className="w-3 h-3 text-teal-600" />
+                <ChevronDown className="w-3 h-3 text-blue-600" />
               </>
             ) : (
               <MoreHorizontal className="w-4 h-4" />
@@ -106,12 +106,12 @@ export const CategoryBar: React.FC<CategoryBarProps> = ({
                     onClick={() => handleSelect(cat.id)}
                     className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left transition-colors cursor-pointer ${
                       isSelected
-                        ? 'bg-teal-50 text-teal-800 font-semibold'
+                        ? 'bg-blue-50 text-blue-800 font-semibold'
                         : 'text-stone-700 hover:bg-stone-50'
                     }`}
                   >
                     <span>{cat.label}</span>
-                    {isSelected && <Check className="w-3.5 h-3.5 text-teal-600" />}
+                    {isSelected && <Check className="w-3.5 h-3.5 text-blue-600" />}
                   </button>
                 );
               })}
