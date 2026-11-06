@@ -14,6 +14,7 @@ import { LeaderboardDrawer } from '@/components/LeaderboardDrawer';
 import { CustomPhraseModal } from '@/components/CustomPhraseModal';
 import { ReflexGuidePill } from '@/components/ReflexGuidePill';
 import { useAuth, MAX_FREE_ATTEMPTS } from '@/contexts/AuthContext';
+import { audioRecorder } from '@/lib/audioRecorder';
 import {
   MULTILINGUAL_ENTRIES,
   buildChallenge,
@@ -248,14 +249,16 @@ export default function JustSpikApp() {
         recognition.interimResults = false;
         recognition.lang = getLanguageInfo(targetLang).locale;
 
-        recognition.onresult = (event: any) => {
+        recognition.onresult = async (event: any) => {
           const transcript = event.results[0][0].transcript;
-          handleProcessVoiceInput(transcript);
+          const userAudioUrl = await audioRecorder.stop();
+          handleProcessVoiceInput(transcript, undefined, userAudioUrl);
         };
 
         recognition.onerror = () => {
           stopTimer();
           setIsRecording(false);
+          audioRecorder.stop();
         };
 
         recognition.onend = () => {
@@ -304,6 +307,9 @@ export default function JustSpikApp() {
     setIsRecording(true);
     startTimer();
 
+    // Démarrer l'enregistrement audio physique du micro pour réécoute
+    audioRecorder.start();
+
     try {
       if (recognitionRef.current) {
         recognitionRef.current.lang = getLanguageInfo(targetLang).locale;
@@ -328,11 +334,16 @@ export default function JustSpikApp() {
   };
 
   // Process voice input and trigger audio/game mechanics
-  const handleProcessVoiceInput = (transcript: string, simulatedTime?: number) => {
+  const handleProcessVoiceInput = (
+    transcript: string,
+    simulatedTime?: number,
+    userAudioUrl?: string | null
+  ) => {
     const finalTime = simulatedTime ?? stopTimer();
     if (!currentChallenge) return;
 
     const result = evaluateSpokenAnswer(transcript, currentChallenge, finalTime);
+    result.userAudioUrl = userAudioUrl || audioRecorder.getCurrentAudioUrl() || null;
     setEvaluation(result);
 
     // Update global session stats
@@ -423,6 +434,8 @@ export default function JustSpikApp() {
 
   // Next challenge
   const handleNextChallenge = () => {
+    audioRecorder.cleanupCurrentAudio();
+
     if (isLimitReached) {
       openAuthModal('signup', undefined, 'limit_reached');
       return;
@@ -445,6 +458,8 @@ export default function JustSpikApp() {
 
   // Retry challenge
   const handleRetry = () => {
+    audioRecorder.cleanupCurrentAudio();
+
     if (isLimitReached) {
       openAuthModal('signup', undefined, 'limit_reached');
       return;

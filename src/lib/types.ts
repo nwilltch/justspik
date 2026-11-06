@@ -55,4 +55,5 @@ export interface EvaluationResult {
   targetLang: SupportedLang;
   explanation: string;
   diffTokens: { text: string; status: 'correct' | 'wrong' | 'missing' }[];
+  userAudioUrl?: string | null;
 }
