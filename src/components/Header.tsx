@@ -73,16 +73,11 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="w-full max-w-2xl mx-auto pt-6 pb-2 px-2 flex items-center justify-between">
-      {/* Brand & Micro-Tagline */}
-      <div className="flex flex-col">
-        <div className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-teal-500 inline-block animate-pulse" />
-          <span className="text-lg font-bold tracking-tight text-stone-900 leading-none">
-            just<span className="text-teal-600">spik</span>
-          </span>
-        </div>
-        <span className="text-[10px] text-stone-400 font-medium tracking-tight mt-0.5">
-          Réflexes oraux sous chrono
+      {/* Brand */}
+      <div className="flex items-center gap-2">
+        <span className="w-2.5 h-2.5 rounded-full bg-teal-500 inline-block animate-pulse" />
+        <span className="text-lg font-bold tracking-tight text-stone-900">
+          just<span className="text-teal-600">spik</span>
         </span>
       </div>
 

@@ -1,14 +1,14 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Mic, MicOff, ChevronRight, Lock } from 'lucide-react';
+import { Mic, MicOff, Lock } from 'lucide-react';
 import { sound } from '@/lib/soundFx';
 
 interface VoiceTriggerProps {
   isRecording: boolean;
   onStartRecording: () => void;
   onStopRecording: () => void;
-  onSimulateAnswer: (preset: 'perfect' | 'with-error') => void;
-  onSkip: () => void;
+  onSimulateAnswer?: (preset: 'perfect' | 'with-error') => void;
+  onSkip?: () => void;
   disabled?: boolean;
   isLimitReached?: boolean;
   onLimitReached?: () => void;
@@ -86,7 +86,7 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
                 : 'bg-white text-stone-600 border-stone-200/90 shadow-2xs'
             }`}
           >
-            {isRecording ? '🔴 Parle maintenant...' : '🎙️ Clique pour parler'}
+            {isRecording ? '🔴 Parle maintenant...' : '🎙️ Clique pour parler ou maintiens Espace appuyé'}
           </div>
         )}
 
@@ -126,34 +126,6 @@ export const VoiceTrigger: React.FC<VoiceTriggerProps> = ({
           ) : (
             <Mic className="w-7 h-7" />
           )}
-        </button>
-      </div>
-
-      {/* Discrete minimal test & skip bar */}
-      <div className="flex items-center gap-2 text-xs text-stone-400 mt-2">
-        <button
-          onClick={() => onSimulateAnswer('perfect')}
-          className="hover:text-stone-700 transition-colors cursor-pointer"
-          title="Tester le rendu sans micro"
-        >
-          Simuler juste
-        </button>
-        <span>•</span>
-        <button
-          onClick={() => onSimulateAnswer('with-error')}
-          className="hover:text-stone-700 transition-colors cursor-pointer"
-          title="Tester une erreur"
-        >
-          Simuler faute
-        </button>
-        <span>•</span>
-        <button
-          onClick={onSkip}
-          className="hover:text-stone-700 transition-colors cursor-pointer flex items-center gap-0.5"
-          title="Passer à la phrase suivante"
-        >
-          <span>Passer</span>
-          <ChevronRight className="w-3.5 h-3.5" />
         </button>
       </div>
     </div>

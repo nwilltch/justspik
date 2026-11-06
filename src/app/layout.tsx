@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { AuthProvider } from '@/contexts/AuthContext';
 import { AuthModal } from '@/components/AuthModal';
+import { UiGrabber } from '@/components/UiGrabber';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://justspik.com'),
@@ -88,6 +89,7 @@ export default function RootLayout({
         <AuthProvider>
           {children}
           <AuthModal />
+          {process.env.NODE_ENV === 'development' && <UiGrabber />}
         </AuthProvider>
       </body>
     </html>

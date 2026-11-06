@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Volume2, ArrowLeftRight, HelpCircle, Eye, EyeOff } from 'lucide-react';
+import { Volume2, ArrowLeftRight, Eye, EyeOff, ChevronRight } from 'lucide-react';
 import { Challenge, SupportedLang } from '@/lib/types';
 import { SUPPORTED_LANGUAGES, getLanguageInfo } from '@/lib/data';
 
@@ -11,6 +11,7 @@ interface PromptCardProps {
   onSwapLanguages: () => void;
   onChangeSourceLang: (lang: SupportedLang) => void;
   onChangeTargetLang: (lang: SupportedLang) => void;
+  onSkip?: () => void;
   ghostRecord?: number | null;
 }
 
@@ -21,6 +22,7 @@ export const PromptCard: React.FC<PromptCardProps> = ({
   onSwapLanguages,
   onChangeSourceLang,
   onChangeTargetLang,
+  onSkip,
   ghostRecord,
 }) => {
   const [showHint, setShowHint] = useState(false);
@@ -28,7 +30,7 @@ export const PromptCard: React.FC<PromptCardProps> = ({
   const targetInfo = getLanguageInfo(challenge.targetLang);
 
   return (
-    <div className="w-full max-w-xl mx-auto rounded-3xl bg-white border border-stone-200/80 p-6 md:p-8 shadow-sm transition-all text-center">
+    <div className="w-full max-w-xl mx-auto rounded-3xl bg-white border border-stone-200/80 p-6 md:p-8 shadow-sm transition-all text-center relative">
       {/* Top Bar with Language Selectors & Audio */}
       <div className="flex items-center justify-between pb-4 mb-4 border-b border-stone-100">
         <div className="flex items-center gap-1.5 bg-stone-50/80 border border-stone-200/70 rounded-full px-2.5 py-1">
@@ -126,23 +128,32 @@ export const PromptCard: React.FC<PromptCardProps> = ({
         )}
       </div>
 
-      {/* Subtle indicator while listening */}
-      <div className="h-6 flex items-center justify-center mt-3">
-        {isRecording ? (
-          <div className="flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-            <span className="w-1.5 h-3 rounded-full bg-teal-500 animate-pulse delay-75" />
-            <span className="w-1.5 h-4 rounded-full bg-teal-500 animate-pulse delay-150" />
-            <span className="w-1.5 h-2 rounded-full bg-teal-500 animate-pulse delay-75" />
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-            <span className="ml-2 text-xs font-mono text-teal-600 font-medium">
-              Écoute en cours ({targetInfo.name})...
-            </span>
-          </div>
-        ) : (
-          <span className="text-[11px] text-stone-400 font-medium">
-            Maintiens <kbd className="px-1.5 py-0.5 rounded bg-stone-100 border border-stone-200 text-stone-600 font-mono text-[10px]">Espace</kbd> ou clique sur le micro pour parler
-          </span>
+      {/* Card Footer: Audio listening indicator + Bottom-Right Skip button */}
+      <div className="flex items-center justify-between mt-3 pt-2">
+        <div className="h-6 flex items-center">
+          {isRecording && (
+            <div className="flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
+              <span className="w-1.5 h-3 rounded-full bg-teal-500 animate-pulse delay-75" />
+              <span className="w-1.5 h-4 rounded-full bg-teal-500 animate-pulse delay-150" />
+              <span className="w-1.5 h-2 rounded-full bg-teal-500 animate-pulse delay-75" />
+              <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
+              <span className="ml-2 text-xs font-mono text-teal-600 font-medium">
+                Écoute en cours ({targetInfo.name})...
+              </span>
+            </div>
+          )}
+        </div>
+
+        {onSkip && (
+          <button
+            onClick={onSkip}
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium text-stone-400 hover:text-stone-800 hover:bg-stone-100 transition-colors cursor-pointer ml-auto"
+            title="Passer à la phrase suivante"
+          >
+            <span>Passer</span>
+            <ChevronRight className="w-3.5 h-3.5" />
+          </button>
         )}
       </div>
     </div>
