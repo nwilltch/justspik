@@ -92,16 +92,7 @@ export const PromptCard: React.FC<PromptCardProps> = ({
         </h2>
 
         {/* Vocabulary Hint Toggle */}
-        <div className="mt-3 flex items-center justify-center gap-2">
-          {ghostRecord !== null && ghostRecord !== undefined && (
-            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-stone-100 border border-stone-200/60 text-[11px] font-mono text-stone-600">
-              <span>👻</span>
-              <span>
-                Record : <strong className="text-blue-700">{ghostRecord.toFixed(2)}s</strong>
-              </span>
-            </div>
-          )}
-
+        <div className="mt-3 flex items-center justify-center">
           <button
             onClick={() => setShowHint(!showHint)}
             className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] text-stone-400 hover:text-stone-700 hover:bg-stone-100 transition-colors cursor-pointer"
@@ -120,18 +111,27 @@ export const PromptCard: React.FC<PromptCardProps> = ({
         )}
       </div>
 
-      {/* Card Footer: Audio listening indicator + Bottom-Right Skip button */}
+      {/* Card Footer: Ghost Record on the left + Skip button on the right */}
       <div className="flex items-center justify-between mt-3 pt-2">
-        <div className="h-6 flex items-center">
+        <div className="flex items-center gap-2">
+          {ghostRecord !== null && ghostRecord !== undefined && (
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-stone-100/90 border border-stone-200/60 text-[11px] font-mono text-stone-600 shadow-2xs">
+              <span>👻</span>
+              <span>
+                Record : <strong className="text-blue-700">{ghostRecord.toFixed(2)}s</strong>
+              </span>
+            </div>
+          )}
+
           {isRecording && (
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 ml-1">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
               <span className="w-1.5 h-3 rounded-full bg-blue-500 animate-pulse delay-75" />
               <span className="w-1.5 h-4 rounded-full bg-blue-500 animate-pulse delay-150" />
               <span className="w-1.5 h-2 rounded-full bg-blue-500 animate-pulse delay-75" />
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-              <span className="ml-2 text-xs font-mono text-blue-600 font-medium">
-                Écoute en cours ({targetInfo.name})...
+              <span className="ml-1.5 text-xs font-mono text-blue-600 font-medium">
+                Écoute ({targetInfo.name})...
               </span>
             </div>
           )}
