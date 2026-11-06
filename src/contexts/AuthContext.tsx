@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { SafeUser } from '@/lib/userStore';
 
 export type AuthModalView = 'login' | 'signup' | 'verify' | 'forgot' | 'reset';
@@ -38,6 +38,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [pendingEmail, setPendingEmail] = useState('');
   const [guestAttempts, setGuestAttempts] = useState(0);
 
+  // Synchronisation ref pour éviter les fermetures obsolètes (stale closures)
+  const userRef = useRef<SafeUser | null>(null);
+  useEffect(() => {
+    userRef.current = user;
+  }, [user]);
+
   // Charger les tentatives sauvegardées dans localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -54,12 +60,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const res = await fetch('/api/auth/me');
       if (res.ok) {
         const data = await res.json();
-        setUser(data.user || null);
+        if (data.user) {
+          setUser(data.user);
+          userRef.current = data.user;
+          // Dès qu'on est connecté, on purge le quota invité
+          setGuestAttempts(0);
+          if (typeof window !== 'undefined') {
+            localStorage.removeItem('justspik_guest_attempts');
+          }
+        } else {
+          setUser(null);
+          userRef.current = null;
+        }
       } else {
         setUser(null);
+        userRef.current = null;
       }
     } catch {
       setUser(null);
+      userRef.current = null;
     } finally {
       setIsLoading(false);
     }
@@ -71,7 +90,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const incrementGuestAttempt = useCallback((): number => {
     // Si l'utilisateur est connecté, pas de décompte invité
-    if (user) return 0;
+    if (userRef.current) return 0;
 
     const nextVal = guestAttempts + 1;
     setGuestAttempts(nextVal);
@@ -79,10 +98,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       localStorage.setItem('justspik_guest_attempts', nextVal.toString());
     }
     return nextVal;
-  }, [user, guestAttempts]);
+  }, [guestAttempts]);
 
   const openAuthModal = useCallback(
     (view: AuthModalView = 'login', email: string = '', reason: AuthReason = 'normal') => {
+      // Un utilisateur connecté ne doit JAMAIS voir la modale s'ouvrir pour cause de limite atteinte
+      if (userRef.current && reason === 'limit_reached') {
+        return;
+      }
       setAuthModalView(view);
       setAuthReason(reason);
       if (email) setPendingEmail(email);
@@ -98,6 +121,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const loginSuccess = useCallback((loggedInUser: SafeUser) => {
     setUser(loggedInUser);
+    userRef.current = loggedInUser;
+    // Réinitialise et supprime immédiatement le quota invité
+    setGuestAttempts(0);
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('justspik_guest_attempts');
+    }
     setIsAuthModalOpen(false);
     setAuthReason('normal');
   }, []);
@@ -106,12 +135,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       await fetch('/api/auth/logout', { method: 'POST' });
       setUser(null);
+      userRef.current = null;
+      setGuestAttempts(0);
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('justspik_guest_attempts');
+      }
     } catch (err) {
       console.error('Erreur déconnexion:', err);
     }
   }, []);
 
-  const isLimitReached = !user && guestAttempts >= MAX_FREE_ATTEMPTS;
+  // La limite n'est JAMAIS active pendant le chargement initial ou si l'utilisateur est connecté
+  const isLimitReached = !isLoading && !user && guestAttempts >= MAX_FREE_ATTEMPTS;
 
   return (
     <AuthContext.Provider

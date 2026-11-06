@@ -27,6 +27,14 @@ import { getGhostRecord, saveGhostRecord, getDailyStreak, recordDayActivity } fr
 export default function JustSpikApp() {
   const { user, guestAttempts, isLimitReached, incrementGuestAttempt, openAuthModal } = useAuth();
 
+  // Ref synchrone sur l'utilisateur pour éviter les closures obsolètes
+  const userRef = useRef(user);
+  useEffect(() => {
+    userRef.current = user;
+  }, [user]);
+
+  const handleProcessVoiceInputRef = useRef<any>(null);
+
   // Game Modes & Sound
   const [gameMode, setGameMode] = useState<GameMode>('focus');
   const [isMuted, setIsMuted] = useState(false);
@@ -280,7 +288,7 @@ export default function JustSpikApp() {
         recognition.onresult = async (event: any) => {
           const transcript = event.results[0][0].transcript;
           const userAudioUrl = await audioRecorder.stop();
-          handleProcessVoiceInput(transcript, undefined, userAudioUrl);
+          handleProcessVoiceInputRef.current?.(transcript, undefined, userAudioUrl);
         };
 
         recognition.onerror = () => {
@@ -326,7 +334,7 @@ export default function JustSpikApp() {
 
   // Recording controls
   const handleStartRecording = () => {
-    if (isLimitReached) {
+    if (!userRef.current && isLimitReached) {
       openAuthModal('signup', undefined, 'limit_reached');
       return;
     }
@@ -378,12 +386,14 @@ export default function JustSpikApp() {
     setSessionAttemptCount((prev) => prev + 1);
     setSessionTotalTime((prev) => prev + finalTime);
 
-    // Suivi du quota d'essais pour les invités non connectés
-    if (!user) {
+    // Suivi du quota d'essais UNIQUEMENT pour les invités non connectés
+    if (!userRef.current) {
       const updatedAttempts = incrementGuestAttempt();
       if (updatedAttempts >= MAX_FREE_ATTEMPTS) {
         setTimeout(() => {
-          openAuthModal('signup', undefined, 'limit_reached');
+          if (!userRef.current) {
+            openAuthModal('signup', undefined, 'limit_reached');
+          }
         }, 1500);
       }
     }
@@ -445,6 +455,7 @@ export default function JustSpikApp() {
       }
     }
   };
+  handleProcessVoiceInputRef.current = handleProcessVoiceInput;
 
   // Instant simulator for testing
   const handleSimulateAnswer = (preset: 'perfect' | 'with-error') => {
@@ -464,7 +475,7 @@ export default function JustSpikApp() {
   const handleNextChallenge = () => {
     audioRecorder.cleanupCurrentAudio();
 
-    if (isLimitReached) {
+    if (!userRef.current && isLimitReached) {
       openAuthModal('signup', undefined, 'limit_reached');
       return;
     }
@@ -488,7 +499,7 @@ export default function JustSpikApp() {
   const handleRetry = () => {
     audioRecorder.cleanupCurrentAudio();
 
-    if (isLimitReached) {
+    if (!userRef.current && isLimitReached) {
       openAuthModal('signup', undefined, 'limit_reached');
       return;
     }
