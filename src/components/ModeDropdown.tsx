@@ -1,9 +1,9 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
-import { Target, Zap, Calendar, ChevronDown, Check } from 'lucide-react';
+import { Target, Zap, Calendar, MessageSquareQuote, ChevronDown, Check } from 'lucide-react';
 import { sound } from '@/lib/soundFx';
 
-export type GameMode = 'focus' | 'survival' | 'daily';
+export type GameMode = 'focus' | 'survival' | 'daily' | 'pingpong';
 
 interface ModeDropdownProps {
   currentMode: GameMode;
@@ -59,6 +59,13 @@ export const ModeDropdown: React.FC<ModeDropdownProps> = ({
       description: 'Sprint quotidien de 7 phrases pour ta série',
       icon: <Calendar className="w-3.5 h-3.5 text-amber-600" />,
       color: 'text-amber-700',
+    },
+    {
+      id: 'pingpong',
+      label: 'Ping-Pong Q&A',
+      description: 'Questions orales directes, réponse libre spontanée',
+      icon: <MessageSquareQuote className="w-3.5 h-3.5 text-indigo-600" />,
+      color: 'text-indigo-700',
     },
   ];
 

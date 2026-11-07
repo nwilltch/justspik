@@ -10,6 +10,8 @@ import {
   Cpu,
   Flame,
   Sparkles,
+  Zap,
+  BookmarkCheck,
   PanelLeftClose,
   PanelLeftOpen,
   X,
@@ -33,6 +35,9 @@ export interface CategorySidebarProps {
   isGenerating?: boolean;
   onGenerateNewPhrase?: () => void;
   onOpenCustomModal?: () => void;
+  reviewCount?: number;
+  isReviewModeActive?: boolean;
+  onToggleReviewMode?: () => void;
 }
 
 interface CategoryDefinition {
@@ -43,6 +48,7 @@ interface CategoryDefinition {
 }
 
 export const CATEGORIES_LIST: CategoryDefinition[] = [
+  { id: 'essential', label: 'Top 500 Chunks', icon: Zap, description: 'Structures & réflexes clés' },
   { id: 'routine', label: 'Routines', icon: Sun, description: 'Habitudes, matin, météo' },
   { id: 'work', label: 'Travail', icon: Briefcase, description: 'Bureau, réunions, emails' },
   { id: 'food', label: 'Cuisine', icon: Coffee, description: 'Restaurant, plats, commandes' },
@@ -64,6 +70,9 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
   isGenerating = false,
   onGenerateNewPhrase,
   onOpenCustomModal,
+  reviewCount = 0,
+  isReviewModeActive = false,
+  onToggleReviewMode,
 }) => {
   const [isAddMenuOpen, setIsAddMenuOpen] = useState(false);
   const [isMobileAddMenuOpen, setIsMobileAddMenuOpen] = useState(false);
@@ -230,6 +239,49 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
               </div>
             )}
           </div>
+
+          {/* SRS Review Button when review cards exist */}
+          {reviewCount > 0 && onToggleReviewMode && (
+            <div className="mb-3">
+              {!isCollapsedDesktop ? (
+                <button
+                  onClick={() => {
+                    sound.playSoftClick();
+                    onToggleReviewMode();
+                  }}
+                  className={`w-full flex items-center justify-between px-3 py-2 rounded-2xl transition-all cursor-pointer ${
+                    isReviewModeActive
+                      ? 'bg-amber-100 text-amber-900 border border-amber-300 font-semibold shadow-2xs'
+                      : 'bg-amber-50/80 hover:bg-amber-100 text-amber-800 border border-amber-200/80 shadow-2xs'
+                  }`}
+                  title="Pratiquer les phrases à perfectionner"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <BookmarkCheck className="w-4 h-4 text-amber-700" />
+                    <span className="text-xs font-semibold">À perfectionner</span>
+                  </div>
+                  <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-200/90 text-amber-950">
+                    {reviewCount}
+                  </span>
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    sound.playSoftClick();
+                    onToggleReviewMode();
+                  }}
+                  className={`w-12 h-12 mx-auto rounded-2xl flex items-center justify-center transition-all cursor-pointer shadow-2xs ${
+                    isReviewModeActive
+                      ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                      : 'bg-amber-50 text-amber-800 border border-amber-200/80 hover:bg-amber-100'
+                  }`}
+                  title={`À perfectionner (${reviewCount})`}
+                >
+                  <BookmarkCheck className="w-5 h-5 text-amber-700" />
+                </button>
+              )}
+            </div>
+          )}
 
           {/* Category Items */}
           <nav className="flex flex-col gap-1.5">
@@ -414,6 +466,32 @@ export const CategorySidebar: React.FC<CategorySidebarProps> = ({
                   </div>
                 )}
               </div>
+
+              {/* Mobile SRS Review Button */}
+              {reviewCount > 0 && onToggleReviewMode && (
+                <div className="mb-4">
+                  <button
+                    onClick={() => {
+                      sound.playSoftClick();
+                      onCloseMobile();
+                      onToggleReviewMode();
+                    }}
+                    className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl transition-all cursor-pointer ${
+                      isReviewModeActive
+                        ? 'bg-amber-100 text-amber-900 border border-amber-300 font-semibold shadow-2xs'
+                        : 'bg-amber-50/90 hover:bg-amber-100 text-amber-800 border border-amber-200/80 shadow-2xs'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <BookmarkCheck className="w-4 h-4 text-amber-700" />
+                      <span className="text-xs font-semibold">À perfectionner</span>
+                    </div>
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-200/90 text-amber-950">
+                      {reviewCount}
+                    </span>
+                  </button>
+                </div>
+              )}
 
               {/* Drawer Categories List */}
               <nav className="flex flex-col gap-1.5">

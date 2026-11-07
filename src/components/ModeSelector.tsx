@@ -3,7 +3,7 @@ import React from 'react';
 import { Target, Zap, Calendar, Volume2, VolumeX } from 'lucide-react';
 import { sound } from '@/lib/soundFx';
 
-export type GameMode = 'focus' | 'survival' | 'daily';
+export type GameMode = 'focus' | 'survival' | 'daily' | 'pingpong';
 
 interface ModeSelectorProps {
   currentMode: GameMode;

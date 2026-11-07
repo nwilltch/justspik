@@ -1,25 +1,46 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import { EvaluationResult } from '@/lib/types';
-import { ArrowRight, RotateCcw, Volume2, Play, Pause, Mic } from 'lucide-react';
+import {
+  ArrowRight,
+  RotateCcw,
+  Volume2,
+  Play,
+  Pause,
+  Mic,
+  Sparkles,
+  Bookmark,
+  BookmarkCheck,
+  Brain,
+} from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { isPhraseInReview, togglePhraseReview, markPhraseForReview } from '@/lib/srsStore';
+import { getLanguageInfo } from '@/lib/data';
 
 interface ResultDrawerProps {
   result: EvaluationResult;
+  challengeId?: string;
   onRetry: () => void;
   onNext: () => void;
   onPlaySolutionAudio: () => void;
+  onPlayAlternativeAudio?: (text: string) => void;
+  onSrsChange?: () => void;
 }
 
 export const ResultDrawer: React.FC<ResultDrawerProps> = ({
   result,
+  challengeId,
   onRetry,
   onNext,
   onPlaySolutionAudio,
+  onPlayAlternativeAudio,
+  onSrsChange,
 }) => {
   const [isPlayingUserAudio, setIsPlayingUserAudio] = useState(false);
+  const [isInReview, setIsInReview] = useState(false);
   const audioPlayerRef = useRef<HTMLAudioElement | null>(null);
 
+  // Confetti si éclair de rapidité
   useEffect(() => {
     if (result.isCorrect && result.speedRating === 'lightning') {
       confetti({
@@ -30,6 +51,20 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
       });
     }
   }, [result]);
+
+  // Initialiser l'état SRS et auto-tagger si échec ou trop lent (> 3.5s)
+  useEffect(() => {
+    if (!challengeId) return;
+    const baseId = challengeId.split('-')[0]; // Extrait l'id racine
+
+    if (!result.isCorrect || result.timeSeconds > 3.5) {
+      markPhraseForReview(baseId, result.accuracy, result.timeSeconds);
+      setIsInReview(true);
+      onSrsChange?.();
+    } else {
+      setIsInReview(isPhraseInReview(baseId));
+    }
+  }, [challengeId, result, onSrsChange]);
 
   // Réinitialiser la lecture audio quand le résultat change
   useEffect(() => {
@@ -61,6 +96,27 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
     setIsPlayingUserAudio(true);
   };
 
+  const handlePlayAlternative = () => {
+    if (!result.nativeAlternative) return;
+    if (onPlayAlternativeAudio) {
+      onPlayAlternativeAudio(result.nativeAlternative);
+    } else if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(result.nativeAlternative);
+      utterance.lang = getLanguageInfo(result.targetLang).locale;
+      utterance.rate = 0.95;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
+  const handleToggleSrs = () => {
+    if (!challengeId) return;
+    const baseId = challengeId.split('-')[0];
+    const nextState = togglePhraseReview(baseId);
+    setIsInReview(nextState);
+    onSrsChange?.();
+  };
+
   const handleCleanAndNext = () => {
     if (audioPlayerRef.current) {
       audioPlayerRef.current.pause();
@@ -79,7 +135,7 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
 
   return (
     <div className="w-full max-w-xl mx-auto mt-6 rounded-3xl bg-white border border-stone-200/80 p-6 sm:p-7 shadow-sm space-y-4 animate-in fade-in slide-in-from-bottom-2 duration-200">
-      {/* Header: Score & Time */}
+      {/* Header: Score & Time & SRS Tag */}
       <div className="flex items-center justify-between pb-3 border-b border-stone-100">
         <div className="flex items-center gap-3">
           <span
@@ -95,6 +151,35 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
         </div>
 
         <div className="flex items-center gap-2">
+          {/* SRS Bookmark toggle */}
+          {challengeId && (
+            <button
+              onClick={handleToggleSrs}
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+                isInReview
+                  ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                  : 'bg-stone-100 text-stone-500 hover:text-stone-800 border border-stone-200/60'
+              }`}
+              title={
+                isInReview
+                  ? 'Retirer de ma liste à revoir'
+                  : 'Ajouter à mes phrases à revoir'
+              }
+            >
+              {isInReview ? (
+                <>
+                  <BookmarkCheck className="w-3.5 h-3.5 text-amber-700" />
+                  <span>À revoir</span>
+                </>
+              ) : (
+                <>
+                  <Bookmark className="w-3.5 h-3.5" />
+                  <span>Mémoriser</span>
+                </>
+              )}
+            </button>
+          )}
+
           <span className="px-2.5 py-1 rounded-full bg-stone-100 font-mono text-xs font-semibold text-stone-600 border border-stone-200/60">
             ⚡ {result.timeSeconds.toFixed(2)}s
           </span>
@@ -166,6 +251,54 @@ export const ResultDrawer: React.FC<ResultDrawerProps> = ({
             « {result.optimalAnswer} »
           </p>
         </div>
+
+        {/* ÉTAPE 1 : Tournure 100% Native (Native Polish) */}
+        {result.nativeAlternative && result.nativeAlternative !== result.optimalAnswer && (
+          <div className="flex flex-col gap-1 p-3.5 rounded-2xl bg-indigo-50/70 border border-indigo-100/90 animate-in fade-in duration-150">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-bold text-indigo-900 uppercase tracking-wider flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
+                <span>Variante ultra-native (Native Polish)</span>
+              </span>
+              <button
+                onClick={handlePlayAlternative}
+                className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white hover:bg-indigo-100 text-indigo-700 text-xs font-semibold border border-indigo-200/80 shadow-2xs transition-all cursor-pointer active:scale-95"
+                title="Écouter la version ultra-idiomatique"
+              >
+                <Volume2 className="w-3 h-3" />
+                <span>Écouter</span>
+              </button>
+            </div>
+            <p className="text-indigo-950 font-bold text-sm mt-1">
+              « {result.nativeAlternative} »
+            </p>
+          </div>
+        )}
+
+        {/* ÉTAPE 1 : Power Chunks (Blocs clés de vocabulaire) */}
+        {result.vocabularyChunks && result.vocabularyChunks.length > 0 && (
+          <div className="p-3.5 rounded-2xl bg-stone-50 border border-stone-200/70">
+            <div className="flex items-center gap-1.5 mb-2">
+              <Brain className="w-3.5 h-3.5 text-stone-500" />
+              <span className="text-[11px] font-bold uppercase tracking-wider text-stone-600">
+                Power Chunks (Blocs à mémoriser)
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {result.vocabularyChunks.map((vc, i) => (
+                <div
+                  key={i}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs shadow-2xs"
+                  title={vc.tip || `${vc.chunk} signifie ${vc.translation}`}
+                >
+                  <span className="font-bold text-stone-900">{vc.chunk}</span>
+                  <span className="text-stone-400">➔</span>
+                  <span className="text-blue-700 font-semibold">{vc.translation}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Explanation */}

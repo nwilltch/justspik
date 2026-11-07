@@ -16,13 +16,16 @@ import { useAuth, MAX_FREE_ATTEMPTS } from '@/contexts/AuthContext';
 import { audioRecorder } from '@/lib/audioRecorder';
 import {
   MULTILINGUAL_ENTRIES,
+  PINGPONG_QUESTIONS,
   buildChallenge,
+  buildPingPongChallenge,
   evaluateSpokenAnswer,
   getLanguageInfo,
 } from '@/lib/data';
 import { Challenge, EvaluationResult, MultilingualEntry, PhraseCategory, SupportedLang } from '@/lib/types';
 import { sound } from '@/lib/soundFx';
 import { getGhostRecord, saveGhostRecord, getDailyStreak, recordDayActivity } from '@/lib/ghostStore';
+import { getReviewCount, getReviewPhraseIds, markPhraseMastered } from '@/lib/srsStore';
 
 export default function JustSpikApp() {
   const { user, guestAttempts, isLimitReached, incrementGuestAttempt, openAuthModal } = useAuth();
@@ -68,6 +71,10 @@ export default function JustSpikApp() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isGenerating, setIsGenerating] = useState(false);
 
+  // SRS Spaced Repetition states
+  const [isReviewModeActive, setIsReviewModeActive] = useState(false);
+  const [reviewCount, setReviewCount] = useState(0);
+
   // Sidebar responsive & collapse states
   const [isSidebarMobileOpen, setIsSidebarMobileOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -75,7 +82,7 @@ export default function JustSpikApp() {
   // Ghost Mode Record for current phrase
   const [ghostRecord, setGhostRecord] = useState<number | null>(null);
 
-  // Load saved phrases & streak on mount
+  // Load saved phrases, streak & review count on mount
   useEffect(() => {
     fetch('/api/phrases')
       .then((res) => res.json())
@@ -87,26 +94,51 @@ export default function JustSpikApp() {
       .catch((err) => console.warn('Erreur chargement phrases:', err));
 
     setStreak(getDailyStreak());
+    setReviewCount(getReviewCount());
   }, []);
 
-  // Compute active challenges list dynamically based on chosen languages and category
+  // Compute active challenges list dynamically based on chosen languages, mode and category
   const activeChallenges = useMemo(() => {
+    // Mode Ping-Pong Q&A
+    if (gameMode === 'pingpong') {
+      return PINGPONG_QUESTIONS.map((q) =>
+        buildPingPongChallenge(q, sourceLang, targetLang)
+      );
+    }
+
+    // Mode SRS "À perfectionner"
+    if (isReviewModeActive) {
+      const reviewIds = getReviewPhraseIds();
+      const reviewEntries = savedEntries.filter((entry) =>
+        reviewIds.includes(entry.id)
+      );
+      if (reviewEntries.length > 0) {
+        return reviewEntries.map((entry) =>
+          buildChallenge(entry, sourceLang, targetLang)
+        );
+      }
+    }
+
+    // Phrases sur-mesure créées par l'utilisateur
     if (currentCategory === 'custom') {
       return customChallenges.filter(
         (c) => c.sourceLang === sourceLang && c.targetLang === targetLang
       );
     }
+
+    // Catégorie standard (ou Top 500 Chunks / essential)
     const filteredEntries = savedEntries.filter(
       (entry) => entry.category === currentCategory
     );
     return filteredEntries.map((entry) =>
       buildChallenge(entry, sourceLang, targetLang)
     );
-  }, [currentCategory, sourceLang, targetLang, savedEntries, customChallenges]);
+  }, [gameMode, isReviewModeActive, currentCategory, sourceLang, targetLang, savedEntries, customChallenges]);
 
   // Dynamic phrase counts per category
   const categoryCounts = useMemo<Record<PhraseCategory, number>>(() => {
     const counts: Record<PhraseCategory, number> = {
+      essential: 0,
       routine: 0,
       work: 0,
       food: 0,
@@ -125,9 +157,11 @@ export default function JustSpikApp() {
   }, [savedEntries, customChallenges]);
 
   const currentCategoryLabel = useMemo(() => {
+    if (gameMode === 'pingpong') return 'Ping-Pong Q&A';
+    if (isReviewModeActive) return 'À perfectionner';
     const found = CATEGORIES_LIST.find((c) => c.id === currentCategory);
     return found ? found.label : 'Thèmes';
-  }, [currentCategory]);
+  }, [gameMode, isReviewModeActive, currentCategory]);
 
   const currentChallenge: Challenge | undefined =
     activeChallenges[currentIndex % Math.max(activeChallenges.length, 1)];
@@ -200,6 +234,9 @@ export default function JustSpikApp() {
       setSessionAttemptCount(0);
       setSessionCorrectCount(0);
       setSessionTotalTime(0);
+    } else if (mode === 'pingpong') {
+      setIsReviewModeActive(false);
+      setCurrentIndex(0);
     }
   };
 
@@ -378,7 +415,12 @@ export default function JustSpikApp() {
     const finalTime = simulatedTime ?? stopTimer();
     if (!currentChallenge) return;
 
-    const result = evaluateSpokenAnswer(transcript, currentChallenge, finalTime);
+    const result = evaluateSpokenAnswer(
+      transcript,
+      currentChallenge,
+      finalTime,
+      gameMode === 'pingpong'
+    );
     result.userAudioUrl = userAudioUrl || audioRecorder.getCurrentAudioUrl() || null;
     setEvaluation(result);
 
@@ -401,6 +443,13 @@ export default function JustSpikApp() {
     if (result.isCorrect) {
       setSessionCorrectCount((prev) => prev + 1);
       setBestUserSpeed((prev) => (prev === null || finalTime < prev ? finalTime : prev));
+
+      // Si maîtrise rapide de la phrase (< 2.5s), marquer comme maîtrisée dans le SRS
+      if (finalTime <= 2.5) {
+        const baseId = currentChallenge.id.split('-')[0];
+        markPhraseMastered(baseId, finalTime);
+        setReviewCount(getReviewCount());
+      }
 
       // Play soft crystalline audio chime
       sound.playSuccessChime(finalTime <= 2.2);
@@ -560,12 +609,22 @@ export default function JustSpikApp() {
       <CategorySidebar
         currentCategory={currentCategory}
         onSelectCategory={(cat) => {
+          setIsReviewModeActive(false);
+          if (gameMode === 'pingpong') setGameMode('focus');
           setCurrentCategory(cat);
           setCurrentIndex(0);
           setEvaluation(null);
           setElapsedTime(0.0);
         }}
         counts={categoryCounts}
+        reviewCount={reviewCount}
+        isReviewModeActive={isReviewModeActive}
+        onToggleReviewMode={() => {
+          setIsReviewModeActive(!isReviewModeActive);
+          setCurrentIndex(0);
+          setEvaluation(null);
+          setElapsedTime(0.0);
+        }}
         isMobileOpen={isSidebarMobileOpen}
         onCloseMobile={() => setIsSidebarMobileOpen(false)}
         isCollapsedDesktop={isSidebarCollapsed}
@@ -618,6 +677,7 @@ export default function JustSpikApp() {
             onChangeTargetLang={handleChangeTargetLang}
             onSkip={handleNextChallenge}
             ghostRecord={ghostRecord}
+            isPingPong={gameMode === 'pingpong'}
           />
         ) : (
           <div className="w-full max-w-xl text-center p-8 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
@@ -653,9 +713,11 @@ export default function JustSpikApp() {
         {evaluation && (
           <ResultDrawer
             result={evaluation}
+            challengeId={currentChallenge?.id}
             onRetry={handleRetry}
             onNext={handleNextChallenge}
             onPlaySolutionAudio={handlePlaySolutionAudio}
+            onSrsChange={() => setReviewCount(getReviewCount())}
           />
         )}
       </div>

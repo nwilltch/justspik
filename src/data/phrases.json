@@ -3464,5 +3464,24 @@
       "it": "Unisci « controllare se » senza pausa e mantieni un tono diretto e ascendente."
     },
     "targetTimeSec": 3.2
+  },
+  {
+    "id": "auto-1794076208726-8114",
+    "category": "slang",
+    "translations": {
+      "fr": "Laisse béton, ça ne vaut pas le coup de s'embrouiller pour si peu.",
+      "en": "Drop it, it's not worth getting into a fight over something so small.",
+      "es": "Pasa de eso, no vale la pena pelearse por tan poco.",
+      "de": "Lass es gut sein, es lohnt sich nicht, sich wegen so einer Kleinigkeit zu streiten.",
+      "it": "Lascia perdere, non vale la pena litigare per così poco."
+    },
+    "explanations": {
+      "fr": "Enchaîne 'laisse béton' d'un seul souffle, sans marquer de pause.",
+      "en": "Blend 'drop it' into one smooth breath, no pause after it.",
+      "es": "Di 'pasa de eso' de corrido, sin pausa entre las palabras.",
+      "de": "Sprich 'Lass es gut sein' in einem Fluss, ohne Pause.",
+      "it": "Dì 'lascia perdere' tutto d'un fiato, senza pause."
+    },
+    "targetTimeSec": 3.2
   }
 ]

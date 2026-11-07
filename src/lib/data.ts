@@ -17,6 +17,7 @@ export const SUPPORTED_LANGUAGES: LanguageInfo[] = [
 ];
 
 export const CATEGORIES_CONFIG: CategoryInfo[] = [
+  { id: 'essential', label: 'Top 500 Chunks', description: 'Structures & réflexes clés du quotidien' },
   { id: 'routine', label: 'Routines', description: 'Habitudes, matin, maison, météo' },
   { id: 'work', label: 'Travail', description: 'Bureau, réunions, projets, emails' },
   { id: 'food', label: 'Cuisine', description: 'Restaurant, plats, goûts, commandes' },
@@ -200,6 +201,246 @@ export const MULTILINGUAL_ENTRIES: MultilingualEntry[] = [
   },
 ];
 
+export interface PingPongQuestion {
+  id: string;
+  category: PhraseCategory;
+  questions: Record<SupportedLang, string>;
+  suggestedAnswers: Record<SupportedLang, string>;
+  nativePolish: Record<SupportedLang, string>;
+}
+
+export const PINGPONG_QUESTIONS: PingPongQuestion[] = [
+  {
+    id: 'pq-1',
+    category: 'routine',
+    questions: {
+      en: 'What did you do first thing this morning?',
+      fr: 'Qu’as-tu fait en tout premier ce matin ?',
+      es: '¿Qué fue lo primero que hiciste esta mañana?',
+      de: 'Was hast du heute Morgen als Erstes gemacht?',
+      it: 'Cos’hai fatto come prima cosa stamattina?',
+    },
+    suggestedAnswers: {
+      en: 'I woke up early, had a hot coffee and went for a run.',
+      fr: 'Je me suis réveillé tôt, j’ai pris un café chaud et je suis allé courir.',
+      es: 'Me desperté temprano, tomé un café caliente y salí a correr.',
+      de: 'Ich bin früh aufgewacht, habe Kaffee getrunken und bin joggen gegangen.',
+      it: 'Mi sono svegliato presto, ho preso un caffè caldo e sono andato a correre.',
+    },
+    nativePolish: {
+      en: 'First thing I did was grab a fresh cup of coffee to kick off the day.',
+      fr: 'La toute première chose a été d’avaler un café pour attaquer la journée.',
+      es: 'Lo primero que hice fue prepararme un buen café para arrancar con energía.',
+      de: 'Als Erstes habe ich mir einen Kaffee geschnappt, um in die Gänge zu kommen.',
+      it: 'La primissima cosa è stata bermi un bel caffè per carburare.',
+    },
+  },
+  {
+    id: 'pq-2',
+    category: 'essential',
+    questions: {
+      en: 'How do you usually unwind after a busy day?',
+      fr: 'Comment décompresses-tu d’habitude après une grosse journée ?',
+      es: '¿Cómo sueles desconectar después de un día ajetreado?',
+      de: 'Wie entspannst du dich normalerweise nach einem anstrengenden Tag?',
+      it: 'Come ti rilassi di solito dopo una giornata intensa?',
+    },
+    suggestedAnswers: {
+      en: 'I like listening to music, cooking a nice meal, or watching a movie.',
+      fr: 'J’aime écouter de la musique, cuisiner un bon plat ou regarder un film.',
+      es: 'Me gusta escuchar música, cocinar algo rico o ver una película.',
+      de: 'Ich höre gerne Musik, koche mir etwas Schönes oder schaue einen Film.',
+      it: 'Mi piace ascoltare musica, cucinare un buon piatto o guardare un film.',
+    },
+    nativePolish: {
+      en: 'Honestly, I just crash on the couch with a good podcast to clear my head.',
+      fr: 'Franchement, je me pose sur le canapé avec un bon podcast pour me vider la tête.',
+      es: 'La verdad es que me tumbo en el sofá con un buen podcast para despejarme.',
+      de: 'Ehrlich gesagt chille ich einfach auf dem Sofa mit einem Podcast zum Abschalten.',
+      it: 'A dire il vero mi butto sul divano con un bel podcast per staccare la spina.',
+    },
+  },
+  {
+    id: 'pq-3',
+    category: 'travel',
+    questions: {
+      en: 'If you could travel anywhere tomorrow, where would you go?',
+      fr: 'Si tu pouvais voyager n’importe où demain, où irais-tu ?',
+      es: 'Si pudieras viajar a cualquier lugar mañana, ¿adónde irías?',
+      de: 'Wenn du morgen überall hinreisen könntest, wohin würdest du gehen?',
+      it: 'Se potessi viaggiare ovunque domani, dove andresti?',
+    },
+    suggestedAnswers: {
+      en: 'I would go to Japan to explore Tokyo and eat delicious ramen.',
+      fr: 'J’irais au Japon pour explorer Tokyo et manger de délicieux ramens.',
+      es: 'Iría a Japón para explorar Tokio y comer un ramen delicioso.',
+      de: 'Ich würde nach Japan fliegen, um Tokio zu erkunden und leckere Ramen zu essen.',
+      it: 'Andrei in Giappone per esplorare Tokyo e mangiare deliziosi ramen.',
+    },
+    nativePolish: {
+      en: 'Without a second thought, I’d book a one-way ticket to Kyoto.',
+      fr: 'Sans hésiter une seconde, je prendrais un billet direct pour Kyoto.',
+      es: 'Sin pensármelo dos veces, me pillaría un billete directo a Kioto.',
+      de: 'Ohne zu zögern würde ich mir ein One-Way-Ticket nach Kyoto buchen.',
+      it: 'Senza pensarci due volte, prenderei un biglietto di sola andata per Kyoto.',
+    },
+  },
+  {
+    id: 'pq-4',
+    category: 'work',
+    questions: {
+      en: 'What’s a goal or project you are currently working on?',
+      fr: 'Sur quel projet ou objectif travailles-tu en ce moment ?',
+      es: '¿En qué objetivo o proyecto estás trabajando ahora mismo?',
+      de: 'An welchem Ziel oder Projekt arbeitest du im Moment?',
+      it: 'A quale obiettivo o progetto stai lavorando in questo momento?',
+    },
+    suggestedAnswers: {
+      en: 'I am building an app to help people speak foreign languages with confidence.',
+      fr: 'Je développe une application pour aider les gens à parler une langue avec confiance.',
+      es: 'Estoy creando una aplicación para ayudar a la gente a hablar idiomas con confianza.',
+      de: 'Ich entwickle eine App, mit der Leute selbstbewusst Fremdsprachen sprechen.',
+      it: 'Sto sviluppando un’app per aiutare le persone a parlare lingue con sicurezza.',
+    },
+    nativePolish: {
+      en: 'I’ve been pouring my energy into launching an oral fluency training tool.',
+      fr: 'Je mets toute mon énergie dans le lancement d’un outil pour débloquer l’aisance orale.',
+      es: 'Le estoy metiendo caña al lanzamiento de una herramienta para hablar fluido.',
+      de: 'Ich stecke gerade meine ganze Energie in den Launch eines Sprachtraining-Tools.',
+      it: 'Sto mettendo tutta la mia energia nel lancio di uno strumento per parlare fluente.',
+    },
+  },
+  {
+    id: 'pq-5',
+    category: 'essential',
+    questions: {
+      en: 'Why is becoming fluent in this language important to you?',
+      fr: 'Pourquoi devenir bilingue dans cette langue est important pour toi ?',
+      es: '¿Por qué es importante para ti llegar a hablar este idioma con fluidez?',
+      de: 'Warum ist es dir wichtig, diese Sprache fließend zu beherrschen?',
+      it: 'Perché è importante per te parlare fluentemente questa lingua?',
+    },
+    suggestedAnswers: {
+      en: 'It unlocks global opportunities, travel freedom, and deeper connections with people.',
+      fr: 'Ça ouvre des opportunités mondiales, la liberté de voyager et de vraies connexions.',
+      es: 'Abre oportunidades globales, libertad para viajar y conectar de verdad con la gente.',
+      de: 'Es eröffnet weltweite Chancen, Reisefreiheit und echte Verbindungen zu Menschen.',
+      it: 'Apre opportunità globali, libertà di viaggiare e connessioni autentiche con le persone.',
+    },
+    nativePolish: {
+      en: 'It completely levels up my career and lets me feel at home anywhere in the world.',
+      fr: 'Ça fait passer ma carrière à la vitesse supérieure et je me sens chez moi partout.',
+      es: 'Le da un salto total a mi carrera y me permite sentirme como en casa en cualquier lugar.',
+      de: 'Es bringt meine Karriere aufs nächste Level und ich fühle mich überall zuhause.',
+      it: 'Dà una svolta alla mia carriera e mi fa sentire a casa ovunque nel mondo.',
+    },
+  },
+];
+
+export function extractPowerChunks(
+  text: string,
+  lang: SupportedLang
+): { chunk: string; translation: string; tip?: string }[] {
+  const commonChunks: Record<
+    string,
+    Partial<Record<SupportedLang, string>> & { fr: string; en: string; tip?: string }
+  > = {
+    'as far as i know': {
+      fr: 'à ma connaissance',
+      en: 'as far as I know',
+      es: 'que yo sepa',
+      tip: 'Indispensable pour nuancer sans affirmer à 100%',
+    },
+    'to be honest': {
+      fr: 'pour être franc',
+      en: 'to be honest',
+      es: 'para ser sincero',
+      tip: 'Connecteur oral très naturel en début de réplique',
+    },
+    'it turns out': {
+      fr: 'il s’avère que',
+      en: 'it turns out',
+      es: 'resulta que',
+      tip: 'Formule clé pour raconter un dénouement inattendu',
+    },
+    'look forward to': {
+      fr: 'avoir hâte de',
+      en: 'look forward to',
+      es: 'tener muchas ganas de',
+      tip: 'Toujours suivi d’un gérondif (-ing)',
+    },
+    'touch base': {
+      fr: 'faire le point',
+      en: 'touch base',
+      es: 'ponerse al día',
+      tip: 'Collocation pro américaine incontournable',
+    },
+    'figure out': {
+      fr: 'comprendre / résoudre',
+      en: 'figure out',
+      es: 'resolver / descifrar',
+      tip: 'Verbe à particule le plus fréquent au quotidien',
+    },
+    'no wonder': {
+      fr: 'pas étonnant que',
+      en: 'no wonder',
+      es: 'con razón',
+      tip: 'Remplace avantageusement "it is not surprising"',
+    },
+    'make sense': {
+      fr: 'être logique / avoir du sens',
+      en: 'make sense',
+      es: 'tener sentido',
+      tip: 'Utilisé pour valider l’idée de son interlocuteur',
+    },
+    'catch up': {
+      fr: 'se donner des nouvelles',
+      en: 'catch up',
+      es: 'ponerse al día',
+      tip: 'Idéal pour proposer de se revoir',
+    },
+    'give a hand': {
+      fr: 'donner un coup de main',
+      en: 'give a hand',
+      es: 'echar una mano',
+      tip: 'Formule amicale pour demander de l’aide',
+    },
+    'run late': {
+      fr: 'être en retard',
+      en: 'run late',
+      es: 'ir con retraso',
+      tip: 'Plus naturel que "I am late"',
+    },
+    'slip my mind': {
+      fr: 'sortir de la tête',
+      en: 'slip my mind',
+      es: 'pasar por alto',
+      tip: 'Excuse naturelle et élégante pour un oubli',
+    },
+    'long story short': {
+      fr: 'pour faire court',
+      en: 'long story short',
+      es: 'en resumidas cuentas',
+      tip: 'Pour résumer une histoire sans s’éterniser',
+    },
+  };
+
+  const lower = text.toLowerCase();
+  const matched: { chunk: string; translation: string; tip?: string }[] = [];
+
+  for (const [key, info] of Object.entries(commonChunks)) {
+    if (lower.includes(key)) {
+      matched.push({
+        chunk: info[lang] || key,
+        translation: lang === 'fr' ? info.en : info.fr,
+        tip: info.tip,
+      });
+    }
+  }
+
+  return matched;
+}
+
 export function buildChallenge(
   entry: MultilingualEntry,
   sourceLang: SupportedLang,
@@ -210,6 +451,10 @@ export function buildChallenge(
   const explanation =
     entry.explanations[targetLang] ||
     `Traduction idiomatique en ${getLanguageInfo(targetLang).name}.`;
+
+  const nativeAlternative = entry.nativeAlternatives?.[targetLang];
+  const vocabularyChunks =
+    entry.vocabularyChunks?.[targetLang] || extractPowerChunks(optimalAnswer, targetLang);
 
   return {
     id: `${entry.id}-${sourceLang}-${targetLang}`,
@@ -222,6 +467,33 @@ export function buildChallenge(
     explanation,
     difficulty: 'Medium',
     targetTimeSec: entry.targetTimeSec,
+    nativeAlternative,
+    vocabularyChunks,
+  };
+}
+
+export function buildPingPongChallenge(
+  pq: PingPongQuestion,
+  sourceLang: SupportedLang,
+  targetLang: SupportedLang
+): Challenge {
+  const questionText = pq.questions[targetLang] || pq.questions.en;
+  const optimalAnswer = pq.suggestedAnswers[targetLang] || pq.suggestedAnswers.en;
+  const nativeAlternative = pq.nativePolish[targetLang] || pq.nativePolish.en;
+
+  return {
+    id: `pingpong-${pq.id}-${targetLang}`,
+    category: pq.category,
+    sourceLang,
+    targetLang,
+    sourceText: questionText,
+    optimalAnswer,
+    acceptedVariations: [optimalAnswer.toLowerCase()],
+    explanation: `Question directe en ${getLanguageInfo(targetLang).name} : réponds avec tes propres mots !`,
+    difficulty: 'Medium',
+    targetTimeSec: 6.0,
+    nativeAlternative,
+    pingpongQuestion: questionText,
   };
 }
 
@@ -242,10 +514,46 @@ export function cleanText(text: string): string {
 export function evaluateSpokenAnswer(
   transcript: string,
   challenge: Challenge,
-  timeSeconds: number
+  timeSeconds: number,
+  isPingPong: boolean = false
 ): EvaluationResult {
   const cleanedTrans = cleanText(transcript);
   const cleanedOptimal = cleanText(challenge.optimalAnswer);
+
+  if (isPingPong) {
+    const words = cleanedTrans.split(' ').filter(Boolean);
+    const wordCount = words.length;
+    let accuracy = 0;
+    if (wordCount >= 5) {
+      accuracy = 95;
+    } else if (wordCount >= 3) {
+      accuracy = 85;
+    } else if (wordCount >= 1) {
+      accuracy = 65;
+    }
+
+    const isCorrect = accuracy >= 70;
+    const speedRating: EvaluationResult['speedRating'] =
+      timeSeconds <= 3.5 ? 'lightning' : timeSeconds <= 6.0 ? 'fast' : 'hesitant';
+
+    const diffTokens = words.map((w) => ({ text: w, status: 'correct' as const }));
+
+    return {
+      transcript,
+      accuracy,
+      timeSeconds,
+      speedRating,
+      isCorrect,
+      optimalAnswer: challenge.optimalAnswer,
+      targetLang: challenge.targetLang,
+      explanation: 'Réponse orale spontanée enregistrée ! Découvre ci-dessous la version ultra-native.',
+      diffTokens,
+      nativeAlternative: challenge.nativeAlternative,
+      vocabularyChunks: challenge.vocabularyChunks,
+      isPingPong: true,
+      fluencyScore: Math.min(100, Math.round((wordCount / (timeSeconds || 1)) * 40)),
+    };
+  }
 
   let bestScore = 0;
   if (cleanedTrans === cleanedOptimal) {
@@ -311,6 +619,8 @@ export function evaluateSpokenAnswer(
     targetLang: challenge.targetLang,
     explanation: challenge.explanation,
     diffTokens,
+    nativeAlternative: challenge.nativeAlternative,
+    vocabularyChunks: challenge.vocabularyChunks,
   };
 }
 

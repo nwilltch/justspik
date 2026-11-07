@@ -2,6 +2,7 @@ export type SupportedLang = 'fr' | 'en' | 'es' | 'de' | 'it';
 
 export type PhraseCategory =
   | 'routine'
+  | 'essential'
   | 'work'
   | 'food'
   | 'social'
@@ -9,6 +10,12 @@ export type PhraseCategory =
   | 'tech'
   | 'slang'
   | 'custom';
+
+export interface VocabularyChunk {
+  chunk: string;
+  translation: string;
+  tip?: string;
+}
 
 export interface CategoryInfo {
   id: PhraseCategory;
@@ -30,6 +37,8 @@ export interface MultilingualEntry {
   translations: Record<SupportedLang, string>;
   explanations: Partial<Record<SupportedLang, string>>;
   targetTimeSec: number;
+  nativeAlternatives?: Partial<Record<SupportedLang, string>>;
+  vocabularyChunks?: Partial<Record<SupportedLang, VocabularyChunk[]>>;
 }
 
 export interface Challenge {
@@ -43,6 +52,9 @@ export interface Challenge {
   explanation: string;
   difficulty: 'Easy' | 'Medium' | 'Pro';
   targetTimeSec: number;
+  nativeAlternative?: string;
+  vocabularyChunks?: VocabularyChunk[];
+  pingpongQuestion?: string;
 }
 
 export interface EvaluationResult {
@@ -56,4 +68,8 @@ export interface EvaluationResult {
   explanation: string;
   diffTokens: { text: string; status: 'correct' | 'wrong' | 'missing' }[];
   userAudioUrl?: string | null;
+  nativeAlternative?: string;
+  vocabularyChunks?: VocabularyChunk[];
+  fluencyScore?: number;
+  isPingPong?: boolean;
 }
